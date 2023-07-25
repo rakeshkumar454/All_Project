@@ -1,0 +1,191 @@
+<! created by Surendran Velath>
+<html><head>
+<meta name="AccessType" Content="Free">
+<title>Java certification Quiz</title>
+<style>
+ .tip{color:#b23c09;font-size:18px;font-weight:bold;font-family:arial}
+ a:hover{color:red;font-family:verdana;font-size:22px;}
+</style>
+<script type="text/javascript" src="jquiz.js">
+</script>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+<table class="outer">
+<tr>
+<td bgColor="#f3eff0">
+<table class="inner">
+<tr>
+<td>	
+<table cellSpacing=0 cellPadding=0 border=0>
+<tr>
+<td>
+<font class="title">Java Quiz - 28
+
+<p><a href="javaquiz27.htm">&#171;</a>&nbsp;<a href="javaquiz1.htm">1</a>&nbsp;<a href="javaquiz2.htm">2</a>&nbsp;<a href="javaquiz3.htm">3</a>&nbsp;<a href="javaquiz4.htm">4</a>&nbsp;<a href="javaquiz5.htm">5</a>&nbsp;<a href="javaquiz6.htm">6</a>&nbsp;<a href="javaquiz7.htm">7</a>&nbsp;<a href="javaquiz8.htm">8</a>&nbsp;<a href="javaquiz9.htm">9</a>&nbsp;<a href="javaquiz10.htm">10</a>&nbsp;<a href="javaquiz11.htm">11</a>&nbsp;<a href="javaquiz12.htm">12</a>&nbsp;<a href="javaquiz13.htm">13</a>&nbsp;<a href="javaquiz14.htm">14</a>&nbsp;<a href="javaquiz15.htm">15</a>&nbsp;<a href="javaquiz16.htm">16</a>&nbsp;<a href="javaquiz17.htm">17</a>&nbsp;<a href="javaquiz18.htm">18</a>&nbsp;<a href="javaquiz19.htm">19</a>&nbsp;<a href="javaquiz20.htm">20</a>&nbsp;<a href="javaquiz21.htm">21</a>&nbsp;<a href="javaquiz22.htm">22</a>&nbsp;<a href="javaquiz23.htm">23</a>&nbsp;<a href="javaquiz24.htm">24</a>&nbsp;<a href="javaquiz25.htm">25</a>&nbsp;<a href="javaquiz26.htm">26</a>&nbsp;<a href="javaquiz27.htm">27</a>&nbsp;28&nbsp;<a href="javaquiz29.htm">29</a>&nbsp;<a href="javaquiz30.htm">30</a>&nbsp;<a href="javaquiz31.htm">31</a>&nbsp;<a href="javaquiz32.htm">32</a>&nbsp;<a href="javaquiz29.htm">&#187;</a></p>
+</font>
+
+<p title="Arrays" class="tip">1. What is the output?</p>
+<b><font class="ques"><pre>
+public class Test {
+  public static void main(String[] args) {
+    String[] strArr = new String[2];
+    int indx = 0;
+    for (String str : strArr) {
+      strArr[indx].concat(" element "+indx);
+      indx++;
+    }
+    for (int i = 0; i < strArr.length; i++) {
+      System.out.println(strArr[i]);
+    }
+  }
+}</pre></b>
+<font color=#000000><!-- options --><input onclick="ans(this.name,'wrong')" type=radio name=1> a) <em>Compile error</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=1> b) <em>NullPointerException thrown</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=1> c) <em>element 0, element 1</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=1> d) <em>null element 0, null element 1</em><br></font>
+<div class="details" id=wrong1><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong1e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong1a><b>Wrong!</b><br>The correct answer is <i>b) NullPointerException thrown</i> : The array elements are initialized to null by default</div>
+<div class="detailsr" id=correct1><b>Correct! </b><br> <i> NullPointerException thrown</i> : The array elements are initialized to null by default</div>
+
+<p title="main method" class="tip">2. What is the output?</p>
+<b><font class="ques"><pre>
+public class Test {
+  public static void main(String... args) {
+    System.out.println("String");
+  }
+  public static void main(int... args) {
+    System.out.println("int");
+  }
+  public static void main(Object... args) {
+    System.out.println("Object");
+  }
+}</pre>
+</b><font color=#000000><input onclick="ans(this.name,'correct')" type=radio name=2> a) <em>String</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=2> b) <em>int</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=2> c) <em>Object</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=2> d) <em>Compile error</em><br><br>
+</font><div class="details" id=wrong2><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong2e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong2a><b>Wrong! </b>The correct answer is <i>a) String</i> : main with String[] is run</div>
+<div class="detailsr" id=correct2><b>Correct! </b> <br><i> String</i> : main with String[] is run</div>
+
+
+<p title="main method" class="tip">3. What is the output?</p>
+<b><font class="ques"><pre>
+public class Test {
+  public static void main(String... args) {
+    main(10,20,30);
+  }
+  public static void main(Integer... args) {
+    System.out.println("Integer");
+  }
+  public static void main(Object... args) {
+    System.out.println("Object");
+  }
+}</pre>
+</b><font color=#000000><input onclick="ans(this.name,'wrong')" type=radio name=3> a) Compile error</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=3> b) StackOverFlow error</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=3> c) Object</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=3> d) Integer<br>
+<br></font><div class="details" id=wrong3><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong3e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong3a><b>Wrong!</b> The correct answer is <i>d) Integer </i> : matching method is called with main()<br> </div>
+<div class="detailsr" id=correct3><b>Correct! </b><i> Integer </i><br> matching method is called with main()</div>
+
+
+<p title="Class Cast" class="tip">4. What is the output?</p>
+<b><font class="ques"><pre>
+public class Test extends Parent{
+  public void calculate() {
+    System.out.println("in Test");
+  }
+  public static void main(String[] args) {
+    Test p = (Test) new Parent();        
+    p.calculate();
+  }  
+}
+public class Parent {
+  protected void calculate() {
+  System.out.println("in Parent");
+  }
+}</pre>
+</b><font color=#000000><input onclick="ans(this.name,'wrong')" type=radio name=4> a) <em>Compile error</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=4> b) <em>throws Exception</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=4> c) <em>in Test</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=4> d) <em>in Parent</em><br>
+<br></font><div class="details" id=wrong4><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong4e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong4a><b>Wrong! </b><br>The correct answer is <i>b) throws Exception</i> Cannot cast Parent to child</div>
+<div class="detailsr" id=correct4><b>Correct! </b> in Test<i> throws ClassCastException <br>Cannot cast Parent to child</i> </div>
+
+
+<p title="for loop" class="tip">5. What is the output? </p>
+<b><font class="ques"><pre>
+To get output 135 what code should be inserted at XXX
+int[] arr = {1,2,3,4,5};
+for(XXX) {
+  System.out.print(arr[i]); 
+}</pre>
+</b><font color=#000000><input onclick="ans(this.name,'wrong')" type=radio name=5> a) <em>int i=1;i<=5;i+=1</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=5> b) <em>int i=0;i<=4;i++</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=5> c) <em>int i=0;i<5;i+=2</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=5> d) <em>int i=1;i<=4;i++</em>
+<br>
+<br></font><div class="details" id=wrong5><b>Wrong!</b> Try again.</b>.
+<br></div>
+<div class="details" id=wrong5e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong5a><b>Wrong! </b><br>The correct answer is <i>c) int i=0;i<5;i+=2</i> </div>
+<div class="detailsr" id=correct5><b>Correct! </b><br><i> int i=0;i<5;i+=2</i> </div>
+
+
+<p title="String" class="tip">6. What is output?</p>
+<b><font class="ques"><pre>
+String str=" ";
+str.trim();
+System.out.println(str.equals("") 
+   +" " + str.isEmpty());</pre></b>
+<font color=#000000>
+<input onclick="ans(this.name,'correct')" type=radio name=6> a) <em>false false</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=6> b) <em>true true</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=6> c) <em>true false</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=6> d) <em>false true</em><br></font>
+<div class="details" id=wrong6><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong6e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong6a><b>Wrong!</b><br>The correct answer is <i>a) false false</i> : String is immutable </div>
+<div class="detailsr" id=correct6><b>Correct! </b><br> false false : String is immutable</div>
+
+
+<p title="array indexes" class="tip">7. What changes can make code compile?</p>
+<b><font class="ques"><pre>
+1.  abstract class Doctor {
+2.   protected void operate(){
+3.   } 
+4.   abstract void cure();
+5.  }
+6.  class Surgeon extends Doctor {
+7.   void operate(){
+8.   }
+9.   protected void cure(){
+10.  }
+11. }<i>
+A. public void operate() at line 7
+B. protected void operate() at line 7
+C. void operate() at line 2
+D. void cure() at line 9</i></pre></b>
+<font color=#000000>
+<input onclick="ans(this.name,'correct')" type=radio name=7> a) <em>A or B or C</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=7> b) <em>A or B</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=7> c) <em>A or C</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=7> d) <em>Any of them</em></font>
+<div class="details" id=wrong7><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong7e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong7a><b>Wrong!</b><br>The correct answer is a) A or B or C<i> : protected has higher access than default</i></div>
+<div class="detailsr" id=correct7><b>Correct! </b><br> A or B or C  <i> :  protected has higher access than default</i></div>
+
+<tr>
+<td><br><a href="./javaquiz27.htm"><img src="previous.jpg"></a>
+&nbsp;<a href="./javaquiz29.htm"><img src="next.jpg"></a> </td>
+</table></td></tr></table>
+</body></html>

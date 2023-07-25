@@ -1,0 +1,12 @@
+package streamApi;
+
+import java.util.Arrays;
+
+public class SortanArrayThenConvertToStream {
+	public static void main(String[] args) {
+		int arr[]= {23,56,65,74,233,12,2,45};
+		Arrays.parallelSort(arr);
+		
+		Arrays.stream(arr).forEach(n-> System.out.print(n+ " "));
+	}
+}

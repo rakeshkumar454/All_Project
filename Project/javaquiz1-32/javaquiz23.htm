@@ -1,0 +1,204 @@
+<! created by Surendran Velath>
+<html><head>
+
+<meta name="AccessType" Content="Free">
+<title>Java certification Quiz</title>
+<style>
+ .tip{color:#b23c09;font-size:18px;font-weight:bold;font-family:arial}
+ a:hover{color:red;font-family:verdana;font-size:22px;}
+</style>
+<script type="text/javascript" src="jquiz.js">
+</script>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+<table class="outer">
+<tr>
+<td bgColor="#f3eff0">
+<table class="inner">
+<tr>
+<td>  
+<table cellSpacing=0 cellPadding=0 border=0>
+<tr>
+<td>
+<font class="title">Java Quiz - 23
+
+<p><a href="javaquiz22.htm">&#171;</a> <a href="javaquiz1.htm">1</a> 
+<a href="javaquiz2.htm">2</a> <a href="javaquiz3.htm">3</a>
+<a href="javaquiz4.htm">4</a> <a href="javaquiz5.htm">5</a>
+<a href="javaquiz6.htm">6</a> <a href="javaquiz7.htm">7</a>
+<a href="javaquiz8.htm">8</a> <a href="javaquiz9.htm">9</a>
+<a href="javaquiz10.htm">10</a> <a href="javaquiz11.htm">11</a>
+<a href="javaquiz12.htm">12</a> <a href="javaquiz13.htm">13</a>
+<a href="javaquiz14.htm">14</a> <a href="javaquiz15.htm">15</a>
+<a href="javaquiz16.htm">16</a> <a href="javaquiz17.htm">17</a>
+<a href="javaquiz18.htm">18</a> <a href="javaquiz19.htm">19</a>
+<a href="javaquiz20.htm">20</a> <a href="javaquiz21.htm">21</a>
+<a href="javaquiz22.htm">22</a> 23&nbsp;<a href="javaquiz24.htm">24</a>
+<a href="javaquiz25.htm">25</a>&nbsp;<a href="javaquiz26.htm">26</a>&nbsp;<a href="javaquiz27.htm">27</a>&nbsp;<a href="javaquiz28.htm">28</a>&nbsp;<a href="javaquiz29.htm">29</a>&nbsp;<a href="javaquiz30.htm">30</a>&nbsp;<a href="javaquiz31.htm">31</a>&nbsp;<a href="javaquiz32.htm">32</a>&nbsp;<a href="javaquiz24.htm">&#187;</a></p>
+</font>
+
+<b><pre>
+1. What is the output ?
+ public class Test {
+     public static void main(String... args) {
+        int x =5;
+        x *= 3 + 7;
+       System.out.println(x);
+   }
+ }
+</pre></b>
+<div class="ques"><input onclick="ans(this.name,'correct')" type=radio name=1> a) 50
+<br><input onclick="ans(this.name,'wrong')" type=radio name=1> b) 22
+<br><input onclick="ans(this.name,'wrong')" type=radio name=1> c) 10
+<br><input onclick="ans(this.name,'wrong')" type=radio name=1> d) Compile Error
+<br></div>
+<div class="details" id=wrong1><b>Wrong!</b> Try again.</b>.
+<br></div>
+<div class="details" id=wrong1e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong1a><b>Wrong! </b>&nbsp;The correct answer is <i>a) 50</i>. Expression 3+7 is resolved first and then assigned to x after multiplying with original value</div>
+<div class="detailsr" id=correct1><b>Correct! </b> <i> 50</i>. Expression 3+7 is resolved first and then assigned to x after multiplying with original value</div>
+
+<b><pre>
+2. Which of the following is true?
+ A. A class that is abstract may not be instantiated.
+ B. The final keyword indicates that the body of a method is to be found elsewhere. 
+ C. A static variable indicates there is only one copy of that variable
+ D. A method defined as private indicates that it is accessible to all other classes in the same package
+</pre>
+</b><div class="ques"><input onclick="ans(this.name,'wrong')" type=radio name=2> a) A & B
+<br><input onclick="ans(this.name,'wrong')" type=radio name=2> b) A & D
+<br><input onclick="ans(this.name,'correct')" type=radio name=2> c) A & C
+<br><input onclick="ans(this.name,'wrong')" type=radio name=2> d) C & D
+</div>
+<br><br>
+<div class="details" id=wrong2><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong2e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong2a><b>Wrong! </b>The correct answer is <i>c) A & C</i><br></div>
+<div class="detailsr" id=correct2><b>Correct! </b> <i> c) A & C</i></div>
+
+<b><pre>
+3. Which of these statements are true?
+ A. For each try block there must be at least one catch block defined.
+ B. A try block may be followed by any number of finally blocks.
+ C. A try block must be followed by at least one finally or catch block.
+ D. If both catch and finally blocks are defined, catch block must precede the finally block.
+</pre>
+</b><div class="ques"><input onclick="ans(this.name,'correct')" type=radio name=3> a) C & D
+<br><input onclick="ans(this.name,'wrong')" type=radio name=3> b) A & B
+<br><input onclick="ans(this.name,'wrong')" type=radio name=3> c) B & C
+<br><input onclick="ans(this.name,'wrong')" type=radio name=3> d) A & D</div>
+<br><div class="details" id=wrong3><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong3e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong3a><b>Wrong!</b> The correct answer is <i>a)  C & D</i></div>
+<div class="detailsr" id=correct3><b>Correct! </b><i>C & D</i></div>
+
+<b><pre>
+4. What is the output? 
+public class Test {
+   int squares = 21;
+   public static void main(String[] args) {
+      new Test().go();
+   }
+   void go() {
+     incr(++squares);
+     incr(++squares);
+    System.out.println(squares);
+  }
+  void incr(int squares) { squares += 10; }
+}
+</pre>
+</b><div class="ques"><input onclick="ans(this.name,'wrong')" type=radio name=4> a) 43
+<br><input onclick="ans(this.name,'wrong')" type=radio name=4> b) 42
+<br><input onclick="ans(this.name,'wrong')" type=radio name=4> c) 32
+<br><input onclick="ans(this.name,'correct')" type=radio name=4> d) 23
+</div><br>
+<br><div class="details" id=wrong4><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong4e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong4a><b>Wrong! </b><br>The correct answer is <i>d) 23</i>. incr() method assigns value to local variable</div>
+<div class="detailsr" id=correct4><b>Correct! </b><i>23</i>. incr() method assigns value to local variable</div>
+
+
+<b><pre>
+5. Will the following code compile?
+abstract interface IService {
+   String company="ABC Ltd";
+   void service();
+   int getId();
+}
+</pre>
+</b><div class="ques"><input onclick="ans(this.name,'correct')" type=radio name=5> a) YES
+<br><input onclick="ans(this.name,'wrong')" type=radio name=5> b) No. Interface cannot be declared abstract
+<br><input onclick="ans(this.name,'wrong')" type=radio name=5> c) No. service() should be declared public 
+<br><input onclick="ans(this.name,'wrong')" type=radio name=5> d) No. company should be declared public, static, final 
+<br>
+<br></div><div class="details" id=wrong5><b>Wrong!</b> Try again.</b></div>
+<div class="details" id=wrong5e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong5a><b>Wrong! </b>The correct answer is <i>a) YES</i><br></div>
+<div class="detailsr" id=correct5><b>Correct! </b><i> YES</i> <br></div>
+
+
+<b><pre>
+6. What is the output?
+public class TestParent { 
+    static {
+      System.out.print(" parent-static");
+    }
+}
+public class Test extends TestParent{ 
+    static {
+      System.out.print(" child-static");
+    }
+    {
+      System.out.print(" child-instance");
+    }
+    public static void main(String args[]) { 
+      System.out.print(" main");
+      Test t = new Test();
+    }
+}
+</pre>
+</b>
+<div class="ques">
+<input onclick="ans(this.name,'correct')" type=radio name=6> a) parent-static child-static main child-instance
+<br><input onclick="ans(this.name,'wrong')" type=radio name=6> b) parent-static child-static child-instance main
+<br><input onclick="ans(this.name,'wrong')" type=radio name=6> c) child-static main child-instance
+<br><input onclick="ans(this.name,'wrong')" type=radio name=6> d) child-static parent-static main child-instance
+<br><br></div>
+<div class="details" id=wrong6><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong6e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong6a><b>Wrong! </b> The correct answer is <i>a) </i>parent-static child-static main child-instance </i></div>
+<div class="detailsr" id=correct6><b>Correct! </b><i>parent-static child-static main child-instance</i></div>
+
+<b><pre>
+7.  What is the output?
+public static void main(String[] args) {
+    Set set = new TreeSet<>();
+    set.add("7");
+    set.add("9");
+    set.add(9);
+    Iterator iter = set.iterator();
+    while (iter.hasNext()) {
+      System.out.print(iter.next() + " ");      
+    }
+  }
+</pre>
+</b>
+<div class="ques">
+<input onclick="ans(this.name,'wrong')" type=radio name=7> a)  7 9
+<br><input onclick="ans(this.name,'correct')" type=radio name=7> b) Throws ClassCastException
+<br><input onclick="ans(this.name,'wrong')" type=radio name=7> c) 7 9 9
+<br><input onclick="ans(this.name,'wrong')" type=radio name=7> d) Compile Error
+</div>
+<div class="details" id=wrong7><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong7e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong7a><b>Wrong!</b>&nbsp;<i>The correct answer is b) Throws ClassCastException</i><br>TreeSet, being sorted, tries to compare previous String with Integer newly added. 
+</div>
+<div class="detailsr" id=correct7><b>Correct! </b>&nbsp; <i> Throws ClassCastException <br>TreeSet, being sorted, tries to compare previous String with Integer newly added.
+</div>
+
+<tr>
+<td><br><a href="./javaquiz22.htm"> <img src="previous.jpg"></a>
+&nbsp;<a href="./javaquiz24.htm"><img src="next.jpg"></a></td>
+</table></td></tr></table>
+</body></html>

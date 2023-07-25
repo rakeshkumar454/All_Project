@@ -1,0 +1,195 @@
+<! created by Surendran Velath>
+<html><head>
+<meta name="AccessType" Content="Free">
+<title>Java certification Quiz</title>
+<style>
+ .tip{color:#b23c09;font-size:18px;font-weight:bold;font-family:arial}
+ a:hover{color:red;font-family:verdana;font-size:22px;}
+</style>
+<script type="text/javascript" src="jquiz.js">
+</script>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+<table class="outer">
+<tr>
+<td bgColor="#f3eff0">
+<table class="inner">
+<tr>
+<td>	
+<table cellSpacing=0 cellPadding=0 border=0>
+<tr>
+<td>
+<font class="title">Java Quiz - 31
+
+<p><a href="javaquiz30.htm">&#171;</a>&nbsp;<a href="javaquiz1.htm">1</a>&nbsp;<a href="javaquiz2.htm">2</a>&nbsp;<a href="javaquiz3.htm">3</a>&nbsp;<a href="javaquiz4.htm">4</a>&nbsp;<a href="javaquiz5.htm">5</a>&nbsp;<a href="javaquiz6.htm">6</a>&nbsp;<a href="javaquiz7.htm">7</a>&nbsp;<a href="javaquiz8.htm">8</a>&nbsp;<a href="javaquiz9.htm">9</a>&nbsp;<a href="javaquiz10.htm">10</a>&nbsp;<a href="javaquiz11.htm">11</a>&nbsp;<a href="javaquiz12.htm">12</a>&nbsp;<a href="javaquiz13.htm">13</a>&nbsp;<a href="javaquiz14.htm">14</a>&nbsp;<a href="javaquiz15.htm">15</a>&nbsp;<a href="javaquiz16.htm">16</a>&nbsp;<a href="javaquiz17.htm">17</a>&nbsp;<a href="javaquiz18.htm">18</a>&nbsp;<a href="javaquiz19.htm">19</a>&nbsp;<a href="javaquiz20.htm">20</a>&nbsp;<a href="javaquiz21.htm">21</a>&nbsp;<a href="javaquiz22.htm">22</a>&nbsp;<a href="javaquiz23.htm">23</a>&nbsp;<a href="javaquiz24.htm">24</a>&nbsp;<a href="javaquiz25.htm">25</a>&nbsp;<a href="javaquiz26.htm">26</a>&nbsp;<a href="javaquiz27.htm">27</a>&nbsp;<a href="javaquiz28.htm">28</a>&nbsp;<a href="javaquiz29.htm">29</a>&nbsp;<a href="javaquiz30.htm">30</a>&nbsp;31 <a href="javaquiz32.htm">32</a><a href="javaquiz32.htm">&#187;</a></p>
+</font>
+
+<p title="ArrayList" class="tip">1. Which of the following statements can be used to determine if cat can be found in the list?</p>
+<b><font class="ques"><pre>
+ArrayList<String> list = new ArrayList<>(); 
+list.add("dog"); 
+list.add("cat"); 
+list.add("frog");
+A. list.contains("cat")
+B. list.hasObject("cat")
+C. list.indexOf("cat")
+D. list.indexOf(1)</pre></b>
+<font color=#000000><input onclick="ans(this.name,'correct')" type=radio name=1> a) <em>A, C</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=1> b) <em>A, B</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=1> c) <em>A, B, C</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=1> d) <em>All of them</em><br></font>
+<div class="details" id=wrong1><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong1e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong1a><b>Wrong!</b><br>The correct answer is <i>a) A, C</i> </div>
+<div class="detailsr" id=correct1><b>Correct! </b><br> <i> A, C</i> </div>
+
+<p title="StringBuilder" class="tip">2. What is the output?</p>
+<b><font class="ques"><pre>
+StringBuilder s1 = new StringBuilder("Java");
+String s2 = "Love";
+s1.append(s2);
+s1.substring(4);
+int foundAt = s1.indexOf(s2);
+System.out.println(foundAt);</pre>
+</b><font color=#000000><input onclick="ans(this.name,'wrong')" type=radio name=2> a) <em>-1</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=2> b) <em>3</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=2> c) <em>4</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=2> d) <em>A StringIndexOutOfBoundsException is thrown at runtime</em><br><br>
+</font><div class="details" id=wrong2><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong2e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong2a><b>Wrong! </b>The correct answer is <i>c) 4</i> </div>
+<div class="detailsr" id=correct2><b>Correct! </b> <br><i> 4</i> </div>
+
+<p title="Exception" class="tip">3. What is the output?</p>
+<b><font class="ques"><pre>
+public class Test {
+   public static void main(String[] args) {
+     int x = 10;
+     try {
+          for (int z = 2; z >= 0; z--) {
+               int ans = x / z;
+               System.out.print(ans+ " ");
+          }
+     } catch (Exception e1) {
+          System.out.println("E1");
+     } catch (ArithmeticException e1) {
+          System.out.println("E2");
+     }
+  }
+}</pre>
+</b><font color=#000000><input onclick="ans(this.name,'wrong')" type=radio name=3> a) 5 10 E1</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=3> b) 5 10 E2</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=3> c) Exception thrown</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=3> d) Compile error<br>
+<br></font><div class="details" id=wrong3><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong3e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong3a><b>Wrong!</b> The correct answer is <i>d) Compile error </i> <br>ArithmeticException should be caught first<br> </div>
+<div class="detailsr" id=correct3><b>Correct! </b><i> Compile error </i><br>ArithmeticException should be caught first</div>
+
+
+<p title="package" class="tip">4. Which access modifier makes a member available only to classes within the same package or subclasses?</p>
+<b><font class="ques"><pre></pre>
+</b><font color=#000000><input onclick="ans(this.name,'wrong')" type=radio name=4> a) <em>private</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=4> b) <em>public</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=4> c) <em>package-private</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=4> d) <em>protected</em><br>
+<br></font><div class="details" id=wrong4><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong4e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong4a><b>Wrong! </b><br>The correct answer is <i>d) protected</i> </div>
+<div class="detailsr" id=correct4><b>Correct! </b> <i> protected<br></i> </div>
+
+<p title="ArrayList" class="tip">5. What is the output? </p>
+<b><font class="ques"><pre>
+public class TestClass {
+   public static void main(String[] args) {
+      List<String> items = new ArrayList<>();
+      items.add("Pen");
+      items.add("Pencil");
+      items.add("Box");
+      for (String i : items) {
+          if (i.indexOf("P") == 0) {
+            continue;
+          }  else {
+            System.out.print(i+" ");
+         }
+      }
+  }
+}</pre>
+</b><font color=#000000><input onclick="ans(this.name,'wrong')" type=radio name=5> a) <em>Pen Pencil Box</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=5> b) <em>Pen Pencil</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=5> c) <em>Box</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=5> d) <em>Compilation fails</em>
+<br>
+<br></font><div class="details" id=wrong5><b>Wrong!</b> Try again.</b>.
+<br></div>
+<div class="details" id=wrong5e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong5a><b>Wrong! </b><br>The correct answer is <i>c) Box</i> </div>
+<div class="detailsr" id=correct5><b>Correct! </b><br><i> Box</i> </div>
+
+<p title="super()" class="tip">6. What can be written at XX?</p>
+<b><font class="ques"><pre>
+class SuperClass {
+   SuperClass(int x) {
+     System.out.println("Super");
+   }
+}
+public class SubClass extends SuperClass {
+   SubClass() {
+      XX
+      System.out.println("Sub");
+   }
+   SubClass(int x) {
+      super(x);
+   }
+}
+A) this(10);
+B) super(10);
+C) SuperClass(10);
+D) super.SuperClass (10);</pre></b>
+<font color=#000000>
+<input onclick="ans(this.name,'wrong')" type=radio name=6> a) <em>only B</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=6> b) <em>A or B</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=6> c) <em>only A</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=6> d) <em>false true</em><br></font>
+<div class="details" id=wrong6><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong6e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong6a><b>Wrong!</b><br>The correct answer is <i>a) A or B</i>  : SuperClass does not have default constructor. The default super() should be replaced with this(x) or super(10)</div>
+<div class="detailsr" id=correct6><b>Correct! </b><br> A or B : SuperClass does not have default constructor. The default super() should be replaced with this(x) or super(10)</div>
+
+<p title="static method" class="tip">7. What is the output?</p>
+<b><font class="ques"><pre>
+abstract class Writer {
+   public static void write() {
+     System.out.println("Writing...");
+   }
+}
+class Author extends Writer {
+    public static void write() {
+      System.out.println("Writing book");
+   }
+}
+public class Programmer extends Writer {
+   public static void write() {
+     System.out.println("Writing code");
+   }
+   public static void main(String[] args) {
+      Writer w = new Programmer();
+      w.write();
+   }
+}</pre></b>
+<font color=#000000>
+<input onclick="ans(this.name,'wrong')" type=radio name=7> a) <em>Writing code</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=7> b) <em>Writing...</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=7> c) <em>Writing book</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=7> d) <em>Compilation fails</em></font>
+<div class="details" id=wrong7><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong7e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong7a><b>Wrong!</b><br>The correct answer is b) Writing...<i> </i></div>
+<div class="detailsr" id=correct7><b>Correct! </b><br> Writing...<i> </i></div>
+
+<tr>
+<td><br><a href="./javaquiz30.htm"><img src="previous.jpg"></a>
+&nbsp;<a href="./javaquiz32.htm"><img src="next.jpg"></a> </td>
+</table></td></tr></table>
+</body></html>

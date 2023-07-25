@@ -1,0 +1,234 @@
+<! created by Surendran Velath>
+<html><head>
+
+<meta name="AccessType" Content="Free">
+<title>Java certification Quiz</title>
+<style>
+ .tip{color:#b23c09;font-size:18px;font-weight:bold;font-family:arial}
+ a:hover{color:red;font-family:verdana;font-size:22px;}
+</style>
+<script type="text/javascript" src="jquiz.js">
+</script>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+<table class="outer">
+<tr>
+<td bgColor="#f3eff0">
+<table class="inner">
+<tr>
+<td>	
+<table cellSpacing=0 cellPadding=0 border=0>
+<tr>
+<td>
+<font class="title">Java Quiz - 6
+
+<P><a href="javaquiz5.htm">&#171;</a>&nbsp;<a href="javaquiz1.htm">1</a>&nbsp;<a href="javaquiz2.htm">2</a>&nbsp;<a href="javaquiz3.htm">3</a>&nbsp;<a href="javaquiz4.htm">4</a>&nbsp;<a href="javaquiz5.htm">5</a>&nbsp;6&nbsp;<a href="javaquiz7.htm">7</a>&nbsp;<a href="javaquiz8.htm">8</a>&nbsp;<a href="javaquiz9.htm">9</a>&nbsp;<a href="javaquiz10.htm">10</a>&nbsp;<a href="javaquiz11.htm">11</a>&nbsp;<a href="javaquiz12.htm">12</a>&nbsp;<a href="javaquiz13.htm">13</a>&nbsp;<a href="javaquiz14.htm">14</a>&nbsp;<a href="javaquiz15.htm">15</a>&nbsp;<a href="javaquiz16.htm">16</a>&nbsp;<a href="javaquiz17.htm">17</a>&nbsp;<a href="javaquiz18.htm">18</a>&nbsp;<a href="javaquiz19.htm">19</a>&nbsp;<a href="javaquiz20.htm">20</a>&nbsp;<a href="javaquiz21.htm">21</a>&nbsp;<a href="javaquiz22.htm">22</a>&nbsp;<a href="javaquiz23.htm">23</a>&nbsp;<a href="javaquiz24.htm">24</a>&nbsp;<a href="javaquiz25.htm">25</a>&nbsp;<a href="javaquiz26.htm">26</a>&nbsp;<a href="javaquiz27.htm">27</a>&nbsp;<a href="javaquiz28.htm">28</a>&nbsp;<a href="javaquiz29.htm">29</a>&nbsp;<a href="javaquiz30.htm">30</a>&nbsp;<a href="javaquiz31.htm">31</a>&nbsp;<a href="javaquiz32.htm">32</a>&nbsp;<a href="javaquiz7.htm">&#187;</a></P>
+</font>
+
+<p title="for loop" class="tip">1. What is output?</p>
+<b><font class="ques"><pre>
+public class Test {
+ public static void main(String... args) {
+  new Test().doIt();
+ }
+ public void doIt() {
+  int n = 5;
+  doIt2();
+  System.out.println(n);
+ }
+ public void doIt2() {
+  int i,m=7;
+  System.out.print("m");
+  for (i = 0; i < 2; i++) {
+    System.out.print("["+i+","+m+"]");
+  }
+ }
+}</pre></b>
+<font color=#000000><input onclick="ans(this.name,'correct')" type=radio name=1> a) <em>m[0,7][1,7]5</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=1> b) m[0,7][1,7][2,6]5</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=1> c) <em>m5</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=1> d) <em>Compile error</em>
+<br></font>
+<div class="details" id=wrong1><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong1e><b>Wrong Again!</b> Try one more chance.</b><br></div>
+<div class="details" id=wrong1a><b>Wrong!</b><br>The correct answer is <I>a) m[0,7][1,7]5 </I><br></div>
+<div class="detailsr" id=correct1><b>Correct! </b>m[0,7][1,7]5</div>
+
+<p title="main" class="tip">2. What is output?
+<b><font class="ques"><pre>
+class Test {
+ void main() {
+  System.out.println("one");
+ }
+ static public void main(String args) {
+  System.out.println("two");
+ }
+ public static void main(String... args) {
+  System.out.println("three");
+ }
+ void main(Object[] args) {
+  System.out.println("four");
+ }
+}</pre>
+</b><font color=#000000><input onclick="ans(this.name,'correct')" type=radio name=2> a) <em>three </em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=2> b) <em>one two three four</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=2> c) <em>three four</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=2> d) <em>Compile error</em>
+<br><br></font>
+
+<div class="details" id=wrong2><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong2e><b>Wrong Again!</b> Try one more chance.</b><br></div>
+<div class="details" id=wrong2a><b>Wrong!</b><br>The correct answer is <I>a) three</I></div>
+<div class="detailsr" id=correct2><b>Correct! </b> three</div><P></P>
+
+
+<p title="overloading" class="tip">3. What is ouput?
+<b><font class="ques"><pre>
+class Test {
+ int m(double d) {
+ System.out.println("one");
+ return 0;
+}
+String m(double d) {
+ System.out.println("two");
+ return null;
+}
+double m(double d) {
+ System.out.println("three");
+ return 0.0;
+}
+public static void main(String[] args) {
+ new Test().m(4.0);
+}
+}</pre>
+</b><font color=#000000><input onclick="ans(this.name,'wrong')" type=radio name=3> a) <em>three</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=3> b) <em>two </em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=3> c) <em>one </em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=3> d) <em>Compile error</em>
+<br><br>
+</font><div class="details" id=wrong3><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong3e><b>Wrong Again!</b> Try one more chance.</b><br></div>
+<div class="details" id=wrong3a><b>Wrong!</b><br>The correct answer is <I>d) Compile error </I>
+<br> </div>
+<div class="detailsr" id=correct3><b>Correct! </b><br> Compile error</div><P></P>
+
+<p title="assert" class="tip">4. Assume the following code has assertion enabled</p>
+<b><font class="ques"><pre>
+public class Test{ 
+   public void methodA(int i) {
+         assert i >= 0 : methodB();
+         System.out.println(i);
+   }
+   public void methodB() {
+         System.out.println("The value must not be negative");
+   } 
+   public static void main(String args[]) {
+         Test test = new Test();
+         test.methodA(-10); 
+  }
+}
+</pre>
+</b><font color=#000000><input onclick="ans(this.name,'wrong')" type=radio name=4> a) <em>Gives output : -10</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=4> b) <em>Will not compile. </em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=4> c) <em>Results in assertion error : The value must not be negative</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=4> d) <em>Throws Assertion Error.</em>
+<br>
+</font><div class="details" id=wrong4><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong4e><b>Wrong Again!</b> Try one more chance.</b><br></div>
+<div class="details" id=wrong4a><b>Wrong!</b><br>The correct answer is <I>b) Will not compile : Assertion statement second part has to be an expression. Here methodB() is void. </I><br> </div>
+<div class="detailsr" id=correct4><b>Correct! </b><br>Assertion statement second part has to be an expression. Here methodB() is void.</div><P></P>
+
+
+<p title="inheritance" class="tip">5. What is the output ?
+<b><font class="ques"><pre>
+public class Sup  
+{    int x;
+    Sup() {  x = 1; }
+    Sup(String str) {
+        x = 2;
+    }
+}
+public class Test extends Sup   {
+    Test() {  x = 3;   }
+    Test(String str) {
+        x = 4;
+    }
+    public static void main(String args[]) {
+        Sup s = new Test("abc");
+        System.out.println(s.x);
+   }
+}
+</pre>
+</b><font color=#000000><input onclick="ans(this.name,'wrong')" type=radio name=5> a) <em>1</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=5> b) <em>2 </em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=5> c) <em>3</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=5> d) <em>4 </em>
+<br></font><div class="details" id=wrong5><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong5e><b>Wrong Again!</b> Try one more chance.</b><br></div>
+<div class="details" id=wrong5a><b>Wrong!</b>The correct answer is <I>d) 4</I><br> Only default constructor of super is called </div>
+<div class="detailsr" id=correct5><b>Correct! </b><I> 4. <br>Only default constructor of super is called</I></div><P></P>
+
+
+<p title="package" class="tip">6. What is output?
+<b><font class="ques"><pre>
+import com.abc.B;
+public class Test {
+    public static void main(String[] args) {
+         B b = new B();
+         b.print();
+    }
+}
+package com.abc;
+public class A {
+    protected int id = 5;
+}
+package com.abc;
+public class B {
+    public void print() {
+        A a = new A();
+        System.out.println("Id : "+ a.id);
+   }
+}
+</pre>
+</b>
+<font color=#000000><input onclick="ans(this.name,'correct')" type=radio name=6> a) <em>Id : 5</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=6> b) <em>Compile error. Protected member id in A cannot be accessed by B</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=6> c) <em>Will compile, but gives exception when run</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=6> d) <em>Compile error. Cannot create object of A in B print() method</em>
+<br><br></font>
+<div class="details" id=wrong6><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong6e><b>Wrong Again!</b> Try one more chance.</b><br></div>
+<div class="details" id=wrong6a><b>Wrong!</b><br>The correct answer is <I>a) Id : 5</div>
+<div class="detailsr" id=correct6><b>Correct! </b><br>Id : 5</div>
+
+
+<p title="StringBuffer" class="tip">7. What is the output?
+<b><font class="ques"><pre>
+ public class Test {
+     public static void main (String [] args) {
+      StringBuffer a = new StringBuffer ("A");
+      StringBuffer b = new StringBuffer ("B");
+      change(a,b);
+      System.out.println(a+","+b);
+     }
+    static void change(StringBuffer x, StringBuffer y) {
+        y.append(x);
+        y = x;
+    }
+ }
+</pre></b>
+<font color=#000000><input onclick="ans(this.name,'wrong')" type=radio name=7> a) <em>Compile error</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=7> b) <em>A,B</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=7> c) <em>A,A</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=7> d) <em>A,BA</em>
+<br><br></font>
+<div class="details" id=wrong7><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong7e><b>Wrong Again!</b> Try one more chance.</b><br></div>
+<div class="details" id=wrong7a><b>Wrong!</b><br>The correct answer is <I>d) A,BA </div>
+<div class="detailsr" id=correct7><b>Correct! </b> A,BA<br></div>
+<tr>
+<td><br><a href="./javaquiz5.htm"> <img src="previous.jpg"></a> 
+&nbsp;<a href="./javaquiz7.htm"><img src="next.jpg"></a> </td>
+</table></td></tr></table>
+</body></html>

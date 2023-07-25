@@ -1,0 +1,33 @@
+package com.globallogic.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.globallogic.dao.EmployeeDao;
+import com.globallogic.entity.Employee;
+
+
+public class EmployeeServiceImpl implements EmployeeService {
+
+	// autowire
+	@Autowired
+	private EmployeeDao employeeDao;
+
+	// setter injection
+//	public void setEmployeeDao(EmployeeDao employeeDao) {
+//		this.employeeDao = employeeDao;
+//	}
+
+	// constructor injection
+//	public EmployeeServiceImpl(EmployeeDao employeeDao) {
+//		this.employeeDao = employeeDao;
+//	}
+
+	@Override
+	public List<Employee> getAllEmployees() {
+
+		return employeeDao.findAll();
+	}
+
+}

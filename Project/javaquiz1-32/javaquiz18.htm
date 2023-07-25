@@ -1,0 +1,210 @@
+<! created by Surendran Velath>
+<html><head>
+
+<meta name="AccessType" Content="Free">
+<title>Java certification Quiz</title>
+<style>
+ .tip{color:#b23c09;font-size:18px;font-weight:bold;font-family:arial}
+ a:hover{color:red;font-family:verdana;font-size:22px;}
+</style>
+<script type="text/javascript" src="jquiz.js">
+</script>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+<table class="outer">
+<tr>
+<td bgColor="#f3eff0">
+<table class="inner">
+<tr>
+<td>	
+<table cellSpacing=0 cellPadding=0 border=0>
+<tr>
+<td>
+<font class="title">Java Quiz - 18
+
+<p><a href="javaquiz17.htm">&#171;</a>&nbsp;<a href="javaquiz1.htm">1</a>&nbsp;<a href="javaquiz2.htm">2</a>&nbsp;<a href="javaquiz3.htm">3</a>&nbsp;<a href="javaquiz4.htm">4</a>&nbsp;<a href="javaquiz5.htm">5</a>&nbsp;<a href="javaquiz6.htm">6</a>&nbsp;<a href="javaquiz7.htm">7</a>&nbsp;<a href="javaquiz8.htm">8</a>&nbsp;<a href="javaquiz9.htm">9</a>&nbsp;<a href="javaquiz10.htm">10</a>&nbsp;<a href="javaquiz11.htm">11</a>&nbsp;<a href="javaquiz12.htm">12</a>&nbsp;<a href="javaquiz13.htm">13</a>&nbsp;<a href="javaquiz14.htm">14</a>&nbsp;<a href="javaquiz15.htm">15</a>&nbsp;<a href="javaquiz16.htm">16</a>&nbsp;<a href="javaquiz17.htm">17</a>&nbsp;18&nbsp;<a href="javaquiz19.htm">19</a>&nbsp;<a href="javaquiz20.htm">20</a>&nbsp;<a href="javaquiz21.htm">21</a>&nbsp;<a href="javaquiz22.htm">22</a>&nbsp;<a href="javaquiz23.htm">23</a>&nbsp;<a href="javaquiz24.htm">24</a>&nbsp;<a href="javaquiz25.htm">25</a>&nbsp;<a href="javaquiz26.htm">26</a>&nbsp;<a href="javaquiz27.htm">27</a>&nbsp;<a href="javaquiz28.htm">28</a>&nbsp;<a href="javaquiz29.htm">29</a>&nbsp;<a href="javaquiz30.htm">30</a>&nbsp;<a href="javaquiz31.htm">31</a>&nbsp;<a href="javaquiz32.htm">32</a></a>&nbsp;<a href="javaquiz19.htm">&#187;</a></p>
+</font>
+
+<b><font class="ques"><pre>
+1. For the following:
+  1.  public class Test {
+  2.    public static void main(String args[]) {
+  3.        Test t = new Test();
+  4.        System.out.println(t.sum ( new Integer[] {1,2,3,4,5,6,7,8,9} ));
+  5.        System.out.println(t.sum ( 1,1,1,1,1));
+  6.    }  
+  7.    public int sum(Integer... arr) {
+  8.       int mysum = 0;
+  9.       for ( int i : arr )
+ 10.          mysum += i;
+ 11.       return mysum;
+ 12.    }
+ 13. } </pre></font>
+</b>
+<div class="ques"><input onclick="ans(this.name,'wrong')" type=radio name=1></A> a) <em>Compile error at line 4.</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=1></A> b) <em>Compile error at line 5.</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=1></A> c) <em>Gives output: 45 and 5</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=1></A> d) <em>Compile error at line 7.</em>
+<br></div>
+<div class="details" id=wrong1><b>Wrong!</b> Try again.</b>.
+<br></div>
+<div class="details" id=wrong1e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong1a><b>Wrong! </b>&nbsp;The correct answer is <I>c) Gives output: 45 and 5</i>
+<br>sum (Integer .. arr) is a generic method</div>
+<div class="detailsr" id=correct1><b>Correct! </b> <I> Gives output: 45 and 5 </i><br>sum (Integer .. arr) is a generic method</div>
+
+<b><font class="ques"><pre>
+2. What is the output?
+public class Test implements Runnable  { 
+    int x, y; 
+    public void run() { 
+        for(int i = 0; i < 100; i++) 
+            synchronized(this) { 
+               x = 12; 
+               y = 12; 
+            } 
+        System.out.print(x + " " + y + " "); 
+    } 
+    public static void main(String args[]) { 
+           Test run = new Test(); 
+           Thread t1 = new Thread(run); 
+           Thread t2 = new Thread(run); 
+           t1.start(); 
+           t2.start(); 
+   }
+}
+</pre></font></b>
+<div class="ques"><input onclick="ans(this.name,'wrong')" type=radio name=2></A> a) <em>Compile error</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=2></A> b) <em>Prints 200 times 12</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=2></A> c) <em>Gives output: 12 12 12 12</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=2></A> d) <em>Dead Lock</em><br><br></div>
+<div class="details" id=wrong2><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong2e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong2a><b>Wrong! </b>The correct answer is <I>c) Gives output: 12 12 12 12.<br> x and y are printed outside for loop</i></div>
+<div class="detailsr" id=correct2><b>Correct! </b> <I> c) Gives output: 12 12 12 12<br>  x and y are printed outside for loop</i></div></p>
+
+<b><font class="ques"><pre>
+3. Which of these are NOT TRUE?
+A. A singleton cannot be cloned
+B. Dependant objects in a class are cloned in deep cloning
+C. An object can be cloned only if it implements Cloneable interface
+D. An object can be cloned only if it overrides clone() method
+</pre></font>
+</b><div class="ques"><input onclick="ans(this.name,'wrong')" type=radio name=3></A> a) <em>A, D</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=3></A> b) <em>B, D</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=3></A> c) <em>A</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=3></A> b) <em>None of them</em><br></div>
+<br><div class="details" id=wrong3><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong3e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong3a><b>Wrong!</b> </font>The correct answer is <I>c) A<br> Singleton can be cloned </i></div>
+<div class="detailsr" id=correct3><b>Correct! </b><I>A<br>Singleton can be cloned</i></div>
+
+<p title="reflection" class="tip">4. What is the output?</p>
+<b><font class="ques"><pre>
+import java.lang.reflect.Method;
+import java.lang.reflect.Parameter;
+public class Test {
+ public static void main(String[] args) throws Exception {
+  Method meth = Test.class.getMethod("main", String[].class);
+  for (Parameter p : meth.getParameters()) {
+   System.out.println(p);
+  }
+ }
+}</pre></font>
+</b><div class="ques"><input onclick="ans(this.name,'wrong')" type=radio name=4></A> a) <em>Compile error</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=4></A> b) <em>Exception thrown</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=4></A> c) <em>args</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=4></A> d) <em>java.lang.String[] arg0</em><br></div>
+<br><div class="details" id=wrong4><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong4e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong4a><b>Wrong! </b><br>The correct answer is <i>d) java.lang.String[] arg0</i> </div>
+<div class="detailsr" id=correct4><b>Correct! </b><I>java.lang.String[] arg0</i><br> </div>
+
+<b><font class="ques"><pre>
+5. For the following :
+public interface TestInterface { 
+  public static final String name="Bangalore";
+}
+public class Test implements TestInterface { 
+  public static final String name="London";
+  public static void main(String args[]) { 
+       System.out.println(name);
+  }
+}
+
+</pre></font>
+</b><div class="ques"><input onclick="ans(this.name,'wrong')" type=radio name=5></A> a) <em>class Test will not compile</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=5></A> b) <em>interface TestInterface will not compile</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=5></A> c) <em>Gives output : Bangalore</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=5></A> d) <em>Gives output : London</em><br></div>
+<br><div class="details" id=wrong5><b>Wrong!</b> Try again.</b></div>
+<div class="details" id=wrong5e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong5a><b>Wrong! </b><br>The correct answer is <I>d) </i>Gives output : London</div>
+<div class="detailsr" id=correct5><b>Correct! </b><br><I> Gives output : London</i></div>
+
+<b><font class="ques"><pre>
+6.  For the following :
+public class Test extends TestParent { 
+    public static String getName() {
+              return "London";
+    }
+    public static void main(String args[]) { 
+             System.out.println(getName());
+    }
+}
+public class TestParent { 
+     public static String getName() {
+              return "Bangalore";
+     } 
+}
+</pre></font></b>
+<div class="ques">
+<input onclick="ans(this.name,'wrong')" type=radio name=6></A> a) <em>Compile error. Cannot override static method</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=6></A> b) <em>Compile error. Cannot call getName() from main method</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=6></A> c) <em>London</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=6></A> d) <em>Bangalore</em>
+<br><br></font>
+<div class="details" id=wrong6><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong6e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong6a><b>Wrong! </b> The correct answer is <I>c) London</i> <br></div>
+<div class="detailsr" id=correct6><b>Correct! </b> London<br></div>
+
+<b><font class="ques"><pre>
+7. public class NumberObjectDemo {
+      public static void main(String[] args) {
+        try {
+            NumberObject number1 = new NumberObject();
+        } 
+        catch (Throwable t) {
+            t.printStackTrace();
+        }
+        NumberObject number2 = new NumberObject();
+     }
+  }
+  public class NumberObject {
+    static int number = 1 / 0;
+    public NumberObject () {
+         System.out.println("number undefined");
+    }
+  }
+</pre></font>
+</b>
+<div class="ques">
+<input onclick="ans(this.name,'correct')" type=radio name=7></A> a) <em>Throws ExceptionInInitializerError and NoClassDefFoundError </em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=7></A> b) <em>Compile Error</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=7></A> c) <em>Throws ExceptionInInitializerError and ClassNotFoundException</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=7></A> d) <em>Gives Output : number undefined</em>
+</font>
+<div class="details" id=wrong7><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong7e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong7a><b>Wrong!</b>&nbsp;The correct answer is a) Throws ExceptionInInitializerError and NoClassDefFoundError</i> <br>ExceptionInInitializerError : indicates a failure in the static initialization block, as 1/0 is mentioned in static block.<br>
+NoClassDefFoundError : indicates that the JVM looked in its internal class definition data structure for the definition of a class and did not find it as it has failed to load</div>
+<div class="detailsr" id=correct7><b>Correct! </b>&nbsp;  Throws ExceptionInInitializerError and NoClassDefFoundError<br>
+ExceptionInInitializerError : indicates a failure in the static initialization block, as 1/0 is mentioned in static block.<br>
+NoClassDefFoundError : indicates that the JVM looked in its internal class definition data structure for the definition of a class and did not find it as it has failed to load</div>
+<tr>
+<td><br><a href="./javaquiz17.htm"><img src="previous.jpg"></a> </font>
+<font size=6  face=arial> <a href="./javaquiz19.htm"><img src="next.jpg"></a> </font></td>
+</table></td></tr></table>
+</body></html>

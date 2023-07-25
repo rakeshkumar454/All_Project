@@ -1,0 +1,195 @@
+<! created by Surendran Velath>
+<html><head>
+
+<meta name="AccessType" Content="Free">
+<title>Java certification Quiz</title>
+<style>
+ .tip{color:#b23c09;font-size:18px;font-weight:bold;font-family:arial}
+ a:hover{color:red;font-family:verdana;font-size:22px;}
+</style>
+<script type="text/javascript" src="jquiz.js">
+</script>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+<table class="outer">
+<tr>
+<td bgColor="#f3eff0">
+<table class="inner">
+<tr>
+<td>	
+<table cellSpacing=0 cellPadding=0 border=0>
+<tr>
+<td>
+<font class="title">Java Quiz - 5
+
+<p><a href="javaquiz4.htm">&#171;</a>&nbsp;<a href="javaquiz1.htm">1</a>&nbsp;<a href="javaquiz2.htm">2</a>&nbsp;<a href="javaquiz3.htm">3</a>&nbsp;<a href="javaquiz4.htm">4</a>&nbsp;5&nbsp;<a href="javaquiz6.htm">6</a>&nbsp;<a href="javaquiz7.htm">7</a>&nbsp;<a href="javaquiz8.htm">8</a>&nbsp;<a href="javaquiz9.htm">9</a>&nbsp;<a href="javaquiz10.htm">10</a>&nbsp;<a href="javaquiz11.htm">11</a>&nbsp;<a href="javaquiz12.htm">12</a>&nbsp;<a href="javaquiz13.htm">13</a>&nbsp;<a href="javaquiz14.htm">14</a>&nbsp;<a href="javaquiz15.htm">15</a>&nbsp;<a href="javaquiz16.htm">16</a>&nbsp;<a href="javaquiz17.htm">17</a>&nbsp;<a href="javaquiz18.htm">18</a>&nbsp;<a href="javaquiz19.htm">19</a>&nbsp;<a href="javaquiz20.htm">20</a>&nbsp;<a href="javaquiz21.htm">21</a>&nbsp;<a href="javaquiz22.htm">22</a>&nbsp;<a href="javaquiz23.htm">23</a>&nbsp;<a href="javaquiz24.htm">24</a>&nbsp;<a href="javaquiz25.htm">25</a>&nbsp;<a href="javaquiz26.htm">26</a>&nbsp;<a href="javaquiz27.htm">27</a>&nbsp;<a href="javaquiz28.htm">28</a>&nbsp;<a href="javaquiz29.htm">29</a>&nbsp;<a href="javaquiz30.htm">30</a>&nbsp;<a href="javaquiz31.htm">31</a>&nbsp;<a href="javaquiz32.htm">32</a>&nbsp;<a href="javaquiz6.htm">&#187;</a></p></font>
+
+<p title="super" class="tip">1. What is the output? </p>
+<b><font class="ques"><pre>class Test {}
+class Another extends Test {
+ public static void main (String[] args) {
+  Another ano = new Another();
+  Test t = new Test();
+  System.out.println(ano.super.getClass());
+  System.out.println(t.getClass());
+ }
+}</pre></b>
+<font color=#000000><input onclick="ans(this.name,'wrong')" type=radio name=1> a) <em>Test, Test</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=1> b) Another, Test</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=1> c) Another Another</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=1> d) <em>Compile error</em>
+<br></font>
+<div class="details" id=wrong1><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong1e><b>Wrong Again!</b> Try one more chance.</b><br></div>
+<div class="details" id=wrong1a><b>Wrong!</b><br>The correct answer is <i>d) Compile error</i><br></div>
+<div class="detailsr" id=correct1><b>Correct! </b><br>Compile error</div>
+
+<p title="method overloading" class="tip">2. For the following code :</p>
+<b><font class="ques"><pre>
+public class Test{ 
+  public String getCountryName(){
+  	return "USA";
+  }
+  public StringBuffer getCountryName(){
+      StringBuffer sb = new StringBuffer();
+      sb.append("UK");
+      return sb;
+  }
+  public static void main(String args[]) {
+      Test tst = new Test();
+      System.out.println(tst.getCountryName());
+  }
+}
+</pre>
+</b><font color=#000000><input onclick="ans(this.name,'correct')" type=radio name=2> a) <em>Compile error </em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=2> b) <em>Gives output : USA</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=2> c) <em>Gives output : UK</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=2> d) <em>Runtime exception</em>
+<br><br></font>
+<div class="details" id=wrong2><b>Wrong!</b> Try again.</b></div>
+<div class="details" id=wrong2e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong2a><b>Wrong!</b><br>The correct answer is <i>a) Compile error : Cannot have methods with same names, though different return types.</i></div>
+<div class="detailsr" id=correct2><b>Correct! </b><br>Cannot have methods with same names, though different return types.</div>
+
+<p title="ArrayList" class="tip">3. For the following code :</p>
+<b><font class="ques"><pre>
+ import java.util.ArrayList;
+ import java.util.List;
+ public class Test{ 
+       public static void main(String args[]) {
+        List&lt;Integer&gt; list = new ArrayList&lt;Integer&gt;(); 
+	list.add(0, 59);
+	int total = list.get(0);
+	System.out.println(total);  
+     }
+}
+</pre>
+</b><font color=#000000><input onclick="ans(this.name,'wrong')" type=radio name=3> a) <em>Gives output : 0</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=3> b) <em>Will not compile </em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=3> c) <em>Gives output : 59</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=3> d) <em>Runtime Exception </em>
+<br><br></font><div class="details" id=wrong3><b>Wrong!</b> Try again.</b>.
+<br></div>
+<div class="details" id=wrong3a><b>Wrong!</b><br>The correct answer is <i>c) Gives output : 59 - Autoboxing will take care of type Integer to int casting. </i>
+<br> </div>
+<div class="details" id=wrong3e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="detailsr" id=correct3><b>Correct! </b><br> Autoboxing will take care of type Integer to int casting.</div>
+
+<p title="super()" class="tip">4. The following code :</p>
+<b><font class="ques"><pre>
+public class Test{ 
+  public static void main(String args[]) {
+	B b = new B();
+  }
+}
+class A {
+  A() {
+    System.out.print("A");
+  }
+}
+class B extends A{
+  B() {
+    System.out.print("B");
+  }
+}
+</pre>
+</b><font color=#000000><input onclick="ans(this.name,'wrong')" type=radio name=4> a) <em>Gives output : BA</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=4> b) <em>Gives output : AB </em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=4> c) <em>Gives output : B</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=4> d) <em>Compile Error</em>
+<br><br></font>
+<div class="details" id=wrong4><b>Wrong!</b> Try again.</b>.
+<br></div>
+<div class="details" id=wrong4e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong4a><b>Wrong!</b><br>The correct answer is <i>b) Gives output : AB - First constructor of super is called and then child </i><br> </div>
+<div class="detailsr" id=correct4><b>Correct! </b><br>First constructor of super is called and then child</div>
+
+<p title="singleton" class="tip">5. The following class is an example of which design pattern?</p>
+<b><font class="ques"><pre>
+public class Mine {
+   private static Mine m; 
+   private Mine() { 
+   }
+   public static synchronized Mine getInstance() {
+     if (m == null) {
+       m = new Mine();
+     } 
+     return m;
+   }
+}
+</pre>
+</b><font color=#000000><input onclick="ans(this.name,'wrong')" type=radio name=5> a) <em>Composite Pattern</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=5> b) <em>Façade Pattern </em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=5> c) <em>Singleton Pattern</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=5> d) <em>Factory Pattern </em>
+<br><br></font>
+<div class="details" id=wrong5><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong5e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong5a><b>Wrong!</b><br>The correct answer is <i>c) Singleton Pattern : Singleton pattern ensures only one instance is created</i>.<br> </div>
+<div class="detailsr" id=correct5><b>Correct! </b><br><i>Singleton pattern ensures only one instance is created</i>.</div>
+
+<p title="for loop" class="tip">6. Which expression can be placed at XX?</p>
+<b><font class="ques"><pre>
+int[] arr = {1,2,3,4,5};
+int i=0;
+for (XX) {
+   System.out.print("int ");
+}
+A. ; i < 5; i++
+B. int i=0; i < 5; i++
+C. ; i < 1;
+D. int j: arr
+</pre>
+</b>
+<font color=#000000><input onclick="ans(this.name,'correct')" type=radio name=6> a) <em>A, D</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=6> b) <em>B</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=6> c) <em>B, D</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=6> d) <em>A, C, D</em>
+<br><br></font>
+<div class="details" id=wrong6><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong6e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong6a><b>Wrong!</b><br>The correct answer is <i>a) A, D </i>.</div>
+<div class="detailsr" id=correct6><b>Correct! </b><br>A, D</div>
+
+<p title="String" class="tip">7. What is the output?  </p>  
+<b><font class="ques"><pre>
+      String k ="big "; 
+      k.concat("crowded ");
+      k += "city";
+      System.out.println(k);</pre>
+</b>
+<font color=#000000><input onclick="ans(this.name,'wrong')" type=radio name=7> a) <em>big crowded city</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=7> b) <em>big city</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=7> c) <em>big crowded</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=7> d) <em>Compile error</em>
+<br><br></font>
+<div class="details" id=wrong7><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong7e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong7a><b>Wrong!</b><br>The correct answer is <i>b) big city. String is immutable.</i>.</div>
+<div class="detailsr" id=correct7><b>Correct! </b><br> big city. String is immutable.</div>
+<tr>
+<td><br><a href="./javaquiz4.htm"> <img src="previous.jpg"></a> 
+&nbsp;<a href="./javaquiz6.htm"><img src="next.jpg"></a></td>
+</table></td></tr></table>
+</body></html>

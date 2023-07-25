@@ -1,0 +1,31 @@
+package com.globallogic.app;
+
+import org.springframework.beans.BeansException;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.globallogic.config.InvoiceConfig;
+import com.globallogic.entity.Invoice;
+import com.globallogic.service.InvoiceService;
+
+public class InvoiceMain {
+
+	public static void main(String[] args) {
+
+		try (AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(
+				InvoiceConfig.class)) {
+			InvoiceService invoiceService = applicationContext.getBean(InvoiceService.class);
+			Invoice invoice1 = new Invoice("123", "part description", 4, 100);
+			Invoice invoice = invoiceService.getInvoiceDetails(invoice1);
+			System.out.println(invoice + "\nTotal Amount : " + invoice.getInvoiceAmount());
+
+			Invoice invoice2 = new Invoice("123", "part description", -4, -100);
+			Invoice invoice3 = invoiceService.getInvoiceDetails(invoice2);
+			System.out.println(invoice3 + "\nTotal Amount : " + invoice3.getInvoiceAmount());
+		} catch (BeansException e) {
+			e.printStackTrace();
+		}
+
+
+	}
+
+}

@@ -1,0 +1,226 @@
+<! created by Surendran Velath>
+<html><head>
+
+<meta name="AccessType" Content="Free">
+<title>Java certification Quiz</title>
+<style>
+ .tip{color:#b23c09;font-size:18px;font-weight:bold;font-family:arial}
+ a:hover{color:red;font-family:verdana;font-size:22px;}
+</style>
+<script type="text/javascript" src="jquiz.js">
+</script>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+<table class="outer">
+<tr>
+<td bgColor="#f3eff0">
+<table class="inner">
+<tr>
+<td>	
+<table cellSpacing=0 cellPadding=0 border=0>
+<tr>
+<td>
+<font class="title">Java Quiz - 8
+
+<p><a href="javaquiz7.htm">&#171;</a>&nbsp;<a href="javaquiz1.htm">1</a>&nbsp;<a href="javaquiz2.htm">2</a>&nbsp;<a href="javaquiz3.htm">3</a>&nbsp;<a href="javaquiz4.htm">4</a>&nbsp;<a href="javaquiz5.htm">5</a>&nbsp;<a href="javaquiz6.htm">6</a>&nbsp;<a href="javaquiz7.htm">7</a>&nbsp;8&nbsp;<a href="javaquiz9.htm">9</a>&nbsp;<a href="javaquiz10.htm">10</a>&nbsp;<a href="javaquiz11.htm">11</a>&nbsp;<a href="javaquiz12.htm">12</a>&nbsp;<a href="javaquiz13.htm">13</a>&nbsp;<a href="javaquiz14.htm">14</a>&nbsp;<a href="javaquiz15.htm">15</a>&nbsp;<a href="javaquiz16.htm">16</a>&nbsp;<a href="javaquiz17.htm">17</a>&nbsp;<a href="javaquiz18.htm">18</a>&nbsp;<a href="javaquiz19.htm">19</a>&nbsp;<a href="javaquiz20.htm">20</a>&nbsp;<a href="javaquiz21.htm">21</a>&nbsp;<a href="javaquiz22.htm">22</a>&nbsp;<a href="javaquiz23.htm">23</a>&nbsp;<a href="javaquiz24.htm">24</a>&nbsp;<a href="javaquiz25.htm">25</a>&nbsp;<a href="javaquiz26.htm">26</a>&nbsp;<a href="javaquiz27.htm">27</a>&nbsp;<a href="javaquiz28.htm">28</a>&nbsp;<a href="javaquiz29.htm">29</a>&nbsp;<a href="javaquiz30.htm">30</a>&nbsp;<a href="javaquiz31.htm">31</a>&nbsp;<a href="javaquiz32.htm">32</a>&nbsp;<a href="javaquiz9.htm">&#187;</a></p>
+</font>
+
+<b><font class="ques"><pre>
+1. What is the output?
+
+interface Benefits {
+    void calculateSalary();
+}
+public class Employee {
+  public Benefits getBenefitsInstance() {
+         return (
+              new Benefits() {
+                  public void calculateSalary() {
+                       printSalary(20000);
+                  }
+              }
+        );
+ }
+ private void printSalary(int sal) {
+       System.out.println("Salary : "+sal);
+ }
+ public static void main(String[] args) {
+       Employee emp = new Employee();
+       Benefits b = emp.getBenefitsInstance();
+       b.calculateSalary();
+ }
+}
+</pre></b>
+<font color=#000000><!-- options --><input onclick="ans(this.name,'wrong')" type=radio name=1> a) <em>Compile error</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=1> b)<em> Salary : 20000</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=1> c) <em>Runtime exception</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=1> d) <em>No output</em>
+<br></font>
+
+<div class="details" id=wrong1><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong1e><b>Wrong Again!</b> Try one more chance.</b><br></div>
+<div class="details" id=wrong1a><b>Wrong!</b><br>The correct answer is <i>b) Salary : 20000. Inner class can access members of outer class  </i><br></div>
+<div class="detailsr" id=correct1><b>Correct! </b><br> Inner class can access members of outer class </div>
+
+<b><font class="ques"><pre>
+2. What is the output?
+interface Benefits {
+    void calculateSalary();
+}
+public class Employee {
+   public Benefits getBenefitsInstance(String name) {
+           return (
+                 new Benefits() {
+                     public void calculateSalary() {
+                         name = "Mr. "+name;
+                         System.out.print(name);
+                         printSalary(20000);
+                     }
+                 }
+           );
+   }
+    private void printSalary(int sal) {
+           System.out.println(" salary:"+sal);
+    }
+    public static void main(String[] args) {
+           Employee emp = new Employee();
+           Benefits b = emp.getBenefitsInstance("John");
+           b.calculateSalary();
+    }
+}
+</pre>
+</b><font color=#000000><input onclick="ans(this.name,'wrong')" type=radio name=2> a) <em> salary:20000</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=2> b) <em>Mr. John salary:20000</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=2> c) <em>Compile Error</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=2> d) <em>Runtime Exception</em>
+<br><br>
+</font><div class="details" id=wrong2><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong2e><b>Wrong Again!</b> Try one more chance.</b><br></div>
+<div class="details" id=wrong2a><b>Wrong!</b><br>The correct answer is <i>c) Compile Error. Local variable 'name' is accessed within inner class is effectively final and cannot be modified</i><br></div>
+<div class="detailsr" id=correct2><b>Correct! </b><br> <i>Local variable 'name' is accessed within inner class is effectively final and cannot be modified</i></div><p></p>
+
+<b><font class="ques"><pre>
+3. The following code: 
+public class Test implements A, B {
+    public static void main(String args[]) {
+        A a = new Test();
+        a.m1();
+        B b = (Test)a;
+        b.m1();
+    }  
+   public void m1() {
+        System.out.print("Test ");
+   }
+}
+interface A {
+   void m1();
+}
+interface B {
+   void m1();
+}</pre>
+</b><font color=#000000><input onclick="ans(this.name,'wrong')" type=radio name=3> a) <em>Runtime Error</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=3> b) <em>Compile Error</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=3> c) <em>Gives output: Test Test</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=3> d) <em>None of above</em><br>
+<br></font>
+<div class="details" id=wrong3><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong3e><b>Wrong Again!</b> Try one more chance.</b><br></div>
+<div class="details" id=wrong3a><b>Wrong!</b><br>The correct answer is <i>c) Gives output: Test Test</i><br> </div>
+<div class="detailsr" id=correct3><b>Correct! </b><br><i>Gives output: Test Test</i></div>
+
+<b><font class="ques"><pre>
+4. What is the output of following bitwise operations?
+ int m = +12;
+ m<<2; 
+ int n = -12;
+ n>>2;
+</pre>
+</b><font color=#000000><input onclick="ans(this.name,'wrong')" type=radio name=4> a) <em>10 and -10</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=4> b) <em>24 and -10</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=4> c) <em>48 and -3</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=4> d) <em>20 and -6</em><br>
+<br></font>
+<div class="details" id=wrong4><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong4e><b>Wrong Again!</b> Try one more chance.</b><br></div>
+<div class="details" id=wrong4a><b>Wrong!</b><br>The correct answer is <i>c) 48 and -3.  The binary value 001100 when left shifted 2 times, becomes 110000 which is 48 </i><br> </div>
+<div class="detailsr" id=correct4><b>Correct! </b><br><i>48 and -3.   The binary value 001100 when left shifted 2 times, becomes 110000 which is 48</i></div>
+
+<b><font class="ques"><pre>
+5. For the code below :
+class StringCheck {
+   static String str = null;
+   public static void main(String[] args) {
+	String s;
+	if(str=="abc")
+	s = str+10;
+	System.out.println(str);
+	System.out.print(s);
+   }
+}
+</pre>
+</b><font color=#000000><input onclick="ans(this.name,'wrong')" type=radio name=5> a) <em>null and null are printed as output..</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=5> b) <em>runtime error.</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=5> c) <em>Compile error, cannot access str from main.</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=5> d) <em>Compile error, s not initialised. </em>
+<br><br></font>
+<div class="details" id=wrong5><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong5e><b>Wrong Again!</b> Try one more chance.</b><br></div>
+<div class="details" id=wrong5a><b>Wrong!</b><br>The correct answer is <i>d) Compile error, s not initialised.  </i>. Local variables have to be initialised</div>
+<div class="detailsr" id=correct5><b>Correct!</b><br><i>Compile error, s not initialised. </i> Local variables have to be initialised</div><p></p>
+
+<b><font class="ques"><pre>
+6. For the following program:  
+public class Test {
+    private void display(int count) {
+        switch(count) {
+           case 1:
+               System.out.print("1 ");
+           case 2:
+               System.out.print("2 ");
+           case 3:
+               System.out.print("3 ");
+           default:
+                System.out.println(count);
+        }
+   }
+   public static void main(String[] args) {
+        Test t = new Test();
+        t.display(2);
+   }
+}
+</pre></b>
+<font color=#000000><input onclick="ans(this.name,'correct')" type=radio name=6> a) <em>2 3 2</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=6> b) <em>2</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=6> c) <em>Compile error</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=6> d) <em>2 2</em><br><br></font>
+<div class="details" id=wrong6><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong6e><b>Wrong Again!</b> Try one more chance.</b><br></div>
+<div class="details" id=wrong6a><b>Wrong!</b><br>The correct answer is <i>a) 2 3 2. As break is not used, 3 and default are also printed</div>
+<div class="detailsr" id=correct6><b>Correct! </b><br>As break is not used, 3 and default are also printed</div>
+
+<b><font class="ques"><pre>
+7. For the following
+Integer in = new Integer (42);
+Long lg = new Long (42);
+Double db = new Double (42.0);
+Which of the following give output true?
+A. in ==42
+B. in == db
+C. db.equals(in)
+D. in.equals(db)
+E. in.equals(42)
+</pre>
+</b>
+<font color=#000000><input onclick="ans(this.name,'wrong')" type=radio name=7> a) <em>D and E</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=7> b) <em>A and B</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=7> c) <em>C and D</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=7> d) <em>A and E</em><br><br></font>
+<div class="details" id=wrong7><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong7e><b>Wrong Again!</b> Try one more chance.</b><br></div>
+<div class="details" id=wrong7a><b>Wrong!</b><br>The correct answer is <i>d) A and E</div>
+<div class="detailsr" id=correct7><b>Correct! </b>A and E<br></div>
+<tr>
+<td><br><a href="./javaquiz7.htm"><img src="previous.jpg"></a> &nbsp; <a href="./javaquiz9.htm"><img src="next.jpg"></a></td>
+</table></td></tr></table>
+</body></html>

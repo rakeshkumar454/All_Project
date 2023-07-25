@@ -1,0 +1,218 @@
+<! created by Surendran Velath>
+<html><head>
+
+<meta name="AccessType" Content="Free">
+<title>Java certification Quiz</title>
+<style>
+ .tip{color:#b23c09;font-size:18px;font-weight:bold;font-family:arial}
+ a:hover{color:red;font-family:verdana;font-size:22px;}
+</style>
+<script type="text/javascript" src="jquiz.js">
+</script>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+<table class="outer">
+<tr>
+<td bgColor="#f3eff0">
+<table class="inner">
+<tr>
+<td>	
+<table cellSpacing=0 cellPadding=0 border=0>
+<tr>
+<td>
+<font class="title">Java Quiz - 9
+
+<P><a href="javaquiz8.htm">&#171;</a>&nbsp;<a href="javaquiz1.htm">1</a>&nbsp;<a href="javaquiz2.htm">2</a>&nbsp;<a href="javaquiz3.htm">3</a>&nbsp;<a href="javaquiz4.htm">4</a>&nbsp;<a href="javaquiz5.htm">5</a>&nbsp;<a href="javaquiz6.htm">6</a>&nbsp;<a href="javaquiz7.htm">7</a>&nbsp;<a href="javaquiz8.htm">8</a>&nbsp;9&nbsp;<a href="javaquiz10.htm">10</a>&nbsp;<a href="javaquiz11.htm">11</a>&nbsp;<a href="javaquiz12.htm">12</a>&nbsp;<a href="javaquiz13.htm">13</a>&nbsp;<a href="javaquiz14.htm">14</a>&nbsp;<a href="javaquiz15.htm">15</a>&nbsp;<a href="javaquiz16.htm">16</a>&nbsp;<a href="javaquiz17.htm">17</a>&nbsp;<a href="javaquiz18.htm">18</a>&nbsp;<a href="javaquiz19.htm">19</a>&nbsp;<a href="javaquiz20.htm">20</a>&nbsp;<a href="javaquiz21.htm">21</a>&nbsp;<a href="javaquiz22.htm">22</a>&nbsp;<a href="javaquiz23.htm">23</a>&nbsp;<a href="javaquiz24.htm">24</a>&nbsp;<a href="javaquiz25.htm">25</a>&nbsp;<a href="javaquiz26.htm">26</a>&nbsp;<a href="javaquiz27.htm">27</a>&nbsp;<a href="javaquiz28.htm">28</a>&nbsp;<a href="javaquiz29.htm">29</a>&nbsp;<a href="javaquiz30.htm">30</a>&nbsp;<a href="javaquiz31.htm">31</a>&nbsp;<a href="javaquiz32.htm">32</a>&nbsp;<a href="javaquiz10.htm">&#187;</a></p>
+</font>
+
+<b><font class="ques"><pre>
+1. What is the output if Main is run?
+public abstract class Vehicle {
+ private int tyres;
+ public void setTyres(int tyres) {
+   this.tyres = tyres;
+ } 
+ public int getTyres() {
+   return tyres;
+ } 
+}
+public class Car extends Vehicle {
+  @Override
+  public int getTyre() {
+     return super.getTyres()+1;
+  } 
+}
+public class Main {
+  public static void main(String args[]) {
+    Car c = new Car(); 
+    c.setTyres(5); 
+    System.out.println("Tyres = "+c.getTyres()); 
+  }
+}
+</pre></b>
+<font color=#000000><input onclick="ans(this.name,'wrong')" type=radio name=1></A> a)<em> Tyres = 5</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=1></A> b) <em>Compile error</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=1></A> c) <em>Tyres = 6</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=1></A> d) <em>Runtime Exception</em>
+<br></font>
+<div class="details" id=wrong1><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong1e><b>Wrong Again!</b> Try one more chance.</b><br></div>
+<div class="details" id=wrong1a><b>Wrong!</b><br>The correct answer is <I>b) Compile error. The annotation @Override is for compile time safety. Method getTyre() is mis-spelt in class Car : should be getTyres()</I>.<br></div>
+<div class="detailsr" id=correct1><b>Correct! </b><br> The annotation @Override is for compile time safety. Method getTyre() is mis-spelt in class Car : should be getTyres()  </div>
+
+<b><font class="ques"><pre>
+2. What is the output?
+import static java.lang.Math.*;
+public class Main {
+   double rad = 0.0;
+   Main(){
+      rad = cos(PI * 45); 
+   }
+   public double getRad(){
+      return rad;
+   }
+  public static void main(String args[]){
+      Main m = new Main();
+      System.out.println("r = "+m.getRad()); 
+  }
+}
+</pre>
+</b><font color=#000000><input onclick="ans(this.name,'wrong')" type=radio name=2></A> a) <em> Compile error. Method cos() unknown</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=2></A> b) <em>Run time exception. </em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=2></A> c) <em>r = -1.0</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=2></A> d) <em> Compile error. import static not allowed</em>
+</b><br><br></font>
+<div class="details" id=wrong2><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong2e><b>Wrong Again!</b> Try one more chance.</b><br></div>
+<div class="details" id=wrong2a><b>Wrong!</b><br>The correct answer is <I>c) r = -1.0 A static import ensures all static members are imported into the class and can be used directly</I><br> </div>
+<div class="detailsr" id=correct2><b>Correct! </b><br> <I>A static import ensures all static members are imported into the class and can be used directly</I></div>
+
+<b><font class="ques"><pre>
+3. Which of these demonstrate encapsulation of data?
+  A. Member data have no access modifiers.
+  B. Member data can be modified directly.
+  C. The access modifier for methods is protected.
+  D. The access modifier to member data is private.
+  E. Methods provide for access and modification of data.
+</pre>
+</b><font color=#000000><input onclick="ans(this.name,'wrong')" type=radio name=3></A> a) <em>A & C</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=3></A> b) <em>C & E</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=3></A> c) <em>D & E</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=3></A> d) <em>B & E</em><br><br></font>
+<div class="details" id=wrong3><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong3e><b>Wrong Again!</b> Try one more chance.</b><br></div>
+<div class="details" id=wrong3a><b>Wrong!</b><br>The correct answer is <I>c) D & E. They demonstrate encapsulation of data</I><br> </div>
+<div class="detailsr" id=correct3><b>Correct! </b><br><I>D & E demonstrate encapsulation of data</I></div>
+
+<b><font class="ques"><pre>
+4. For the following :
+ public class B extends A{
+    public static void main (String [] args) {
+        B b = new B();
+        System.out.println(b);
+    }
+    public String toStringObject() {
+       return super.toString() +"45";
+    }
+ }
+
+class A {
+    public String toString() {
+       return "89";
+    }
+} 
+</pre></b>
+<font color=#000000><input onclick="ans(this.name,'wrong')" type=radio name=4></A> a) <em>Ouput looks like : B@15b7986</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=4></A> b) <em>Output is : 8945</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=4></A> c) <em>Output is : 89</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=4></A> d) <em>Compile Error</em><br></font>
+<div class="details" id=wrong4><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong4e><b>Wrong Again!</b> Try one more chance.</b><br></div>
+<div class="details" id=wrong4a><b>Wrong!</b><br>The correct answer is <I>c) 89</I> : toString() of super is called<br> </div>
+<div class="detailsr" id=correct4><b>Correct! </b><br><I>89</I> : toString() of super is called</div>
+
+<b><font class="ques"><pre>
+5. 
+ public class OverLoadTest {
+    private int m, n;
+    private float k;
+    public void setNum(int x, int y, float z){
+       m = x;
+       n = y;
+       k = z;
+   }
+ }
+Which of the following overloads setNum() method in above class?
+A. private void setNum(int x,int y,float z){
+       m = x;
+       n = y;
+       k = z;
+   }
+B. public void setNum(int x,float z,int y){
+           setNum(x,y,z);
+   }
+C. public void setNum(int x,float z,int y){
+         this(x,y,z);
+   }
+D. public void setNum(int x,float y){
+       m = x;
+       k = y;
+   }
+E. public void setNum(int xm,int yn,float zk){
+       m =xm;
+       n =yn;
+       k =zk;
+  }
+</pre>
+</b><font color=#000000><input onclick="ans(this.name,'wrong')" type=radio name=5></A> a) <em>D & E.</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=5></A> b) <em>B & D. </em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=5></A> c) <em>A & D</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=5></A> d) <em>B & E</em><br><br></font>
+<div class="details" id=wrong5><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong5e><b>Wrong Again!</b> Try one more chance.</b><br></div>
+<div class="details" id=wrong5a><b>Wrong!</b><br>The correct answer is <I>b) B & D. </I>Over loading is implemented by same name but different parameters or their order<br> </div>
+<div class="detailsr" id=correct5><b>Correct!</b> <I>B & D. </I> Over loading is implemented by same name but different parameters or their order</div>
+
+<b><font class="ques"><pre>
+6. Which interface does java.util.Hashtable implement?
+</pre></b>
+<font color=#000000><input onclick="ans(this.name,'correct')" type=radio name=6></A> a) <em>java.util.Map</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=6></A> b) <em>java.util.List</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=6></A> c) <em>java.util.Hashable</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=6></A> d) <em>java.util.Collection</em><br> <br></font>
+<div class="details" id=wrong6><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong6e><b>Wrong Again!</b> Try one more chance.</b><br></div>
+<div class="details" id=wrong6a><b>Wrong!</b><br>The correct answer is <I>a) Hashtable implements java.util.Map</I></div>
+<div class="detailsr" id=correct6><b>Correct! </b><br> Hashtable implements java.util.Map</div>
+
+<b><font class="ques"><pre>
+7. What is the correct statement at XX for an inner class?
+ public class MyImp {
+    public class InsideOne {
+      public void getMe() {
+        System.out.println("inside InsideOne");
+      }
+   }
+ }
+ public class Test {
+   public static void main (String [] args) {
+     MyImp mi = new MyImp();
+     XX 
+     mio.getMe();
+   }
+ }</pre>
+</b>
+
+<font color=#000000><input onclick="ans(this.name,'wrong')" type=radio name=7></A> a) <em>MyImp.InsideOne mio = new mi.InsideOne();</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=7></A> b) <em>MyImp mio = mi.new InsideOne();</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=7></A> c) <em>MyImp.InsideOne mio = mi.new InsideOne();</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=7></A> d) <em>MyImp mio = new mi.InsideOne();</em><br> <br></font>
+<div class="details" id=wrong7><b>Wrong!</b> Try again.</b>.<br></div>
+<div class="details" id=wrong7e><b>Wrong Again!</b> Try one more chance.</b><br></div>
+<div class="details" id=wrong7a><b>Wrong!</b><br>The correct answer is <I>c) MyImp.InsideOne mio = mi.new InsideOne();</div>
+<div class="detailsr" id=correct7><b>Correct! </b><br> MyImp.InsideOne mio = mi.new InsideOne();</div>
+<tr>
+<td><br><a href="./javaquiz8.htm"><img src="previous.jpg"></a> &nbsp; <a href="./javaquiz10.htm"><img src="next.jpg"></a> </td>
+</table></td></tr></table>
+</body></html>

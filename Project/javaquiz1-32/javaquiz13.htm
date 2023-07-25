@@ -1,0 +1,204 @@
+<! created by Surendran Velath>
+<html><head>
+
+<meta name="AccessType" Content="Free">
+<title>Java certification Quiz</title>
+<style>
+ .tip{color:#b23c09;font-size:18px;font-weight:bold;font-family:arial}
+ a:hover{color:red;font-family:verdana;font-size:22px;}
+</style>
+<script type="text/javascript" src="jquiz.js">
+</script>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+<table class="outer">
+<tr>
+<td bgColor="#f3eff0">
+<table class="inner">
+<tr>
+<td>	
+<table cellSpacing=0 cellPadding=0 border=0>
+<tr>
+<td>
+<font class="title">Java Quiz - 13
+
+<p><a href="javaquiz12.htm">&#171;</a>&nbsp;<a href="javaquiz1.htm">1</a>&nbsp;<a href="javaquiz2.htm">2</a>&nbsp;<a href="javaquiz3.htm">3</a>&nbsp;<a href="javaquiz4.htm">4</a>&nbsp;<a href="javaquiz5.htm">5</a>&nbsp;<a href="javaquiz6.htm">6</a>&nbsp;<a href="javaquiz7.htm">7</a>&nbsp;<a href="javaquiz8.htm">8</a>&nbsp;<a href="javaquiz9.htm">9</a>&nbsp;<a href="javaquiz10.htm">10</a>&nbsp;<a href="javaquiz11.htm">11</a>&nbsp;<a href="javaquiz12.htm">12</a>&nbsp;13&nbsp;<a href="javaquiz14.htm">14</a>&nbsp;<a href="javaquiz15.htm">15</a>&nbsp;<a href="javaquiz16.htm">16</a>&nbsp;<a href="javaquiz17.htm">17</a>&nbsp;<a href="javaquiz18.htm">18</a>&nbsp;<a href="javaquiz19.htm">19</a>&nbsp;<a href="javaquiz20.htm">20</a>&nbsp;<a href="javaquiz21.htm">21</a>&nbsp;<a href="javaquiz22.htm">22</a>&nbsp;<a href="javaquiz23.htm">23</a>&nbsp;<a href="javaquiz24.htm">24</a>&nbsp;<a href="javaquiz25.htm">25</a>&nbsp;<a href="javaquiz26.htm">26</a>&nbsp;<a href="javaquiz27.htm">27</a>&nbsp;<a href="javaquiz28.htm">28</a>&nbsp;<a href="javaquiz29.htm">29</a>&nbsp;<a href="javaquiz30.htm">30</a>&nbsp;<a href="javaquiz31.htm">31</a>&nbsp;<a href="javaquiz32.htm">32</a>&nbsp;<a href="javaquiz14.htm">&#187;</a></p>
+</font>
+
+<b><font class="ques"><pre>
+1. For the following code :
+import java.io.*;
+public class Test {
+   public static void main (String [] args) {
+     try {
+        File f = new File("file.txt");
+        OutputStream out = new FileOutputStream(f, true);
+    }
+    catch(IOException e) {
+    }
+  }
+}</pre>
+</b>
+<font color=#000000><input onclick="ans(this.name,'wrong')" type=radio name=1> a) <em>The code does not compile</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=1> b) <em>The code runs and no change is made to the file</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=1> c) <em>The code runs and sets the length of the file to 0</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=1> d) <em>An exception is thrown because the file is not closed</em><br></font>
+<div class="details" id=wrong1><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong1e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong1a><b>Wrong!</b><br>The correct answer is <i>b) The code runs and no change is made to the file. </I><br></div>
+<div class="detailsr" id=correct1><b>Correct! </b><br> <i>The code runs and no change is made to the file. </I></div>
+
+<b><font class="ques"><pre>
+2. What is the output?
+       int i = 1;
+       int[] f = new int[3];
+       int b = f[i];
+       int z = b + i;
+       System.out.println(z);
+</pre>
+</b><font color=#000000><input onclick="ans(this.name,'wrong')" type=radio name=2> a) <em>0</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=2> b) <em>2</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=2> c) <em>Compile error</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=2> d) 1</em><br><br>
+</font><div class="details" id=wrong2><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong2e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong2a><b>Wrong! </b>The correct answer is <i>d) 1.<br> int array is assigned 0 by default</I><br> </div>
+<div class="detailsr" id=correct2><b>Correct! </b> <i> d) 1. <br>int array is assigned 0 by default</I></div><p></p>
+
+<b><font class="ques"><pre>
+3. What is the output?
+  public class Test {
+    public static void main (String [] args) {
+       int i=1, j=10;
+       do {
+           if(i++ > --j) continue;
+       } 
+       while(i<5);
+       System.out.println(i+", "+j);
+     }
+  }</pre>
+</b><font color=#000000><input onclick="ans(this.name,'wrong')" type=radio name=3> a) <em>5, 5</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=3> b) <em>6, 6</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=3> c) <em>5, 6</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=3> d) <em>6, 5</em><br>
+<br></font><div class="details" id=wrong3><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong3e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong3a><b>Wrong!</b> </font> The correct answer is <i>c) 5, 6</I> <br>i &gt; j is checked before incrementing<br> </div>
+<div class="detailsr" id=correct3><b>Correct! </b><i>5, 6</I><br>  i &gt; j is checked before incrementing </div>
+
+<b><font class="ques"><pre>
+4. What is the output?
+ public class Test {
+    public static String out ="";
+    public static void chk(int i) {
+ 	try {
+	   if(i==1) {
+	      throw new Exception();
+	   }
+	   out += "A";
+	 }
+	 catch(Exception e) {
+	    out += "D";
+	    return;
+	 }
+	 finally {
+	    out += "B";
+	 }
+	 out += "C";
+     }       
+     public static void main (String [] args) {
+       chk(0);
+       chk(1);
+       System.out.println(out);
+     }
+ }
+</pre>
+</b><font color=#000000><input onclick="ans(this.name,'wrong')" type=radio name=4> a) <em>DBCAB</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=4> b) <em>ADBCDB</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=4> c) <em>ABCD</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=4> d) <em>ABCDB</em><br>
+<br></font><div class="details" id=wrong4><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong4e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong4a><b>Wrong! </b><br></font>The correct answer is <i>d) </I>ABCDB </div>
+<div class="detailsr" id=correct4><b>Correct! </b><br><i>ABCDB</I></div>
+
+<b><font class="ques"><pre>
+5. Which statement is true?
+</pre>
+</b><font color=#000000>
+<input onclick="ans(this.name,'wrong')" type=radio name=5> a) <em> If only one thread is blocked in the wait method of an object, and another thread executes 
+  <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the notify on the same object, then the first thread immediately resumes execution.</em><br>
+<input onclick="ans(this.name,'correct')" type=radio name=5> b) <em>If a thread is blocked in the wait method of an object, and another thread executes the   <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;notify method on the same object, it is still possible that the first thread might never resume execution.</em><br>
+  <input onclick="ans(this.name,'wrong')" type=radio name=5> c) <em>If a thread is blocked in the wait method of an object, and another thread executes the <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;notify method on the same object, then the first thread definitely resumes execution as a direct 
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and sole consequence of the notify call.</em><br>
+  <input onclick="ans(this.name,'wrong')" type=radio name=5> d) <em>If two threads are blocked in the wait method of one object,and another thread executes the <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;notify method on the same object, then the first thread that executed the wait call first definitely <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resumes execution as a direct and sole consequence of the notify call.</em>
+<br><br></font>
+<div class="details" id=wrong5><b>Wrong!</b> Try again.</b>.
+<br></div>
+<div class="details" id=wrong5e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong5a><b>Wrong! </b> The correct answer is <i>b) <br>&nbsp;&nbsp;&nbsp;If a thread is blocked in the wait method of an object, and another thread executes the notify <br>&nbsp;&nbsp;&nbsp;method on the same object, it is still possible that the first thread might never resume execution. </I> <br> </div>
+<div class="detailsr" id=correct5><b>Correct!</b> <i> If a thread is blocked in the wait method of an object, and another thread executes the 
+notify <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;method on the same object, it is still possible that the first thread might never resume execution. </I>  <br></I> </div><p></p>
+
+<p>
+
+<b><font class="ques"><pre>
+6. Under which conditions will check() return true when called from a different class?
+   private int x, y;
+   private synchronized void setX(int i) {
+        x = i;
+   }
+   private synchronized void setY(int i) {
+        y = i;
+   }
+   public void setXY(int i) {
+        setX(i); setY(i);
+   }
+   public synchronized boolean check() {
+       return x!=y;
+   }
+
+</pre>
+</b>
+
+<font color=#000000>
+<input onclick="ans(this.name,'correct')" type=radio name=6> a) <em>check() can return true when setXY is called by multiple threads.</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=6> b) <em>check() can never return true.</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=6> c) <em>check() can return true when multiple threads call setX and setY separately.</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=6> d) <em>check() can only return true if code is changed to allow x and y to be set separately.</em>
+<br><br></font>
+<div class="details" id=wrong6><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong6e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong6a><b>Wrong!</b><br>The correct answer is <i>a) check() can return true when setXY is called by multiple threads.</I> </div>
+<div class="detailsr" id=correct6><b>Correct! </b><br> check() can return true when setXY is called by multiple threads.</div>
+
+<p>
+
+<b><font class="ques"><pre>
+7. What is output?
+  public class Test {
+     public static void main(String args[]) {
+        int a=1, b=2, c=3;
+        a=b=c;
+        System.out.println(a+" "+b+" "+c);
+     }
+ }
+</pre>
+</b>
+
+<font color=#000000>
+<input onclick="ans(this.name,'wrong')" type=radio name=7> a) <em>1 1 1</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=7> b) <em>2 2 2</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=7> c) <em>3 3 3</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=7> d) <em>Compile Error</em>
+<br><br></font>
+<div class="details" id=wrong7><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong7e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong7a><b>Wrong!</b><br>The correct answer is <i>c) 3 3 3</I> </div>
+<div class="detailsr" id=correct7><b>Correct! </b><br> 3 3 3</div>
+<tr>
+<td><br><a href="./javaquiz12.htm"><img src="previous.jpg"></a>
+&nbsp;<a href="./javaquiz14.htm"><img src="next.jpg"></a></td>
+</table></td></tr></table>
+</body></html>

@@ -1,0 +1,100 @@
+.details 
+ {border:1 solid black; background-color:f3e9d0; display:none; padding:6 2 2 6; margin: 0 0 0 0; font-size:1.2em; color:#ff0000;}
+.detailsr 
+ {border:1 solid black; background-color:f3e9d0; display:none; padding:6 2 2 6; margin: 0 0 0 0; font-size:1.2em; color:#277801;}
+
+p.tip {
+   color:#b23c09;
+   font-size:18px;
+   font-weight:bold;
+   font-family:arial;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-top: 1px dotted white;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #83B6A1;
+    color: #aff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+body 
+ {
+    background-color: #f3eff0;
+    margin-left:0px;
+    margin-top:0px;
+}
+table.outer {
+    border-collapse: collapse;                   
+    border-style: solid;
+    border-color: red;
+    border-width:0px;    
+    padding:3px;
+    width: 100%;
+    align:center;
+    background-color: #f3eff0;
+}
+
+table.inner {
+    border-collapse: separate;                   
+    border-style: solid;
+    border-color: blue;
+    border-width:0px;    
+    padding:20px;
+    border-spacing:0px;
+}
+pre {
+    word-wrap: break-word;
+    white-space: pre-wrap;
+   color:#923c09;
+   font-size:19px;
+}
+font.options {
+   color:#624c39;
+   font-size:19px;
+}
+a:hover{
+   color:red;
+   font-family:verdana;
+   font-size:22px;
+}
+.title {
+   color:#000000;
+   font-size:25px;
+   font-family:arial;
+}
+font.ques {
+   color:#923c09;
+   font-size:19px;
+}
+div.ques {
+   color:#000000;
+   font-size:19px;
+   font-style:italic;
+}
+font.ans {
+   color:#000000;
+   font-size:18px;
+   font-weight:normal;
+}
+font.wrong {
+   font-size:1.2em;
+   color:#ff0000;
+}
+font.right {
+   font-size:1.2em;
+   color:#277801;
+}

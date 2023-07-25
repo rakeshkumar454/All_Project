@@ -1,0 +1,21 @@
+package com.globallogic.App;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.globallogic.Service.EmployeeValidation;
+import com.globallogic.model.Employee;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Employee employee=new Employee("Abc", "c");
+		EmployeeValidation empValidation=new EmployeeValidation(employee);
+		try {
+			System.out.println(empValidation.NameValidation());
+		}catch(Exception e) {
+			System.out.println(e.getMessage());
+		}
+	}
+	
+}

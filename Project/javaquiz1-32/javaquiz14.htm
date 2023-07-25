@@ -1,0 +1,216 @@
+<! created by Surendran Velath>
+<html><head>
+
+<meta name="AccessType" Content="Free">
+<title>Java certification Quiz</title>
+<style>
+ .tip{color:#b23c09;font-size:18px;font-weight:bold;font-family:arial}
+ a:hover{color:red;font-family:verdana;font-size:22px;}
+</style>
+<script type="text/javascript" src="jquiz.js">
+</script>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+<table class="outer">
+<tr>
+<td bgColor="#f3eff0">
+<table class="inner">
+<tr>
+<td>	
+<table cellSpacing=0 cellPadding=0 border=0>
+<tr>
+<td>
+<font class="title">Java Quiz - 14
+
+<p><a href="javaquiz13.htm">&#171;</a>&nbsp;<a href="javaquiz1.htm">1</a>&nbsp;<a href="javaquiz2.htm">2</a>&nbsp;<a href="javaquiz3.htm">3</a>&nbsp;<a href="javaquiz4.htm">4</a>&nbsp;<a href="javaquiz5.htm">5</a>&nbsp;<a href="javaquiz6.htm">6</a>&nbsp;<a href="javaquiz7.htm">7</a>&nbsp;<a href="javaquiz8.htm">8</a>&nbsp;<a href="javaquiz9.htm">9</a>&nbsp;<a href="javaquiz10.htm">10</a>&nbsp;<a href="javaquiz11.htm">11</a>&nbsp;<a href="javaquiz12.htm">12</a>&nbsp;<a href="javaquiz13.htm">13</a>&nbsp;14&nbsp;<a href="javaquiz15.htm">15</a>&nbsp;<a href="javaquiz16.htm">16</a>&nbsp;<a href="javaquiz17.htm">17</a>&nbsp;<a href="javaquiz18.htm">18</a>&nbsp;<a href="javaquiz19.htm">19</a>&nbsp;<a href="javaquiz20.htm">20</a>&nbsp;<a href="javaquiz21.htm">21</a>&nbsp;<a href="javaquiz22.htm">22</a>&nbsp;<a href="javaquiz23.htm">23</a>&nbsp;<a href="javaquiz24.htm">24</a>&nbsp;<a href="javaquiz25.htm">25</a>&nbsp;<a href="javaquiz26.htm">26</a>&nbsp;<a href="javaquiz27.htm">27</a>&nbsp;<a href="javaquiz28.htm">28</a>&nbsp;<a href="javaquiz29.htm">29</a>&nbsp;<a href="javaquiz30.htm">30</a>&nbsp;<a href="javaquiz31.htm">31</a>&nbsp;<a href="javaquiz32.htm">32</a>&nbsp;<a href="javaquiz15.htm">&#187;</a> </p>
+</font>
+
+<b><font class="ques"><pre>
+1. If class B is run :
+ public class A {
+    public static void m1() {
+        System.out.println("in m1() of A");
+    }
+ }
+ public class B extends A {
+     public static void main (String [] args) {
+           B b = new B();
+           b.m1();     
+     }
+     public static void m1() {
+         System.out.println("in m1() of B");
+     }
+ }
+</pre></b>
+<font color=#000000><input onclick="ans(this.name,'correct')" type=radio name=1> a) <em>Gives output: in m1() of B</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=1> b) <em>Compile error, cannot override static method</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=1> c) <em>Gives output: in m1() of A, followed by in m1() of B</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=1> d) <em>Gives output: in m1() of B, followed by in m1() of A</em><br></font>
+<div class="details" id=wrong1><b>Wrong! Try again.</b><br></div>
+<div class="details" id=wrong1e><b>Wrong Again! Try one more chance.</b></div>
+<div class="details" id=wrong1a><b>Wrong!</b><br>The correct answer is <i>a) Gives output: in m1() of B. </i><br></div>
+<div class="detailsr" id=correct1><b>Correct!</b> <br> <i> Gives output: in m1() of B. </i></div>
+
+<b><font class="ques"><pre>
+2. What is the ouput when Test is run?
+public abstract interface MyInt {
+     void m1() ;
+}
+public class Test implements MyInt{
+    public Test() {
+         super();
+    }
+    public static void main(String [] args) {
+         new Test().m1();
+    }
+    public void m1() {
+        System.out.println("In m1()");
+    }
+}
+</pre>
+</b><font color=#000000><input onclick="ans(this.name,'wrong')" type=radio name=2> a) <em>m1() should be public in MyInt</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=2> b) <em>Wrong usage of super() in Test</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=2> c) <em>Interface cannot be declared abstract</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=2> d) <em>Gives ouput:  In m1()</em><br><br></font>
+<div class="details" id=wrong2><b>Wrong! Try again.</b><br></div>
+<div class="details" id=wrong2e><b>Wrong Again! Try one more chance.</b></div>
+<div class="details" id=wrong2a><b>Wrong!</b> The correct answer is <i>d)Gives ouput: In m1().<br></i><br></div>
+<div class="detailsr" id=correct2><b>Correct!</b>  <i> d)Gives ouput:  In m1(). <br></i></div>
+
+<b><font class="ques"><pre>
+3. For following code :
+public class Test {
+    public static void main(String [] args) {
+       try {
+           new Test().m1();
+       }
+       catch(Throwable e) {
+          System.out.println(e);
+       }
+    }
+     public void m1 () {
+         throw new RuntimeException("Error");
+    }
+}
+</pre>
+</b><font color=#000000><input onclick="ans(this.name,'wrong')" type=radio name=3> a) <em>method should be : m1() throws RuntimeException </em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=3> b) <em>Throwable should not be caught</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=3> c) <em>Gives output: java.lang.RuntimeException: Error</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=3> b) <em>RuntimeException cannot be thrown</em><br><br></font>
+<div class="details" id=wrong3><b>Wrong! Try again.</b><br></div>
+<div class="details" id=wrong3e><b>Wrong Again! Try one more chance.</b></div>
+<div class="details" id=wrong3a><b>Wrong!</b><br> The correct answer is <i>c) Gives output: java.lang.RuntimeException: Error</i> <br> </div>
+<div class="detailsr" id=correct3><b>Correct!</b> <i></i><br>  Gives output: java.lang.RuntimeException: Error </div>
+
+<b><font class="ques"><pre>
+4. What is the output?
+  public class Test {
+   public Test () {
+        System.out.print("B");
+   }
+   static {
+        System.out.print("C");
+   }
+   public void printMe() {
+        System.out.print("D");
+   }
+   public static void main (String[] args) {
+        System.out.print("A");
+        Test t = new Test();
+        t.printMe();
+   }
+ }
+</pre>
+</b><font color=#000000><input onclick="ans(this.name,'wrong')" type=radio name=4> a) <em>ABCD</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=4> b) <em>ACBD</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=4> c) <em>CADB</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=4> d) <em>CABD</em><br><br></font>
+<div class="details" id=wrong4><b>Wrong! Try again.</b><br></div>
+<div class="details" id=wrong4e><b>Wrong Again! Try one more chance.</b></div>
+<div class="details" id=wrong4a><b>Wrong! </b><br></font>The correct answer is <i>d) </i>CABD. Static block is executed first</div>
+<div class="detailsr" id=correct4><b>Correct!</b> <br><i>CABD. Static block is executed first</i></div>
+
+<b><font class="ques"><pre>
+5. What is the output?
+public class Test {
+   String name="John";
+   public Test() {
+         this(name);
+   }
+   public Test(String name) {
+         System.out.print(name);
+   }
+   public static void main(String[] arg)
+   {
+        Test t1 = new Test();
+        Test t2 = new Test(" Peter");
+   }
+}
+</pre>
+</b><font color=#000000><input onclick="ans(this.name,'wrong')" type=radio name=5> a) <em>John Peter</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=5> b) <em>John</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=5> c) <em>Peter</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=5> d) <em>Compile Error</em><br>
+<br></font><div class="details" id=wrong5><b>Wrong! Try again.</b><br></div>
+<div class="details" id=wrong5e><b>Wrong Again! Try one more chance.</b></div>
+<div class="details" id=wrong5a><b>Wrong! </b><br></font>The correct answer is <i>d) </i>Compile Error.  Cannot reference instance variable 'name' before supertype constructor has been called</div>
+<div class="detailsr" id=correct5><b>Correct!</b> <br><i>Compile Error</i> Cannot reference instance variable 'name' before supertype constructor has been called</div>
+
+<b><font class="ques"><pre>
+6. If following is run as 'java MyClass hello' :
+  abstract class MyClass {
+      public static void main (String.. args) {
+          System.out.println("MyClass, " + args[0]);
+      }
+  }
+
+</pre></b>
+<font color=#000000>
+<input onclick="ans(this.name,'correct')" type=radio name=6> a) <em>Gives output : MyClass, hello</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=6> b) <em>Cannot run an abstract class</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=6> c) <em>Cannot use String...</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=6> d) <em>Class has to be public</em><br><br></font>
+<div class="details" id=wrong6><b>Wrong! Try again.</b><br></div>
+<div class="details" id=wrong6e><b>Wrong Again! Try one more chance.</b></div>
+<div class="details" id=wrong6a><b>Wrong!</b><br>The correct answer is <i>a)Gives output : MyClass, hello</i> </div>
+<div class="detailsr" id=correct6><b>Correct!</b> <br> Gives output : MyClass, hello</div>
+
+<b><font class="ques"><pre>
+7. For the following :
+ 1. public class MyImp {
+ 2.   public void printMe() {
+ 3.        System.out.print("printMe ");
+ 4.   }
+ 5.   public class InsideOne {
+ 6.      public void getMe() {
+ 7.        System.out.print("getMe ");
+ 8.      }
+ 9.   }
+ 10.  public static class MyImpInner extends MyImp {
+ 11.  }
+ 12.  public static void main (String [] args) {
+ 13.     MyImp mi = new MyImp();
+ 14.     MyImp.InsideOne mio = mi.new InsideOne();  
+ 15.     mio.getMe();
+ 16.     MyImp.MyImpInner mii = new MyImp.MyImpInner();
+ 17.     mii.printMe();
+ 18.   }
+ 19. }
+</pre></b>
+<font color=#000000>
+<input onclick="ans(this.name,'wrong')" type=radio name=7> a) <em>Compile error at line 
+10</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=7> b) <em>Compile error at line 
+14</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=7> c) <em>Gives output: getMe printMe</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=7> d) <em>Compile error at line 16</em><br><br></font>
+<div class="details" id=wrong7><b>Wrong! Try again.</b><br></div>
+<div class="details" id=wrong7e><b>Wrong Again! Try one more chance.</b></div>
+<div class="details" id=wrong7a><b>Wrong!</b><br>The correct answer is <i>c) Gives output: getMe printMe </i> </div>
+<div class="detailsr" id=correct7><b>Correct!</b> <br> Gives output: getMe printMe</div>
+<tr>
+<td><br><a href="./javaquiz13.htm"><img src="previous.jpg"></a>
+&nbsp;<a href="./javaquiz15.htm"><img src="next.jpg"></a></td>
+</table></td></tr></table>
+</body></html>

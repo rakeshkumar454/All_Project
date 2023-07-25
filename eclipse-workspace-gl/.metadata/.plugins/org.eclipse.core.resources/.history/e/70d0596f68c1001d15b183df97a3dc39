@@ -1,0 +1,29 @@
+package com.springaop.springaop;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.springaop.springaop.entity.Employee;
+import com.springaop.springaop.entity.Student;
+import com.springaop.springaop.service.PaymentService;
+
+public class EmployeeDriver {
+    public static void main( String[] args )  {
+    	
+    	ApplicationContext context=new ClassPathXmlApplicationContext("com/springaop/springaop/employeeconfig.xml");
+    	PaymentService paymentBean = context.getBean("payment",PaymentService.class);
+    	paymentBean.makePayment();
+    	
+    	ApplicationContext context1=new ClassPathXmlApplicationContext("com/springaop/springaop/employeeconfig.xml");
+    	PaymentService paymentBean1 = context1.getBean("payment",PaymentService.class);
+    	paymentBean.makePayment1(100);
+    	
+    	ApplicationContext context2=new ClassPathXmlApplicationContext("com/springaop/springaop/employeeconfig.xml");
+        Employee empBean = context2.getBean("emp",Employee.class);
+       // empBean.setEmployee_id(101);
+        empBean.setEmployee_name("bisal");
+        
+       // System.out.println(empBean.getEmployee_id());
+        System.out.println(empBean.getEmployee_name());
+    }
+}

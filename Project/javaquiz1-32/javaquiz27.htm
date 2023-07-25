@@ -1,0 +1,209 @@
+<! created by Surendran Velath>
+<html><head>
+<meta name="AccessType" Content="Free">
+<title>Java certification Quiz</title>
+<style>
+ .tip{color:#b23c09;font-size:18px;font-weight:bold;font-family:arial}
+ a:hover{color:red;font-family:verdana;font-size:22px;}
+</style>
+<script type="text/javascript" src="jquiz.js">
+</script>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+<table class="outer">
+<tr>
+<td bgColor="#f3eff0">
+<table class="inner">
+<tr>
+<td>	
+<table cellSpacing=0 cellPadding=0 border=0>
+<tr>
+<td>
+<font class="title">Java Quiz - 27
+
+<p><a href="javaquiz26.htm">&#171;</a>&nbsp;<a href="javaquiz1.htm">1</a>&nbsp;<a href="javaquiz2.htm">2</a>&nbsp;<a href="javaquiz3.htm">3</a>&nbsp;<a href="javaquiz4.htm">4</a>&nbsp;<a href="javaquiz5.htm">5</a>&nbsp;<a href="javaquiz6.htm">6</a>&nbsp;<a href="javaquiz7.htm">7</a>&nbsp;<a href="javaquiz8.htm">8</a>&nbsp;<a href="javaquiz9.htm">9</a>&nbsp;<a href="javaquiz10.htm">10</a>&nbsp;<a href="javaquiz11.htm">11</a>&nbsp;<a href="javaquiz12.htm">12</a>&nbsp;<a href="javaquiz13.htm">13</a>&nbsp;<a href="javaquiz14.htm">14</a>&nbsp;<a href="javaquiz15.htm">15</a>&nbsp;<a href="javaquiz16.htm">16</a>&nbsp;<a href="javaquiz17.htm">17</a>&nbsp;<a href="javaquiz18.htm">18</a>&nbsp;<a href="javaquiz19.htm">19</a>&nbsp;<a href="javaquiz20.htm">20</a>&nbsp;<a href="javaquiz21.htm">21</a>&nbsp;<a href="javaquiz22.htm">22</a>&nbsp;<a href="javaquiz23.htm">23</a>&nbsp;<a href="javaquiz24.htm">24</a>&nbsp;<a href="javaquiz25.htm">25</a>&nbsp;<a href="javaquiz26.htm">26</a>&nbsp;27&nbsp;<a href="javaquiz28.htm">28</a>&nbsp;<a href="javaquiz29.htm">29</a>&nbsp;<a href="javaquiz30.htm">30</a>&nbsp;<a href="javaquiz31.htm">31</a>&nbsp;<a href="javaquiz32.htm">32</a>&nbsp;<a href="javaquiz28.htm">&#187;</a></p>
+</font>
+
+<p title="Boolean class" class="tip">1. What is the output?</p>
+<b><font class="ques"><pre>
+public class BooleanTest {
+  public static void main(String[] args) {
+    Boolean[] bool = new Boolean[2];
+    bool[0] = new Boolean(Boolean.parseBoolean("true"));
+    bool[1] = new Boolean(null);
+    System.out.println(bool[0] + ", " + bool[1]);
+  }
+}</pre></b>
+<font color=#000000><!-- options --><input onclick="ans(this.name,'wrong')" type=radio name=1> a) <em>true, null</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=1> b) <em>true, true</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=1> c) <em>true, false</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=1> d) <em>false, false</em><br></font>
+<div class="details" id=wrong1><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong1e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong1a><b>Wrong!</b><br>The correct answer is <i>c) true, false</i><br>Boolean.parseBoolean() returns true for "true" and false for any other value</div>
+<div class="detailsr" id=correct1><b>Correct! </b><br> <i> true, false</i> - Boolean.parseBoolean() returns true for "true" and false for any other value</div>
+
+
+<p title="local variable" class="tip">2. What is the output?</p>
+<b><font class="ques"><pre>
+public class RectAreaTest {
+  static double area;
+  int l=2, b=3;
+  public static void main(String[] args) {
+    double p, l, b;
+    if(area==0) {
+      l=3; b=4; 
+    }
+    area = l * b;
+    System.out.println("Area = " + area);
+  }
+}</pre>
+</b><font color=#000000><input onclick="ans(this.name,'correct')" type=radio name=2> a) <em>Compile error</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=2> b) <em>Area = 12.0</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=2> c) <em>Area = 6.0</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=2> d) <em>Exception at runtime</em><br><br>
+</font><div class="details" id=wrong2><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong2e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong2a><b>Wrong! </b>The correct answer is <i>a) Compile error</i><br>local variables have to be initialized</div>
+<div class="detailsr" id=correct2><b>Correct! </b> <br><i> Compile error</i> - local variables have to be initialized</div>
+
+<p title="inheritance" class="tip">3. Which of the options causes compile error?</p>
+<b><font class="ques"><pre>
+public class AnimalTest {
+  public static void main(String[] args) {
+     XX
+    System.out.println(myList);
+  }
+}
+public interface Hunter {}
+public abstract class Animal { }
+public class Cat extends Animal implements Hunter {}
+public class Tiger extends Cat { }
+<font class="options"><i>A. ArrayList&lt;Tiger&gt; myList = new ArrayList&lt;&gt;();
+   myList.add(new Cat());
+B. ArrayList&lt;Hunter&gt; myList = new ArrayList&lt;&gt;();
+   myList.add(new Cat());
+C. ArrayList&lt;Animal&gt; myList = new ArrayList&lt;&gt;();
+   myList.add(new Cat());
+D. ArrayList&lt;Animal&gt; myList = new ArrayList&lt;&gt;();
+   myList.add(new Tiger());</font></i></pre>
+</b><font color=#000000><input onclick="ans(this.name,'wrong')" type=radio name=3> a) A, B</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=3> b) B</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=3> c) A</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=3> d) All of them<br>
+<br></font><div class="details" id=wrong3><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong3e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong3a><b>Wrong!</b> The correct answer is <i>c) A <br> Cat is parent of Tiger<br> </div>
+<div class="detailsr" id=correct3><b>Correct! </b><i>A </i><br> Cat is parent of Tiger</div>
+
+
+<p title="variable type" class="tip">4. What is the output?</p>
+<b><font class="ques"><pre>
+public class Test {
+  public static void main(String[] args) {
+    Test t =new Test();
+    t.printVal(23);
+  }
+  public void printVal(short val) {
+    System.out.println("short val = " + val);
+  }
+  public void printVal(Long val) {
+    System.out.println("Long val = " + val);
+  }
+  public void printVal(Object val) {
+    System.out.println("Object val = " + val);
+  }
+}</pre>
+</b><font color=#000000><input onclick="ans(this.name,'wrong')" type=radio name=4> a) <em>Long val = 23</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=4> b) <em>Object val = 23</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=4> c) <em>Short val = 23</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=4> d) <em>Compile error</em><br>
+<br></font><div class="details" id=wrong4><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong4e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong4a><b>Wrong! </b><br>The correct answer is <i>b) Object val = 23</i> : Nearest match of int is int, Integer, Number, Object in that order</div>
+<div class="detailsr" id=correct4><b>Correct! </b><i> Nearest match of int is int, Integer, Number, Object in that order</i></div>
+
+
+<p title="variable scope" class="tip">5. What is the output? </p>
+<b><font class="ques"><pre>
+public class Test {
+  public static void main(String[] args) {
+    int val = 100;
+    Test t =new Test();
+    System.out.print(t.calculate(val));
+    System.out.println(" " + val); 
+  }
+  public int calculate(int val) {
+    return val*2;
+  }
+}</pre>
+</b><font color=#000000><input onclick="ans(this.name,'wrong')" type=radio name=5> a) <em>Compile error</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=5> b) <em>200 200</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=5> c) <em>100 100</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=5> d) <em>200 100</em>
+<br>
+<br></font><div class="details" id=wrong5><b>Wrong!</b> Try again.</b>.
+<br></div>
+<div class="details" id=wrong5e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong5a><b>Wrong! </b><br>The correct answer is <i>d) 200 100</i> : primitive types are passed by value</div>
+<div class="detailsr" id=correct5><b>Correct! </b><br><i> 200 100</i> : primitive types are passed by value</div>
+
+
+<p title="java declarations" class="tip">6. Which of the files compile successfully?</p>
+<b><font class="ques"><pre>
+A.java
+public class A {
+  public void a() { }
+}
+
+B.java
+public class B {
+  private int doIt() {
+     private int x=100;
+     return x++;
+  }
+}
+
+C.java
+import java.io.*;
+package co.abc;
+class C {
+  public void main(String name) throws IOException {}
+}</pre></b>
+<font color=#000000>
+<input onclick="ans(this.name,'correct')" type=radio name=6> a) <em>Only A.java</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=6> b) <em>A.java and B.java</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=6> c) <em>A.java and C.java</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=6> d) <em>All 3 of them</em><br></font>
+<div class="details" id=wrong6><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong6e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong6a><b>Wrong!</b><br>The correct answer is <i>a) Only A.java</i> : B has private inside method, C declares package on second line </div>
+<div class="detailsr" id=correct6><b>Correct! </b><br> Only A.java : B has private inside method, C declares package on second line</div>
+
+
+<p title="array indexes" class="tip">7. What is the output?</p>
+<b><font class="ques"><pre>
+public class Test {
+  public static void main(String[] args) {
+    int[] arr = {3,4,5,4,5,6};
+    for (int i : arr) {
+      System.out.print(arr[i-1] + " ");
+    }
+  }  
+}</pre></b>
+<font color=#000000>
+<input onclick="ans(this.name,'wrong')" type=radio name=7> a) <em>Compile error</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=7> b) <em>3,4,5,4,5,6</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=7> c) <em>5 4 5 4 5 6 </em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=7> d) <em>ArrayIndexOutOfBoundsException </em></font>
+<div class="details" id=wrong7><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong7e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong7a><b>Wrong!</b><br>The correct answer is c) 5 4 5 4 5 6<i> : the values at the indexes </i></div>
+<div class="detailsr" id=correct7><b>Correct! </b><br> 5 4 5 4 5 6  <i> :  the values at the indexes </i></div>
+
+<tr>
+<td><br><a href="./javaquiz26.htm"><img src="previous.jpg"></a>
+&nbsp;<a href="./javaquiz28.htm"><img src="next.jpg"></a> </td>
+</table></td></tr></table>
+</body></html>

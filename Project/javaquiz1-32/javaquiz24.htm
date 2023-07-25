@@ -1,0 +1,175 @@
+<! created by Surendran Velath>
+<html><head>
+
+<meta name="AccessType" Content="Free">
+<title>Java certification Quiz</title>
+<style>
+ .tip{color:#b23c09;font-size:18px;font-weight:bold;font-family:arial}
+ a:hover{color:red;font-family:verdana;font-size:22px;}
+</style>
+
+<script type="text/javascript" src="jquiz.js">
+</script>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+<table class="outer">
+<tr>
+<td bgColor="#f3eff0">
+<table class="inner">
+<tr>
+<td>	
+<table cellSpacing=0 cellPadding=0 border=0>
+<tr>
+<td>
+<font class="title">Java Quiz - 24
+
+<p><a href="javaquiz23.htm">&#171;</a>&nbsp;<a href="javaquiz1.htm">1</a>&nbsp;<a href="javaquiz2.htm">2</a>&nbsp;<a href="javaquiz3.htm">3</a>&nbsp;<a href="javaquiz4.htm">4</a>&nbsp;<a href="javaquiz5.htm">5</a>&nbsp;<a href="javaquiz6.htm">6</a>&nbsp;<a href="javaquiz7.htm">7</a>&nbsp;<a href="javaquiz8.htm">8</a>&nbsp;<a href="javaquiz9.htm">9</a>&nbsp;<a href="javaquiz10.htm">10</a>&nbsp;<a href="javaquiz11.htm">11</a>&nbsp;<a href="javaquiz12.htm">12</a>&nbsp;<a href="javaquiz13.htm">13</a>&nbsp;<a href="javaquiz14.htm">14</a>&nbsp;<a href="javaquiz15.htm">15</a>&nbsp;<a href="javaquiz16.htm">16</a>&nbsp;<a href="javaquiz17.htm">17</a>&nbsp;<a href="javaquiz18.htm">18</a>&nbsp;<a href="javaquiz19.htm">19</a>&nbsp;<a href="javaquiz20.htm">20</a>&nbsp;<a href="javaquiz21.htm">21</a>&nbsp;<a href="javaquiz22.htm">22</a>&nbsp;<a href="javaquiz23.htm">23</a>&nbsp;24</a>&nbsp;<a href="javaquiz25.htm">25</a>&nbsp;<a href="javaquiz26.htm">26</a>&nbsp;<a href="javaquiz27.htm">27</a>&nbsp;<a href="javaquiz28.htm">28</a>&nbsp;<a href="javaquiz29.htm">29</a>&nbsp;<a href="javaquiz30.htm">30</a>&nbsp;<a href="javaquiz31.htm">31</a>&nbsp;<a href="javaquiz32.htm">32</a>&nbsp;<a href="javaquiz25.htm">&#187;</a></p>
+</font>
+
+<b><font class="ques"><pre><div class="tooltip">
+1. What is the output?
+import java.util.Arrays;
+public class Test {
+  public static void main(String[] args) {
+    Arrays.asList(new String[]{"red","blue","orange","green","pink"})
+       .stream().filter(s->s.contains("e")).forEach(System.out::println);
+  }
+}</div>
+</pre></b>
+<font color=#000000><!-- options --><input onclick="ans(this.name,'correct')" type=radio name=1> a) <em>red blue orange green</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=1> b) <em>blue green orange pink red</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=1> c) <em>red blue orange green pink</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=1> d) <em>compile error</em><br></font>
+<div class="details" id=wrong1><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong1e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong1a><b>Wrong!</b><br>The correct answer is <i>a) red blue orange green</i><br></div>
+<div class="detailsr" id=correct1><b>Correct! </b><br> <i> red blue orange green</i></div>
+
+<b><font class="ques"><pre><div class="tooltip">
+2. What is the output?
+String[][] names = {
+     {"A", "B", "C"}, {"M", "N", "O"}, {"X", "Y"}
+   };
+   Arrays.asList(names).stream()
+     .forEach((a)->{Arrays.asList(a)
+     .stream().forEach(System.out::print);});
+</div>
+</pre>
+</b><font color=#000000><input onclick="ans(this.name,'wrong')" type=radio name=2> a) <em>AMNOBXYC</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=2> b) <em>AMXBNYCO</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=2> c) <em>ABCMNOXY </em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=2> d) <em>No output displayed</em><br><br>
+</font><div class="details" id=wrong2><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong2e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong2a><b>Wrong! </b>The correct answer is <i>c) ABCMNOXY<br>
+The outer forEach operates on each inner array, where another stream is created to print each inner element.</i><br> </div>
+<div class="detailsr" id=correct2><b>Correct! </b> <i> ABCMNOXY <br>
+The outer forEach operates on each inner array, where another stream is created to print each inner element.</i></div>
+
+<b><font class="ques"><pre><div class="tooltip">
+3. What is the output?
+String str="none", s;
+ if(str.equals("none"))
+    s = str+10;
+ else 
+    s = str+100;
+ System.out.print(s);
+</div></pre>
+</b><font color=#000000><input onclick="ans(this.name,'wrong')" type=radio name=3> a) <em>none100 </em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=3> b) <em>none10</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=3> c) <em>compile error  s is not initialized</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=3> d) <em>compile error cannot add int to String</em><br>
+<br></font><div class="details" id=wrong3><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong3e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong3a><b>Wrong!</b> The correct answer is <i>b)none10</i> <br>s is initialized in if or else<br> </div>
+<div class="detailsr" id=correct3><b>Correct! </b><i>none10</i><br> s is initialized in if or else</div>
+
+<b><font class="ques"><pre><div class="tooltip">
+4. What is the output?
+String[] arr = { "red", "blue", null, "pink", null };
+List<String> arrL = Arrays.asList(arr);
+arrL.stream().forEach(System.out::print);
+</div>
+</pre>
+</b><font color=#000000><input onclick="ans(this.name,'wrong')" type=radio name=4> a) <em>Compile error</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=4> b) <em>bluenullpinkred</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=4> c) <em>redbluenullpink</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=4> d) <em>redbluenullpinknull</em><br>
+<br></font><div class="details" id=wrong4><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong4e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong4a><b>Wrong! </b><br>The correct answer is <i>d) redbluenullpinknull</i><br>List accepts null more than once</div>
+<div class="detailsr" id=correct4><b>Correct! </b><i>redbluenullpinknull <br>List accepts null more than once</i></div>
+
+<b><font class="ques"><pre><div class="tooltip">
+5. What is the output?
+public interface Finder<T> {
+   String find(T t);
+}
+public class FinderTest {
+   public static void main(String[] args) {
+      Finder<Emp> finder = e -> e.getName()+":"+e.getAge();
+      System.out.println(finder.find(new Emp("Geeta", 25)));
+   }
+}
+public class Emp {
+  private String name;
+  private int age;
+  public Emp(String name, int age) {
+    this.name = name;
+    this.age = age;
+  }
+  public int getAge() {
+    return age;
+  }
+  public String getName() {
+    return name;
+  }  
+}</div>
+</pre>
+</b><font color=#000000><input onclick="ans(this.name,'wrong')" type=radio name=5> a) <em>Compile error</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=5> b) <em>Geeta:0</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=5> c) <em>null:0</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=5> d) <em>Geeta:25</em>
+<br>
+<br></font><div class="details" id=wrong5><b>Wrong!</b> Try again.</b>.
+<br></div>
+<div class="details" id=wrong5e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong5a><b>Wrong! </b><br>The correct answer is <i>d) Geeta:25</i></div>
+<div class="detailsr" id=correct5><b>Correct! </b><br><i> Geeta:25</i></div>
+
+<b><font class="ques"><pre><div class="tooltip">
+6.  Which are TRUE with respect to Built-in Functional Interfaces?
+ A.  A Supplier takes no arguments and returns a result 
+ B.  A Consumer takes an argument, but returns no result 
+ C.  The method in Consumer is : accept(T) 
+ D.  A BiPredicate  takes two arguments , and returns boolean
+</div></pre></b>
+<font color=#000000>
+<input onclick="ans(this.name,'wrong')" type=radio name=6> a) <em>A, B, C</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=6> b) <em>A, C, D</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=6> c) <em>B, C, D</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=6> d) <em>All of them</em><br></font>
+<div class="details" id=wrong6><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong6e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong6a><b>Wrong!</b><br>The correct answer is <i>d)All of them</i> </div>
+<div class="detailsr" id=correct6><b>Correct! </b><br> All of them</div>
+
+<b><font class="ques"><pre><div class="tooltip">
+7. . The following is an implementation of which Functional Interface?  
+()-> "Hello guys"
+</div></pre></b>
+<font color=#000000>
+<input onclick="ans(this.name,'wrong')" type=radio name=7> a) <em>Predicate</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=7> b) <em>Consumer</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=7> c) <em>Supplier</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=7> d) <em>None of the above</em></font>
+<div class="details" id=wrong7><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong7e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong7a><b>Wrong!</b><br>The correct answer is c) Supplier<i> </div>
+<div class="detailsr" id=correct7><b>Correct! </b><br> Supplier</div>
+<tr>
+<td><br><a href="./javaquiz23.htm"><img src="previous.jpg"></a>
+&nbsp;<a href="./javaquiz25.htm"><img src="next.jpg"></a> </td>
+</table></td></tr></table>
+</body></html>

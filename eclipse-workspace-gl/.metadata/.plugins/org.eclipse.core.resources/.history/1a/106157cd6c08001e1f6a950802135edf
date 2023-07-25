@@ -1,0 +1,27 @@
+package practice;
+
+public class A {
+	  private String name;
+	    private int id;
+	    
+	    // Constructor, getters, setters, etc.
+
+	    @Override
+	    public int hashCode() {
+	        int prime = 31;
+	        int result = 10;
+	        result = prime * result + id;
+	        result = prime * result + ((name == null) ? 0 : name.hashCode());
+	        return result;
+	    }
+
+	public static void main(String[] args) {
+		A a= new A();
+		a.hashCode();
+		a.id= 10;
+		a.name= "Rakesh";
+//		System.out.println(a);
+		System.out.println(a.toString());
+		
+	}
+}

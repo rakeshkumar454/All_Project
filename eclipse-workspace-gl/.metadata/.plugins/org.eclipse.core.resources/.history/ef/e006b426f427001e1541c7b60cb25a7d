@@ -1,0 +1,15 @@
+
+public class Main {
+	public static void main(String[] args) {
+		Parent p = new Child();
+		p.test();
+//		Test test1 = new Test1();
+//		syso(test1.var);
+//		test1.parent();
+//		Test1 t2 = new Test1();
+//		syso(t2.var1);
+//		System.out.println(p.var1);error
+		Child c= new Child();
+		System.out.println(c.var1);
+	}
+}

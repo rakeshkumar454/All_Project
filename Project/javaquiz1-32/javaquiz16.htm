@@ -1,0 +1,174 @@
+<! created by Surendran Velath>
+<html><head>
+
+<meta name="AccessType" Content="Free">
+<title>Java certification Quiz</title>
+<style>
+ .tip{color:#b23c09;font-size:18px;font-weight:bold;font-family:arial}
+ a:hover{color:red;font-family:verdana;font-size:22px;}
+</style>
+<script type="text/javascript" src="jquiz.js">
+</script>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+<table class="outer">
+<tr>
+<td bgColor="#f3eff0">
+<table class="inner">
+<tr>
+<td>	
+<table cellSpacing=0 cellPadding=0 border=0>
+<tr>
+<td>
+<font class="title">Java Quiz - 16
+
+<p><a href="javaquiz15.htm">&#171;</a>&nbsp;<a href="javaquiz1.htm">1</a>&nbsp;<a href="javaquiz2.htm">2</a>&nbsp;<a href="javaquiz3.htm">3</a>&nbsp;<a href="javaquiz4.htm">4</a>&nbsp;<a href="javaquiz5.htm">5</a>&nbsp;<a href="javaquiz6.htm">6</a>&nbsp;<a href="javaquiz7.htm">7</a>&nbsp;<a href="javaquiz8.htm">8</a>&nbsp;<a href="javaquiz9.htm">9</a>&nbsp;<a href="javaquiz10.htm">10</a>&nbsp;<a href="javaquiz11.htm">11</a>&nbsp;<a href="javaquiz12.htm">12</a>&nbsp;<a href="javaquiz13.htm">13</a>&nbsp;<a href="javaquiz14.htm">14</a>&nbsp;<a href="javaquiz15.htm">15</a>&nbsp;16&nbsp;<a href="javaquiz17.htm">17</a>&nbsp;<a href="javaquiz18.htm">18</a>&nbsp;<a href="javaquiz19.htm">19</a>&nbsp;<a href="javaquiz20.htm">20</a>&nbsp;<a href="javaquiz21.htm">21</a>&nbsp;<a href="javaquiz22.htm">22</a>&nbsp;<a href="javaquiz23.htm">23</a>&nbsp;<a href="javaquiz24.htm">24</a>&nbsp;<a href="javaquiz25.htm">25</a>&nbsp;<a href="javaquiz26.htm">26</a>&nbsp;<a href="javaquiz27.htm">27</a>&nbsp;<a href="javaquiz28.htm">28</a>&nbsp;<a href="javaquiz29.htm">29</a>&nbsp;<a href="javaquiz30.htm">30</a>&nbsp;<a href="javaquiz31.htm">31</a>&nbsp;<a href="javaquiz32.htm">32</a>&nbsp;<a href="javaquiz17.htm">&#187;</a></p>
+</font>
+
+<b><font class="ques"><pre>
+1. For the below:
+public class Datatype extends DatatypeParent{
+ public static void go(Short n){
+ 	System.out.println("Short " + n);
+ }
+ public static void go(int n){
+	System.out.println("int " + n);
+ }
+ public static void main(String [] args){
+   short y = 6;
+   go(y);
+ }
+}
+public class DatatypeParent {
+ public static void go(short n){
+ 	System.out.println("P short " + n);
+ }
+}
+</pre></b>
+<font color=#000000><!-- options --><input onclick="ans(this.name,'correct')" type=radio name=1> a) <em>Gives output:  P short 6</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=1> b) <em>Gives output:  Short 6</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=1> c) <em>Compile error</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=1> d) <em>Gives output:  int 6</em><br></font>
+<div class="details" id=wrong1><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong1e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong1a><b>Wrong!</b><br>The correct answer is <i>a) Gives output:  P short 6<i><br></div>
+<div class="detailsr" id=correct1><b>Correct! </b><br> <i> Gives output:  P short 6 <i></div>
+
+<b><font class="ques"><pre>
+2. wait() is a method of :
+</pre>
+</b><font color=#000000><input onclick="ans(this.name,'wrong')" type=radio name=2> a) <em>Thread</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=2> b) <em>Class</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=2> c) <em>Object</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=2> d) <em>Runnable</em><br><br>
+</font><div class="details" id=wrong2><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong2e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong2a><b>Wrong! </b>The correct answer is <i>c) Object<br><i><br> </div>
+<div class="detailsr" id=correct2><b>Correct! </b> <i>  Object <br><i></div>
+
+<b><font class="ques"><pre>
+3. What is the output?
+public class MyWrapper {
+     public static void main( String args[] ) {
+         Integer no1 = 300, no2 = 300;
+         System.out.print((no1==no2) + ", ");
+         Integer no3 = 127, no4 = 127;
+         System.out.print(no3==no4);
+     }
+}
+</pre>
+</b><font color=#000000><input onclick="ans(this.name,'wrong')" type=radio name=3> a) <em>true, true </em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=3> b) <em>false, false</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=3> c) <em>false, true</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=3> d) <em>compile error</em><br>
+<br></font><div class="details" id=wrong3><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong3e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong3a><b>Wrong!</b> The correct answer is <i>c)false, true<i> <br>Value upto 127 is primitive int<br> </div>
+<div class="detailsr" id=correct3><b>Correct! </b><i><i><br> Value upto 127 is primitive int</div>
+
+<b><font class="ques"><pre>
+4. What is the output if run as : java A B 
+  public class A {
+     public static void main(String[] args) {
+        System.out.print("A "); 
+    }
+  }
+  public class B {
+     public static void main(String[] args) {
+        System.out.print("B "); 
+    }
+  }</pre>
+</b><font color=#000000><input onclick="ans(this.name,'wrong')" type=radio name=4> a) <em>A, B</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=4> b) <em>B, A</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=4> c) <em>Run time error</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=4> d) <em>A</em><br>
+<br></font><div class="details" id=wrong4><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong4e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong4a><b>Wrong! </b><br>The correct answer is <i>d) <i>A. B is args[0] for main() of A</div>
+<div class="detailsr" id=correct4><b>Correct! </b><i>A. <br>B is args[0] for main() of A<i></div>
+
+<b><font class="ques"><pre>
+5. In the class File, the method createNewFile()
+A. creates a new file if it does not exist
+B. overwrites existing file
+C. does not overwrite existing file
+D. throws IOException if file exists
+</pre>
+</b><font color=#000000><input onclick="ans(this.name,'wrong')" type=radio name=5> a) <em>C and D</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=5> b) <em>A and D</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=5> c) <em>A and B</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=5> d) <em>A and C</em>
+<br>
+<br></font><div class="details" id=wrong5><b>Wrong!</b> Try again.</b>.
+<br></div>
+<div class="details" id=wrong5e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong5a><b>Wrong! </b><br>The correct answer is <i>d) <i>A and C</div>
+<div class="detailsr" id=correct5><b>Correct! </b><br><i> A and C<i></div>
+
+<b><font class="ques"><pre>
+6.  What is the output?
+ public class Test { 
+    public float check(float a, float b){
+          return a + b + 1;
+    } 
+    public double check(double a, double b){
+          return a + b + 2;
+    }
+    public int check(int a, int b){
+          return a + b;
+    }
+    public static void main(String args[]) {
+       Test tst = new Test();
+       System.out.println( Math.round(tst.check(10,20)) +" " +
+                           Math.round(tst.check(10,20f))+" " +
+                           Math.round(tst.check(10,20.02)) );
+   }
+</pre></b>
+<font color=#000000>
+<input onclick="ans(this.name,'correct')" type=radio name=6> a) <em>30 31 32</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=6> b) <em>31 31 32</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=6> c) <em>30 30 32</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=6> d) <em>Compile Error</em><br><br></font>
+<div class="details" id=wrong6><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong6e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong6a><b>Wrong!</b><br>The correct answer is <i>a)30 31 32<i> </div>
+<div class="detailsr" id=correct6><b>Correct! </b><br> 30 31 32</div>
+
+<b><font class="ques"><pre>
+7. The correct way to create a custom annotation @CanRun is :
+</pre></b>
+<font color=#000000>
+<input onclick="ans(this.name,'wrong')" type=radio name=7> a) <em>public @class CanRun</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=7> b) <em>public interface @CanRun</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=7> c) <em>public @interface CanRun</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=7> d) <em>public @annotation CanRun</em></font>
+<div class="details" id=wrong7><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong7e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong7a><b>Wrong!</b><br>The correct answer is c) public @interface CanRun<i> </div>
+<div class="detailsr" id=correct7><b>Correct! </b><br> public @interface CanRun</div>
+<tr>
+<td><br><a href="./javaquiz15.htm"><img src="previous.jpg"></a>
+&nbsp;<a href="./javaquiz17.htm"><img src="next.jpg"></a> </td>
+</table></td></tr></table>
+</body></html>

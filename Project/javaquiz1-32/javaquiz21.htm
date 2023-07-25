@@ -1,0 +1,206 @@
+<! created by Surendran Velath>
+<html><head>
+
+<meta name="AccessType" Content="Free">
+<title>Java certification Quiz</title>
+<style>
+ .tip{color:#b23c09;font-size:18px;font-weight:bold;font-family:arial}
+ a:hover{color:red;font-family:verdana;font-size:22px;}
+</style>
+<script type="text/javascript" src="jquiz.js">
+</script>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+<table class="outer">
+<tr>
+<td bgColor="#f3eff0">
+<table class="inner">
+<tr>
+<td>	
+<table cellSpacing=0 cellPadding=0 border=0>
+<tr>
+<td>
+<font class="title">Java Quiz - 21
+
+<p><a href="javaquiz20.htm">&#171;</a> <a href="javaquiz1.htm">1</a>
+<a href="javaquiz2.htm">2</a> <a href="javaquiz3.htm">3</a>
+<a href="javaquiz4.htm">4</a> <a href="javaquiz5.htm">5</a>
+<a href="javaquiz6.htm">6</a> <a href="javaquiz7.htm">7</a>
+<a href="javaquiz8.htm">8</a> <a href="javaquiz9.htm">9</a>
+<a href="javaquiz10.htm">10</a> <a href="javaquiz11.htm">11</a>
+<a href="javaquiz12.htm">12</a> <a href="javaquiz13.htm">13</a>
+<a href="javaquiz14.htm">14</a> <a href="javaquiz15.htm">15</a>
+<a href="javaquiz16.htm">16</a> <a href="javaquiz17.htm">17</a>
+<a href="javaquiz18.htm">18</a> <a href="javaquiz19.htm">19</a>
+<a href="javaquiz20.htm">20</a> 21 <a href="javaquiz22.htm">22</a>
+<a href="javaquiz23.htm">23</a> <a href="javaquiz24.htm">24</a>&nbsp;<a href="javaquiz25.htm">25</a>&nbsp;<a href="javaquiz26.htm">26</a>&nbsp;<a href="javaquiz27.htm">27</a>&nbsp;<a href="javaquiz28.htm">28</a>&nbsp;<a href="javaquiz29.htm">29</a>&nbsp;<a href="javaquiz30.htm">30</a>&nbsp;<a href="javaquiz31.htm">31</a>&nbsp;<a href="javaquiz32.htm">32</a>&nbsp;<a href="javaquiz22.htm">&#187;</a></p>
+</font>
+
+<p title="toString()" class="tip">1. For following :</p>
+<b><font class="ques"><pre>
+public class Baby { 
+    String gender = "girl";
+    public String toString() {
+         return gender;
+    }
+}
+public class Test { 
+    public static void main(String args[]) { 
+      Baby b = new Baby();
+      String str = "It's a " + b;
+      System.out.print(str);
+    }
+}</pre></font>
+</b>
+<div class="ques"><input onclick="ans(this.name,'correct')" type=radio name=1> a) <em>Gives output: It's a girl</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=1> b) <em>Gives output similar to: It's a Baby@a234fd</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=1> c) <em>Gives output: It's a class Baby</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=1> d) <em>Does not compile</em></font>
+<br></div>
+<div class="details" id=wrong1><b>Wrong!</b> Try again.</b>.
+<br></div>
+<div class="details" id=wrong1e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong1a><b>Wrong! </b>&nbsp;The correct answer is <i>a) Gives output: It's a girl</i><br> toString() is called to convert object to String</div>
+<div class="detailsr" id=correct1><b>Correct! </b> <i> Gives output: It's a girl </i><br> toString() is called to convert object to String</div>
+
+<p title="singleton" class="tip">2. What is the output?</p>
+<b><font class="ques"><pre>
+public class MySingleton {
+     private static MySingleton ms;
+     public String name="Singleton";
+     private MySingleton (){
+     }
+     public static MySingleton getInstance () {
+        if (ms==null)
+         ms = new MySingleton();
+        return ms;
+     }
+}
+public class TestSingleton extends MySingleton{ 
+   public static void main(String args[]) { 
+     MySingleton  ms1 = MySingleton.getInstance ();
+     MySingleton  ms2 = MySingleton.getInstance ();
+     if(ms1==ms2)
+       System.out.println(ms2.name);
+     else
+       System.out.println("Not Singleton");
+   }
+}</pre></font>
+</b><div class="ques"><input onclick="ans(this.name,'wrong')" type=radio name=2> a) <em>Singleton</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=2> b) <em>Not Singleton</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=2> c) <em>Compile error</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=2> d) <em>NullPointerException thrown</em><br><br>
+</div></font><div class="details" id=wrong2><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong2e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong2a><b>Wrong! </b>The correct answer is <i>c) Compile error</i><br> 
+Child class calls super constructor which is private </div>
+<div class="detailsr" id=correct2><b>Correct! </b> <i> c) Compile error</i><br> Child class calls super constructor which is private</div>
+
+<p title="stream.forEach()" class="tip">3. What is the output?</p>
+<b><font class="ques"><pre>
+String str = "baba";
+str.chars().forEach(c->System.out.print(c+"-"));
+</pre></font>
+</b><div class="ques"><input onclick="ans(this.name,'correct')" type=radio name=3> a) <em>98-97-98-97-</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=3> b) <em>b-a-b-a-</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=3> c) <em>B-A-B-A-</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=3> d) <em>Exception thrown</em>
+<br></div><div class="details" id=wrong3><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong3e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong3a><b>Wrong!</b> </FONT>The correct answer is <i>a)  98-97-98-97-</i></div>
+<div class="detailsr" id=correct3><b>Correct! </b><i>98-97-98-97-</i></div>
+
+<p title="Random" class="tip">4. What is output?</p>
+<b><font class="ques"><pre>
+Random r = new Random();
+for (int i = 0; i < 3; i++) {
+   System.out.print(r.ints(1,5,11).findFirst().getAsInt()+ " ");
+}</pre></font>
+</b><div class="ques"><input onclick="ans(this.name,'wrong')" type=radio name=4> a) <em>Three numbers 6 to 11</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=4> b) <em>Three numbers 6 to 10</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=4> c) <em>Three numbers 5 to 11</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=4> d) <em>Three numbers 5 to 10</em>
+<br>
+<br></div></font><div class="details" id=wrong4><b>Wrong!</b> Try again.</b>.
+<br></div>
+<div class="details" id=wrong4e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong4a><b>Wrong! </b><br></FONT>The correct answer is <i>d)</i>Three numbers 5 to 10</i> </div>
+<div class="detailsr" id=correct4><b>Correct! </b><i>Three numbers 5 to 10</i> </div>
+
+<p title="ArrayList" class="tip">5. What happens when you compile the code? </p>
+<b><font class="ques"><pre>
+1. import java.util.*;
+2. public class Forever {
+3.  public static void main(String[] args) {
+4.    List x1 = new ArrayList();
+5.    List x3 = new ArrayList<>();
+6.  } 
+7. } 
+</pre></font>
+</b><div class="ques"><input onclick="ans(this.name,'correct')" type=radio name=5><em> a) Compilation succeeds</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=5> b) <em>Compilation fails due to multiple errors </em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=5> c) <em>Compilation fails due to an error on line 5 </em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=5> d) <em>Compilation fails due to an error on line 4 </em>
+<br>
+<br></div></font><div class="details" id=wrong5><b>Wrong!</b> Try again.</b></div>
+<div class="details" id=wrong5e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong5a><b>Wrong! </b>The correct answer is <i>a) Compilation succeeds</i><br></div>
+<div class="detailsr" id=correct5><b>Correct! </b><i>Compilation succeeds</i> <br></div>
+
+<p title="join()" class="tip">6. What is the output?</p>
+<b><font class="ques"><pre>
+public class Test extends Thread  { 
+    public void run()  { 
+       System.out.println("[run] ");
+       throw new RuntimeException(); 
+    } 
+    public static void main(String args[]) { 
+           Test t1 = new Test();
+           try {
+              t1.setName("t1");
+              t1.start(); 
+              t1.join();
+              System.out.println("[end] ");
+          }
+          catch(Exception e) {
+             System.out.println("[error1] ");
+          } 
+   }
+}</pre></font>
+</b>
+<div class="ques">
+<input onclick="ans(this.name,'correct')" type=radio name=6> a) <em>[run] Exception in thread "t1" java.lang.RuntimeException [end]</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=6> b) <em>[run] [error1]</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=6> c) <em>[run] Exception in thread "t1" java.lang.RuntimeException [error1]</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=6> d) <em>[run] Exception in thread "t1" java.lang.RuntimeException [error1] [end]</em>
+<br><br></div></font>
+<div class="details" id=wrong6><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong6e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong6a><b>Wrong! </b> The correct answer is <i>a) </i>[run] Exception in thread "t1" java.lang.RuntimeException [end] </i> <br>Exception does not reach main thread</div>
+<div class="detailsr" id=correct6><b>Correct! </b><i> [run] Exception in thread "t1" java.lang.RuntimeException [end]</i><br>Exception does not reach main thread</div>
+
+<p title="ArrayList" class="tip">7. What is output?</p>
+<b><font class="ques"><pre>
+ List<Integer> elements = new ArrayList<>();
+     elements.add(10);
+     int firstElmnt = elements.get(1);
+     System.out.println(firstElmnt);</pre></font>
+</b>
+<div class="ques">
+<input onclick="ans(this.name,'wrong')" type=radio name=7> a) <em>10</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=7> b) <em>null</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=7> c) <em>Compile error</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=7> d) <em>Excepton thrown</em>
+</div></font>
+<div class="details" id=wrong7><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong7e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong7a><b>Wrong!</b>&nbsp;<i>The correct answer is d) Excepton thrown</i>
+</div>
+<div class="detailsr" id=correct7><b>Correct! </b>&nbsp; <i> Excepton thrown</i>
+</div>
+<tr>
+<td><br><a href="./javaquiz20.htm"> <img src="previous.jpg"></a>
+&nbsp;<a href="./javaquiz22.htm"><img src="next.jpg"></a></td>
+</table></td></tr></table>
+</body></html>

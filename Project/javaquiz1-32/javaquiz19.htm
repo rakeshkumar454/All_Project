@@ -1,0 +1,184 @@
+<! created by Surendran Velath>
+<html><head>
+
+<meta name="AccessType" Content="Free">
+<title>Java certification Quiz</title>
+<style>
+ .tip{color:#b23c09;font-size:18px;font-weight:bold;font-family:arial}
+ a:hover{color:red;font-family:verdana;font-size:22px;}
+</style>
+<script type="text/javascript" src="jquiz.js">
+</script>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+<table class="outer">
+<tr>
+<td bgColor="#f3eff0">
+<table class="inner">
+<tr>
+<td>	
+<table cellSpacing=0 cellPadding=0 border=0>
+<tr>
+<td>
+<font class="title">Java Quiz - 19
+
+<P><a href="javaquiz18.htm">&#171;</a>&nbsp;<a href="javaquiz1.htm">1</a>&nbsp;<a href="javaquiz2.htm">2</a>&nbsp;<a href="javaquiz3.htm">3</a>&nbsp;<a href="javaquiz4.htm">4</a>&nbsp;<a href="javaquiz5.htm">5</a>&nbsp;<a href="javaquiz6.htm">6</a>&nbsp;<a href="javaquiz7.htm">7</a>&nbsp;<a href="javaquiz8.htm">8</a>&nbsp;<a href="javaquiz9.htm">9</a>&nbsp;<a href="javaquiz10.htm">10</a>&nbsp;<a href="javaquiz11.htm">11</a>&nbsp;<a href="javaquiz12.htm">12</a>&nbsp;<a href="javaquiz13.htm">13</a>&nbsp;<a href="javaquiz14.htm">14</a>&nbsp;<a href="javaquiz15.htm">15</a>&nbsp;<a href="javaquiz16.htm">16</a>&nbsp;<a href="javaquiz17.htm">17</a>&nbsp;<a href="javaquiz18.htm">18</a>&nbsp;19&nbsp;<a href="javaquiz20.htm">20</a>&nbsp;<a href="javaquiz21.htm">21</a>&nbsp;<a href="javaquiz22.htm">22</a>
+<a href="javaquiz23.htm">23</a>&nbsp;<a href="javaquiz24.htm">24</a>&nbsp;<a href="javaquiz25.htm">25</a>&nbsp;<a href="javaquiz26.htm">26</a>&nbsp;<a href="javaquiz27.htm">27</a>&nbsp;<a href="javaquiz28.htm">28</a>&nbsp;<a href="javaquiz29.htm">29</a>&nbsp;<a href="javaquiz30.htm">30</a>&nbsp;<a href="javaquiz31.htm">31</a>&nbsp;<a href="javaquiz32.htm">32</a></a>&nbsp;<a href="javaquiz20.htm">&#187;</a></P>
+
+</font>
+
+<b><pre>
+1. For the following:
+   public class Test {
+      public static void main(String args[]) {
+          Scanner scan = new Scanner("1234"); 
+          System.out.println(scan.nextInt());
+      }  
+   } </pre></b>
+<div class="ques"><input onclick="ans(this.name,'correct')" type=radio name=1> a) <em>Gives output: 1234</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=1> b) <em>Compile error</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=1> c) <em>Exception at runtime</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=1> d) <em>None of the above</em><br></div>
+<div class="details" id=wrong1><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong1e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong1a><b>Wrong! </b>&nbsp;The correct answer is <i>a) Gives output: 1234</i> </div>
+<div class="detailsr" id=correct1><b>Correct! </b> <i> Gives output: 1234 </i></div>
+
+<b><pre>
+2. What is the output?
+public class Test { 
+  public static void main(String args[]) { 
+     System.out.println(A.B.C.i);
+  }
+  public static class A {
+     public static class B {
+       public static class C {
+          public static int i=8;
+          static {
+            i =8; 
+          }
+       }
+    }
+  }
+}
+</pre>
+</b><div class="ques"><input onclick="ans(this.name,'wrong')" type=radio name=2> a) <em>Compile error : illegal static declaration in inner class</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=2> b) <em>Compile error : Cannot have nested inner classes</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=2> c) <em>Gives output: 8</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=2> d) <em>Compile error : Cannot access i from main</em><br><br>
+</div><div class="details" id=wrong2><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong2e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong2a><b>Wrong! </b>The correct answer is <i>c) Gives output: 8<br> All are static and so can be accessed without instance being created</i> </div>
+<div class="detailsr" id=correct2><b>Correct! </b> <i> c) Gives output: 8<br> All are static and so can be accessed without instance being created</i></div>
+
+<b><pre>
+3. What is output?
+import java.util.Date;
+public class Test { 
+    public static void main(String args[]) { 
+        Date d1 = new Date();
+        Date d2 = (Date) d1.clone();
+        System.out.println(d1=d2);
+    }
+}
+</pre>
+</b><div class="ques"><input onclick="ans(this.name,'wrong')" type=radio name=3> a) <em>Compile error: Cannot clone Date</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=3> b) <em>Gives output: false</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=3> c) <em>Gives output: true</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=3> d) <em>Prints current date-time</em>
+<br></div><div class="details" id=wrong3><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong3e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong3a><b>Wrong!</b> </font>The correct answer is <i>d)  Prints current date-time<br> d1=d2 is assignment</i></div>
+<div class="detailsr" id=correct3><b>Correct! </b><i>Prints current date-time<br> d1=d2 is assignment</i></div>
+
+<b><pre>
+4. public class Test { 
+     public static void main(String args[]) { 
+        String a = "abc";
+        System.out.println(a.hashCode());
+        String b = "def";
+        System.out.println(b.hashCode());
+        a = a+b;
+        System.out.println(a.hashCode());
+     }
+  }</pre>
+</b><div class="ques"><input onclick="ans(this.name,'wrong')" type=radio name=4> a) <em>Prints three numbers all of which are same</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=4> b) <em>First and third numbers are same</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=4> c) <em>Compile error</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=4> d) <em>Prints three different numbers</em><br>
+<br></div><div class="details" id=wrong4><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong4e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong4a><b>Wrong! </b><br>The correct answer is <i>d) Prints three different numbers<br>For String object always a new instance is created</i> </div>
+<div class="detailsr" id=correct4><b>Correct! </b><i> Prints three different numbers</i><br>For String object always a new instance is created </div>
+
+<b><pre>
+5. To prevent a field from being saved when an object is serialized,
+    The field should be marked as :
+</pre>
+</b><div class="ques"><input onclick="ans(this.name,'wrong')" type=radio name=5> a) <em>strictfp</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=5> b) <em>deserialize</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=5> c) <em>volatile</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=5> d) <em>transient</em>
+<br>
+<br></div><div class="details" id=wrong5><b>Wrong!</b> Try again.</b></div>
+<div class="details" id=wrong5e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong5a><b>Wrong! </b><br>The correct answer is <i>d) </i>transient</div>
+<div class="detailsr" id=correct5><b>Correct! </b><i> transient</i></div>
+
+<b><pre>
+6.  For the following :
+public class Test { 
+    public static void main(String args[]) { 
+       String [][] names = {
+              {"Mr.", "Mrs.", "Ms."},
+              {"John", "Gupta", "Hegde", "Khan"},
+              {" : M", " : F"}
+       };
+       String[][] arrNew = new String[2][2];
+       System.arraycopy(names, 1, arrNew, 0, 2);
+       System.out.println(arrNew[0][1] + arrNew[1][0]);
+    }
+}
+</pre></b>
+<div class="ques">
+<input onclick="ans(this.name,'correct')" type=radio name=6> a) <em>Gives output : Gupta : M</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=6> b) <em>Gives output : Mrs.John</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=6> c) <em>Compile Error</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=6> d) <em>Throws ArrayIndexOutOfBoundsException</em><br><br></div>
+<div class="details" id=wrong6><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong6e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong6a><b>Wrong! </b> The correct answer is <i>a) Gives output : Gupta : M</i> <br></div>
+<div class="detailsr" id=correct6><b>Correct! </b> Gives output : Gupta : M<br></div>
+
+<b><pre>
+7. public class Test extends Parent{
+     public void calculate() {
+         System.out.println("in Test");
+     }
+     public static void main(String[] args) {
+           Parent p = new Test();        
+           p.calculate();
+     }
+  }
+  public class Parent {
+      private void calculate() {
+         System.out.println("in Parent");
+      }
+  }
+</pre></b>
+<div class="ques">
+<input onclick="ans(this.name,'correct')" type=radio name=7> a) <em>class Test will not compile</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=7> b) <em>Gives Output: in Test</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=7> c) <em>Gives Output: in Parent</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=7> d) <em>class Parent will not compile</em></div>
+<div class="details" id=wrong7><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong7e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong7a><b>Wrong!</b>&nbsp;<i>The correct answer is a) class Test will not compile</i> <br> calculate() is not visible in Parent<br>
+</div>
+<div class="detailsr" id=correct7><b>Correct! </b>&nbsp; <i> class Test will not compile</i><br> calculate() is not visible in Parent<br></div>
+<tr>
+<td><br><a href="./javaquiz18.htm"><img src="previous.jpg"></a> 
+&nbsp;<a href="./javaquiz20.htm"><img src="next.jpg"></a> </td>
+</table></td></tr></table>
+</body></html>

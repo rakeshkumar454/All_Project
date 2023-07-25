@@ -1,0 +1,183 @@
+<! created by Surendran Velath>
+<html><head>
+
+<meta name="AccessType" Content="Free">
+<title>Java certification Quiz</title>
+<style>
+ .tip{color:#b23c09;font-size:18px;font-weight:bold;font-family:arial}
+ a:hover{color:red;font-family:verdana;font-size:22px;}
+</style>
+<script type="text/javascript" src="jquiz.js">
+</script>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+<table class="outer">
+<tr>
+<td bgColor="#f3eff0">
+<table class="inner">
+<tr>
+<td>	
+<table cellSpacing=0 cellPadding=0 border=0>
+<tr>
+<td>
+<font class="title">Java Quiz - 4
+
+<p><a href="javaquiz3.htm">&#171;</a>&nbsp;<a href="javaquiz1.htm">1</a>&nbsp;<a href="javaquiz2.htm">2</a>&nbsp;<a href="javaquiz3.htm">3</a>&nbsp;4&nbsp;<a href="javaquiz5.htm">5</a>&nbsp;<a href="javaquiz6.htm">6</a>&nbsp;<a href="javaquiz7.htm">7</a>&nbsp;<a href="javaquiz8.htm">8</a>&nbsp;<a href="javaquiz9.htm">9</a>&nbsp;<a href="javaquiz10.htm">10</a>&nbsp;<a href="javaquiz11.htm">11</a>&nbsp;<a href="javaquiz12.htm">12</a>&nbsp;<a href="javaquiz13.htm">13</a>&nbsp;<a href="javaquiz14.htm">14</a>&nbsp;<a href="javaquiz15.htm">15</a>&nbsp;<a href="javaquiz16.htm">16</a>&nbsp;<a href="javaquiz17.htm">17</a>&nbsp;<a href="javaquiz18.htm">18</a>&nbsp;<a href="javaquiz19.htm">19</a>&nbsp;<a href="javaquiz20.htm">20</a>&nbsp;<a href="javaquiz21.htm">21</a>&nbsp;<a href="javaquiz22.htm">22</a>&nbsp;<a href="javaquiz23.htm">23</a>&nbsp;<a href="javaquiz24.htm">24</a>&nbsp;<a href="javaquiz25.htm">25</a>&nbsp;<a href="javaquiz26.htm">26</a>&nbsp;<a href="javaquiz27.htm">27</a>&nbsp;<a href="javaquiz28.htm">28</a>&nbsp;<a href="javaquiz29.htm">29</a>&nbsp;<a href="javaquiz30.htm">30</a>&nbsp;<a href="javaquiz31.htm">31</a>&nbsp;<a href="javaquiz32.htm">32</a>&nbsp;<a href="javaquiz5.htm">&#187;</a></p>
+</font>
+
+<p title="instance variable" class="tip">1. For the code :</p>
+<b><pre>
+public class Test {
+  int age=25;
+  Test() {
+  }
+  public static void main(String[] args) {
+     System.out.println("Age = "+ ++age );
+  }
+}</pre>
+</b>
+<div class="ques"><input onclick="ans(this.name,'wrong')" type="radio" name=1> a) Gives output : Age = 26
+<br><input onclick="ans(this.name,'correct')" type="radio" name=1> b) Will not compile.
+<br><input onclick="ans(this.name,'wrong')" type="radio" name=1> c) Gives output : Age = 25
+<br><input onclick="ans(this.name,'wrong')" type="radio" name=1> d) None of above
+<br></div>
+<div class="details" id=wrong1><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong1e><b>Wrong Again!</b> Try one more chance.</b><br></div>
+<div class="details" id=wrong1a><b>Wrong!</b><br>The correct answer is <i>b) Will not compile.</i>
+<br>Cannot access instance variable age from static method main.</div>
+<div class="detailsr" id=correct1><b>Correct!</b><br>
+Cannot access instance variable age from static method main.</div>
+
+<p title="local variable" class="tip">2. For the following code : </p>
+<b><pre>
+public class Test { 
+  static public void main(String args[]) {
+    int x = 10, y;
+    if(x  <  10)   y = 1;
+    if(x >= 10)   y = 2;
+   System.out.println("y is " + (y--));
+  }
+}</pre>
+</b><div class="ques"><input onclick="ans(this.name,'correct')" type="radio" name=2> a) Will not compile 
+<br><input onclick="ans(this.name,'wrong')" type="radio" name=2> b) Gives output : y is 1
+<br><input onclick="ans(this.name,'wrong')" type="radio" name=2> c) Gives output : y is 2
+<br><input onclick="ans(this.name,'wrong')" type="radio" name=2> d) Gives output : y is 0
+<br><br></font>
+<div class="details" id=wrong2><b>Wrong!</b> Try again.</b></div>
+<div class="details" id=wrong2e><b>Wrong Again!</b> Try one more chance.</b></div>
+<br></div><div class="details" id=wrong2a><b>Wrong!</b><br>The correct answer is <i>a) Will not compile : local variable y has to be initialised before using it. </i></div>
+<div class="detailsr" id=correct2><b>Correct! </b><br>Will not compile : local variable y has to be initialised before using it.</div>
+
+<p title="Thread class" class="tip">3. Which two are valid constructors for Thread?</p>
+<b><pre>
+&nbsp;1. Thread(Runnable r, String name) 
+&nbsp;2. Thread() 
+&nbsp;3. Thread(int priority) 
+&nbsp;4. Thread(Runnable r, ThreadGroup g) 
+&nbsp;5. Thread(Runnable r, int priority)
+</pre>
+</b><div class="ques"><input onclick="ans(this.name,'wrong')" type="radio" name=3> a) 3 and 5
+<br><input onclick="ans(this.name,'wrong')" type="radio" name=3> b) 2 and 3  
+<br><input onclick="ans(this.name,'wrong')" type="radio" name=3> c) 2 and 4  
+<br><input onclick="ans(this.name,'correct')" type="radio" name=3> d) 1 and 2
+<br><br></font>
+<div class="details" id=wrong3><b>Wrong!</b> Try again.</b></div>
+<div class="details" id=wrong3e><b>Wrong Again!</b> Try one more chance.</b></div>
+</div><div class="details" id=wrong3a><b>Wrong!</b><br>The correct answer is <i>d) 1 and 2 are valid constructors. </i>
+<br> </div>
+<div class="detailsr" id=correct3><b>Correct! </b><br> 1 and 2 are valid constructors</div>
+
+<p title="interface implementation" class="tip">4. The following code :</p>
+<b><pre>
+  public class Test implements IntA{ 
+     public void print(){
+          System.out.println("Print done");
+     }
+     public static void main(String args[]) {
+         IntA tst = new Test();
+         tst.print();
+     }
+  }
+  public interface IntA {
+     void print();
+  }
+</pre>
+</b><div class="ques"><input onclick="ans(this.name,'wrong')" type="radio" name=4> a) print() in Test cannot be public.
+<br><input onclick="ans(this.name,'correct')" type="radio" name=4> b) Gives output : Print done. 
+<br><input onclick="ans(this.name,'wrong')" type="radio" name=4> c) Cannot access print() in static method.
+<br><input onclick="ans(this.name,'wrong')" type="radio" name=4> d) IntA cannot refer to object of Test.
+<br><br></font>
+<div class="details" id=wrong4><b>Wrong!</b> Try again.</b></div>
+<div class="details" id=wrong4e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong4a><b>Wrong!</b><br>The correct answer is <i>b) Gives output : Print done. </i><br> </div>
+<div class="detailsr" id=correct4><b>Correct! </b>Gives output : Print done.<br></div>
+
+<p title="Exception handling" class="tip">5. For following:</p>
+<b><pre>
+public class Test extends A{ 
+  void n() throws Exception {
+  }
+  public static void main(String args[]) {
+     Test tst = new Test();
+     System.out.println("Error thrown");
+  }
+}
+public class A {
+   void n() throws Exception {
+       throw new NullPointerException("error message");
+   } 
+}
+</pre>
+</b><div class="ques"><input onclick="ans(this.name,'wrong')" type="radio" name=5> a) Will not compile.
+<br><input onclick="ans(this.name,'wrong')" type="radio" name=5> b) Gives output : error message 
+<br><input onclick="ans(this.name,'correct')" type="radio" name=5> c) Gives output : Error thrown
+<br><input onclick="ans(this.name,'wrong')" type="radio" name=5> d) None of above 
+<br><br></font>
+<div class="details" id=wrong5><b>Wrong!</b> Try again.</b></div>
+<div class="details" id=wrong5e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong5a><b>Wrong!</b><br>The correct answer is <i>c) Gives output : Error thrown </i>.<br> </div>
+<div class="detailsr" id=correct5><b>Correct!</b><br><i>Gives output : Error thrown</i>.</div>
+
+<p title="if else" class="tip">6. What is output?</p>
+<b><pre>int b = 3;
+if ( !(b > 3)) {
+    System.out.print("square");
+}{
+    System.out.print("circle");
+}
+System.out.println("...");</pre>
+</b>
+<div class="ques"><input onclick="ans(this.name,'wrong')" type="radio" name=6> a) Compile error
+<br><input onclick="ans(this.name,'wrong')" type="radio" name=6> b) square...
+<br><input onclick="ans(this.name,'wrong')" type="radio" name=6> c) circle...
+<br><input onclick="ans(this.name,'correct')" type="radio" name=6> d) squarecircle...
+<br><br></font>
+<div class="details" id=wrong6><b>Wrong!</b> Try again.</b></div>
+<div class="details" id=wrong6e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong6a><b>Wrong!</b><br>The correct answer is <i>d) squarecircle...</i>There is no else statement<br> </div>
+<div class="detailsr" id=correct6><b>Correct!</b><br> squarecircle... There is no else statement</div>
+
+<p title="default constructor" class="tip">7. Which of following are true of a default constructor?</p>
+<b><pre>
+&nbsp;A. The default constructor initializes method variables.
+&nbsp;B. The compiler always creates a default <br>constructor for every class.
+&nbsp;C. The default constructor may invoke the parameterized <br>constructor of the superclass.
+&nbsp;D. The default constructor initializes the instance<br> variables declared in the class.
+&nbsp;E. When a class has only constructors with parameters,<br> the compiler does not create a default constructor.
+</pre>
+</b>
+<div class="ques"><input onclick="ans(this.name,'correct')" type="radio" name=7> a) D and E
+<br><input onclick="ans(this.name,'wrong')" type="radio" name=7> b) B and D
+<br><input onclick="ans(this.name,'wrong')" type="radio" name=7> c) B and E
+<br><input onclick="ans(this.name,'wrong')" type="radio" name=7> d) C and D
+<br><br></font>
+<div class="details" id=wrong7><b>Wrong!</b> Try again.</b></div>
+<div class="details" id=wrong7e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong7a><b>Wrong!</b><br>The correct answer is <i>a) D and E</i><br></div>
+<div class="detailsr" id=correct7><b>Correct!</b> D and E<br></div>
+<tr>
+<td><br><a href="./javaquiz3.htm"> <img src="previous.jpg"></a>
+&nbsp;<a href="./javaquiz5.htm"><img src="next.jpg"></a></td>
+</table></td></tr></table>
+</body></html>

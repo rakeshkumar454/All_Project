@@ -1,0 +1,17 @@
+package com.globallogic.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import com.globallogic.service.InvoiceService;
+import com.globallogic.service.InvoiceServiceImpl;
+
+@Configuration
+public class InvoiceConfig {
+
+//	@Bean
+//	public InvoiceService invoiceService() {
+//		return new InvoiceServiceImpl();
+//	}
+
+}

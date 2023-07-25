@@ -1,0 +1,210 @@
+<! created by Surendran Velath>
+<html><head>
+
+<meta name="AccessType" Content="Free">
+<title>Java certification Quiz</title>
+<style>
+ .tip{color:#b23c09;font-size:18px;font-weight:bold;font-family:arial}
+ a:hover{color:red;font-family:verdana;font-size:22px;}
+</style>
+<script type="text/javascript" src="jquiz.js">
+</script>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+<table class="outer">
+<tr>
+<td bgColor="#f3eff0">
+<table class="inner">
+<tr>
+<td>	
+<table cellSpacing=0 cellPadding=0 border=0>
+<tr>
+<td>
+<font class="title">Java Quiz - 17
+
+<P><a href="javaquiz16.htm">&#171;</a>&nbsp;<a href="javaquiz1.htm">1</a>&nbsp;<a href="javaquiz2.htm">2</a>&nbsp;<a href="javaquiz3.htm">3</a>&nbsp;<a href="javaquiz4.htm">4</a>&nbsp;<a href="javaquiz5.htm">5</a>&nbsp;<a href="javaquiz6.htm">6</a>&nbsp;<a href="javaquiz7.htm">7</a>&nbsp;<a href="javaquiz8.htm">8</a>&nbsp;<a href="javaquiz9.htm">9</a>&nbsp;<a href="javaquiz10.htm">10</a>&nbsp;<a href="javaquiz11.htm">11</a>&nbsp;<a href="javaquiz12.htm">12</a>&nbsp;<a href="javaquiz13.htm">13</a>&nbsp;<a href="javaquiz14.htm">14</a>&nbsp;<a href="javaquiz15.htm">15</a>&nbsp;<a href="javaquiz16.htm">16</a>&nbsp;17&nbsp;<a href="javaquiz18.htm">18</a>&nbsp;<a href="javaquiz19.htm">19</a>&nbsp;<a href="javaquiz20.htm">20</a>&nbsp;<a href="javaquiz21.htm">21</a>&nbsp;<a href="javaquiz22.htm">22</a>&nbsp;<a href="javaquiz23.htm">23</a>&nbsp;<a href="javaquiz24.htm">24</a>&nbsp;<a href="javaquiz25.htm">25</a>&nbsp;<a href="javaquiz26.htm">26</a>&nbsp;<a href="javaquiz27.htm">27</a>&nbsp;<a href="javaquiz28.htm">28</a>&nbsp;<a href="javaquiz29.htm">29</a>&nbsp;<a href="javaquiz30.htm">30</a>&nbsp;<a href="javaquiz31.htm">31</a>&nbsp;<a href="javaquiz32.htm">32</a>&nbsp;<a href="javaquiz18.htm">&#187;</a></P>
+</font>
+
+<b><font class="ques"><pre>
+1. For the following:
+public class Test {
+    public static void main(String args[]) {
+        new Test().m1(); 
+    }  
+   private void m1() {
+       new TestInner().m2();
+   }
+   private class TestInner {
+       private void m2() {
+             System.out.print("m2()");
+       }
+    }
+}
+</pre></b>
+<font color=#000000><input onclick="ans(this.name,'correct')" type=radio name=1> a) <em>Gives output:  m2()</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=1> b) <em>Compile error. m2() has private access</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=1> c) <em>Compile error. TestInner is private</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=1> d) <em>Compile error. Cannot access private m1() from main()</em><br></font>
+<div class="details" id=wrong1><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong1e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong1a><b>Wrong! </b>&nbsp;The correct answer is <i>a) Gives output:  m2()</i>
+<br>Outer class can access inner class members.</div>
+<div class="detailsr" id=correct1><b>Correct! </b> <i> Gives output:  m2() </i><br>Outer class can access inner class members.</div>
+
+<b><font class="ques"><pre>
+2. 
+public class Test {
+    public static void main(String args[]) {
+      try {
+        new Test().m1(); 
+      }
+      catch(Exception e) {
+          System.out.println(e.getMessage());
+      }
+    }  
+    public void m1() throws Exception {
+      try {
+         m2();
+      }
+      catch(Exception e) {
+         e.setMessage("new error msg");
+         throw e;
+      }
+    }
+    public void m2() throws Exception {
+        throw new Exception("m2 error msg");  
+    }
+}
+</pre>
+</b><font color=#000000><input onclick="ans(this.name,'wrong')" type=radio name=2> a) <em>Gives outpout: new error msg</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=2> b) <em>Gives outpout: m2 error msg</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=2> c) <em>Compile error.</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=2> d) <em>None of above</em><br><br>
+</font><div class="details" id=wrong2><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong2e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong2a><b>Wrong! </b>The correct answer is <i>c) Compile error<br> No setMessage() in Exception. Exception object cannot be modified.</i></div>
+<div class="detailsr" id=correct2><b>Correct! </b> <i> c) Compile error.<br> No setMessage() in Exception. Exception object cannot be modified. </i></div>
+
+<b><font class="ques"><pre>
+3. An Object can be created by :
+ A. With keyword 'new'
+ B. Using Factory method
+ C. Calling clone() method of an object
+ D. Passing object to copy constructor
+ E. Using java reflection
+ F. Using Object de-serialization
+</pre>
+</b><font color=#000000><input onclick="ans(this.name,'wrong')" type=radio name=3> a) <em>A, B, C</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=3> b) <em>A, C, D</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=3> c) <em>A, B, C, F</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=3> d) <em>All of them</em><br>
+<br></font><div class="details" id=wrong3><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong3e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong3a><b>Wrong!</b> The correct answer is <i>d) All of them<br> </i></div>
+<div class="detailsr" id=correct3><b>Correct! </b><i><br> All of them can be used</i></div>
+
+<b><font class="ques"><pre>
+4. What is the output?
+import java.sql.SQLException; 
+public class Test {
+    public static void main(String args[]) {
+      try {
+         new Test().save(); 
+      }
+      catch(Exception e) {
+          System.out.println(e.getMessage());
+      }
+    }  
+    public void save() throws Exception, SQLException {
+       throw new SQLException("db error");
+    }
+}</pre>
+</b><font color=#000000><input onclick="ans(this.name,'wrong')" type=radio name=4> a) <em>Compile error: declaration should be throws SQLException, Exception</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=4> b) <em>Compile error. Cannot throw a checked exception</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=4> c) <em>Runtime error</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=4> d) <em>Gives output : db error</em><br>
+<br></font><div class="details" id=wrong4><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong4e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong4a><b>Wrong! </b><br>The correct answer is <i>d) Gives output : db error</i></div>
+<div class="detailsr" id=correct4><b>Correct! </b><i> Gives output : db error</i></div>
+
+<b><font class="ques"><pre>
+5. Which is true about an anonymous inner class? 
+</pre>
+</b><font color=#000000><input onclick="ans(this.name,'wrong')" type=radio name=5> a) <em>It can extend exactly one class and implement exactly one interface</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=5> b) <em>It can extend exactly one class and can implement multiple interfaces</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=5> c) <em>It can implement multiple interfaces regardless of whether it also extends a class</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=5> d) <em>It can extend exactly one class or implement exactly one interface</em>
+<br>
+<br></font><div class="details" id=wrong5><b>Wrong!</b> Try again.</b>.
+<br></div>
+<div class="details" id=wrong5e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong5a><b>Wrong! </b><br>The correct answer is <i>d) </i>It can extend exactly one class or implement exactly one interface
+<b><font class="ques"><pre>
+Example :  Runnable r = new Runnable() {
+                                public void run() {
+                                     // logic here
+                                }
+                          };
+</font></pre></b></div>
+<div class="detailsr" id=correct5><b>Correct! </b><br><i> It can extend exactly one class or implement exactly one interface</i>
+<b><font class="ques"><pre>
+Example :  Runnable r = new Runnable() {
+                                public void run() {
+                                     // logic here
+                                }
+                          };
+</font></b></pre></div>
+
+<b><font class="ques"><pre>
+6.  java.io.Externalizable interface is implemented by a class in order to decide what fields are to be serialized.
+Which are the methods to be overridden?
+A. public void writeExternal(ObjectOutput out) throws IOException
+B. public void readExternal(ObjectInput in) throws IOException
+C. public void readExternal(ObjectInput in) throws IOException, ClassNotFoundException
+D. public void writeExternal(DataOutput out) throws IOException
+E. public void readExternal(DataInput in) throws IOException, ClassNotFoundException
+F. public void readExternal(DataInput in) throws IOException
+</pre></b>
+<font color=#000000>
+<input onclick="ans(this.name,'wrong')" type=radio name=6> a) <em>A, B</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=6> b) <em>D, E</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=6> c) <em>A, C</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=6> d) <em>D, F</em>
+<br><br></font>
+<div class="details" id=wrong6><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong6e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong6a><b>Wrong! </b> The correct answer is <i>c) A, C</i> <br> These methods are called when the Object is to be serialized/de-serialzied. We can use the write methods for primitive values <br>or the writeObject method for objects, strings and arrays of the ObjectOutput interface. Similarly, we can use the <br>read methods for primitive values or the readObject method for objects, strings and arrays of the ObjectInput interface. <br>The readExternal method must read the values in the same sequence and with the same types as were written by writeExternal.
+</div>
+<div class="detailsr" id=correct6><b>Correct! </b> A, C <br>These methods are called when the Object is to be serialized/de-serialzied. We can use the write methods for primitive values <br>or the writeObject method for objects, strings and arrays of the ObjectOutput interface. Similarly, we can use the <br>read methods for primitive values or the readObject method for objects, strings and arrays of the ObjectInput interface. <br>The readExternal method must read the values in the same sequence and with the same types as were written by writeExternal.</div>
+
+<b><font class="ques"><pre>
+7. For the following :
+public class Test {
+    public static void main(String... args) {
+       System.out.print("Test");
+       Test.InnerTest it = new Test.InnerTest();
+       it.main("hi");
+    }
+    private static class InnerTest {
+       public static void main(String... args) { 
+           System.out.println("InnerTest");
+       }
+    }
+}
+</pre></b>
+<font color=#000000>
+<input onclick="ans(this.name,'wrong')" type=radio name=7> a) <em>Gives output: Test </em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=7> b) <em>Compile Error</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=7> c) <em>Gives output: Test InnerTest</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=7> d) <em>Runtime error</em></font>
+<div class="details" id=wrong7><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong7e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong7a><b>Wrong!</b>&nbsp;The correct answer is c) Gives output: Test InnerTest</i> </div>
+<div class="detailsr" id=correct7><b>Correct! </b><br> Gives output: Test InnerTest</div>
+<tr>
+<td><br><a href="./javaquiz16.htm"><img src="previous.jpg"></a>
+&nbsp;<a href="./javaquiz18.htm"><img src="next.jpg"></a></td>
+</table></td></tr></table>
+</body></html>

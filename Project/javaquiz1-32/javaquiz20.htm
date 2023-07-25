@@ -1,0 +1,201 @@
+<! created by Surendran Velath>
+<html><head>
+
+<meta name="AccessType" Content="Free">
+<title>Java certification Quiz</title>
+<style>
+ .tip{color:#b23c09;font-size:18px;font-weight:bold;font-family:arial}
+ a:hover{color:red;font-family:verdana;font-size:22px;}
+</style>
+<script type="text/javascript" src="jquiz.js">
+</script>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+<table class="outer">
+<tr>
+<td bgColor="#f3eff0">
+<table class="inner">
+<tr>
+<td>	
+<table cellSpacing=0 cellPadding=0 border=0>
+<tr>
+<td>
+<font class="title">Java Quiz - 20
+
+<p><a href="javaquiz19.htm">&#171;</a>&nbsp;<a href="javaquiz1.htm">1</a>&nbsp;<a href="javaquiz2.htm">2</a>&nbsp;<a href="javaquiz3.htm">3</a>&nbsp;<a href="javaquiz4.htm">4</a>&nbsp;<a href="javaquiz5.htm">5</a>&nbsp;<a href="javaquiz6.htm">6</a>&nbsp;<a href="javaquiz7.htm">7</a>&nbsp;<a href="javaquiz8.htm">8</a>&nbsp;<a href="javaquiz9.htm">9</a>&nbsp;<a href="javaquiz10.htm">10</a>&nbsp;<a href="javaquiz11.htm">11</a>&nbsp;<a href="javaquiz12.htm">12</a>&nbsp;<a href="javaquiz13.htm">13</a>&nbsp;<a href="javaquiz14.htm">14</a>&nbsp;<a href="javaquiz15.htm">15</a>&nbsp;<a href="javaquiz16.htm">16</a>&nbsp;<a href="javaquiz17.htm">17</a>&nbsp;<a href="javaquiz18.htm">18</a>&nbsp;<a href="javaquiz19.htm">19</a>&nbsp;20&nbsp;<a href="javaquiz21.htm">21</a>&nbsp;<a href="javaquiz22.htm">22</a>&nbsp;<a href="javaquiz23.htm">23</a>&nbsp;<a href="javaquiz24.htm">24</a>&nbsp;<a href="javaquiz25.htm">25</a>&nbsp;<a href="javaquiz26.htm">26</a>&nbsp;<a href="javaquiz27.htm">27</a>&nbsp;<a href="javaquiz28.htm">28</a>&nbsp;<a href="javaquiz29.htm">29</a>&nbsp;<a href="javaquiz30.htm">30</a>&nbsp;<a href="javaquiz31.htm">31</a>&nbsp;<a href="javaquiz32.htm">32</a>&nbsp;<a href="javaquiz21.htm">&#187;</a></p>
+</font>
+
+<b><font class="ques"><pre>
+1. For following :
+public class TestParent { 
+    static {
+      System.out.print(" parent");
+    }
+}
+public class Test extends TestParent{ 
+    static {
+      System.out.print(" child");
+    }
+    public static void main(String args[]) { 
+      System.out.print(" main");
+    }
+}</pre>
+</b>
+<font color=#000000><input onclick="ans(this.name,'correct')" type=radio name=1> a) <em>Gives output: parent child main</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=1> b) <em>Gives output: child parent main</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=1> c) <em>Gives output: main parent child</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=1> d) <em>Gives output: main</em><br></font>
+<div class="details" id=wrong1><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong1e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong1a><b>Wrong! </b>&nbsp;The correct answer is <i>a) Gives output: parent child main </i><br> static block of Parent is called first </div>
+<div class="detailsr" id=correct1><b>Correct! </b> <i> Gives output: parent child main </i><br> static block of Parent is called first</div>
+
+<b><font class="ques"><pre>
+2. What is the output?
+public class TestParent { 
+   static void m1() {
+       System.out.print(" parent");
+   }
+}
+public class Test extends TestParent{ 
+   static void m1() {
+       System.out.print(" child");
+   }
+   public static void main(String args[]) { 
+      TestParent t = new Test();
+      t.m1();
+      System.out.print( " main");
+   }
+}</pre>
+</b><font color=#000000><input onclick="ans(this.name,'wrong')" type=radio name=2> a) <em>Gives output: child main</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=2> b) <em>Compile error : cannot override static method</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=2> c) <em>Gives output: parent main</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=2> d) <em>Gives output: parent child main</em><br><br>
+</font><div class="details" id=wrong2><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong2e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong2a><b>Wrong! </b>The correct answer is <i>c) Gives output: parent main</i><br> static method of reference class is called
+ </div>
+<div class="detailsr" id=correct2><b>Correct! </b> <i> c) Gives output: parent main</i><br> static method of reference class is called</div>
+
+<b><font class="ques"><pre>
+3. What is output?
+public class TestParent { 
+   public void m1() {
+       System.out.print(" parent");
+   }
+}
+public class Test extends TestParent{ 
+   public static void m1() {
+       System.out.print(" child");
+   }
+   public static void main(String args[]) { 
+      TestParent t = new Test();
+      t.m1();
+      System.out.print( " main");
+   }
+} </pre>
+</b><font color=#000000><input onclick="ans(this.name,'correct')" type=radio name=3> a) <em>Compile error</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=3> b) <em>Gives output: child main</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=3> c) <em>Gives output: parent main</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=3> d) <em>None of the above</em>
+<br></font><div class="details" id=wrong3><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong3e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong3a><b>Wrong!</b> The correct answer is <i>a)  Compile error: Cannot change overridden method to static</i></div>
+<div class="detailsr" id=correct3><b>Correct! </b><i>Compile error: Cannot change overridden method to static</i></div>
+
+<b><font class="ques"><pre>
+4. What is the output?
+public class Test{ 
+   static {
+       System.out.print(" static1");
+   }
+   public static void main(String args[]) { 
+      System.out.print( " main");
+   }
+   static {
+       System.out.print(" static2");
+   }
+}</pre>
+</b><font color=#000000><input onclick="ans(this.name,'wrong')" type=radio name=4> a) <em>main static1 static2</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=4> b) <em>static1 main static2</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=4> c) <em>Compile error</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=4> d) <em>static1 static2 main</em><br>
+<br></font><div class="details" id=wrong4><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong4e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong4a><b>Wrong! </b><br>The correct answer is <i>d) static1 static2 main</i><br> static blocks are executed first, in the order declared</i> </div>
+<div class="detailsr" id=correct4><b>Correct! </b><i> static1 static2 main</i><br> static blocks are executed first, in the order declared </div>
+
+<b><font class="ques"><pre>
+5. Which of the following are marker interfaces?
+1. java.io.Serializable 
+2. java.lang.Cloneable
+3. java.io.Externalizable
+4. java.lang.Runnable
+5. java.lang.Throwable </pre>
+</b><font color=#000000><input onclick="ans(this.name,'correct')" type=radio name=5> a) 1 and 2</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=5> b) <em>1, 2 and 3</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=5> c) <em>1, 3 and 5</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=5> d) <em>All of them</em>
+<br>
+<br></font><div class="details" id=wrong5><b>Wrong!</b> Try again.</b></div>
+<div class="details" id=wrong5e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong5a><b>Wrong! </b>The correct answer is <i>a) </i>1 and 2. <br>Serializable and Cloneable are marker interfaces. Marker interface indicate, signal or command the compiler or JVM to do something special</div>
+<div class="detailsr" id=correct5><b>Correct! </b><i> 1 and 2.</i> <br>Serializable and Cloneable are marker interfaces. Marker interface indicate, signal or command the compiler or JVM to do something special</div>
+
+<b><font class="ques"><pre>
+6.  For the following :
+public class TestParent { 
+   protected void m1() {
+       System.out.print(" parent");
+   }
+}
+public class Test extends TestParent{ 
+   void m1() {
+       System.out.print(" child");
+   }
+   public static void main(String args[]) { 
+      TestParent t = new Test();
+      t.m1();
+   }
+} </pre>
+</b>
+<font color=#000000>
+<input onclick="ans(this.name,'correct')" type=radio name=6> a) <em>Compile Error</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=6> b) <em>Gives output : child</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=6> c) <em>Gives output : parent</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=6> d) <em>Runtime Exception</em>
+<br><br></font>
+<div class="details" id=wrong6><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong6e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong6a><b>Wrong! </b> The correct answer is <i>a) Compile Error.</i> 'protected' has higher access privilege to 'default'</i> <br></div>
+<div class="detailsr" id=correct6><b>Correct! </b><i> Compile Error. </i> 'protected' has higher access privilege to 'default'<br></div>
+
+<b><font class="ques"><pre>
+7.  What is the output?
+ public class Test { 
+    static {
+      System.out.print(" static");
+    }
+    public void Test () {
+      System.out.print("  constr");
+    }
+   public static void main(String args[]) { 
+      System.out.print(" main");
+      Test t = new Test();
+    }
+ } </pre></b>
+<font color=#000000>
+<input onclick="ans(this.name,'correct')" type=radio name=7> a) <em>static main</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=7> b) <em>static main constr</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=7> c) <em>static constr main</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=7> d) <em>Will not compile</em></font>
+<div class="details" id=wrong7><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong7e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong7a><b>Wrong!</b>&nbsp;<i>The correct answer is a) static main</i><br>public void Test () is a method <br></div>
+<div class="detailsr" id=correct7><b>Correct! </b>&nbsp; <i> static main</i><br> public void Test () is a method<br></div>
+<tr>
+<td><br><a href="./javaquiz19.htm"> <img src="previous.jpg"></a>
+&nbsp;<a href="./javaquiz21.htm"><img src="next.jpg"></a></td>
+</table></td></tr></table>
+</body></html>

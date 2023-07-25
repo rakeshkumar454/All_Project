@@ -1,0 +1,190 @@
+<! created by Surendran Velath>
+<html><head>
+
+<meta name="AccessType" Content="Free">
+<title>Java certification Quiz</title>
+<style>
+ .tip{color:#b23c09;font-size:18px;font-weight:bold;font-family:arial}
+ a:hover{color:red;font-family:verdana;font-size:22px;}
+</style>
+<script type="text/javascript" src="jquiz.js">
+</script>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+<table class="outer">
+<tr>
+<td bgColor="#f3eff0">
+<table class="inner">
+<tr>
+<td>	
+<table cellSpacing=0 cellPadding=0 border=0>
+<tr>
+<td>
+<font class="title">Java Quiz - 2
+<P><a href="javaquiz1.htm">&#171;</a>&nbsp;<a href="javaquiz1.htm">1</a>&nbsp;2&nbsp;<a href="javaquiz3.htm">3</a>&nbsp;<a href="javaquiz4.htm">4</a>&nbsp;<a href="javaquiz5.htm">5</a>&nbsp;<a href="javaquiz6.htm">6</a>&nbsp;<a href="javaquiz7.htm">7</a>&nbsp;<a href="javaquiz8.htm">8</a>&nbsp;<a href="javaquiz9.htm">9</a>&nbsp;<a href="javaquiz10.htm">10</a>&nbsp;<a href="javaquiz11.htm">11</a>&nbsp;<a href="javaquiz12.htm">12</a>&nbsp;<a href="javaquiz13.htm">13</a>&nbsp;<a href="javaquiz14.htm">14</a>&nbsp;<a href="javaquiz15.htm">15</a>&nbsp;<a href="javaquiz16.htm">16</a>&nbsp;<a href="javaquiz17.htm">17</a>&nbsp;<a href="javaquiz18.htm">18</a>&nbsp;<a href="javaquiz19.htm">19</a>&nbsp;<a href="javaquiz20.htm">20</a>&nbsp;<a href="javaquiz21.htm">21</a>&nbsp;<a href="javaquiz22.htm">22</a>&nbsp;<a href="javaquiz23.htm">23</a>&nbsp;<a href="javaquiz24.htm">24</a>&nbsp;<a href="javaquiz25.htm">25</a>&nbsp;<a href="javaquiz26.htm">26</a>&nbsp;<a href="javaquiz27.htm">27</a>&nbsp;<a href="javaquiz28.htm">28</a>&nbsp;<a href="javaquiz29.htm">29</a>&nbsp;<a href="javaquiz30.htm">30</a>&nbsp;<a href="javaquiz31.htm">31</a>&nbsp;<a href="javaquiz32.htm">32</a>&nbsp;<a href="javaquiz3.htm">&#187;</a></P>
+</font>
+
+<p title="static block" class="tip">1. What is the ouput?</p>
+<b><pre>import java.util.*;
+public class Test { 
+   static int n=1;
+   static String s="2";
+   static {
+      System.out.print(n + " ");
+   }
+   public Test(){
+      n = 3;
+   }
+   public void printS() {
+       System.out.print(s + " ");
+   }
+    public static void main(String args[]) {
+       System.out.print("0 ");
+       Test t = new Test();
+       t.printS();
+    }
+}
+</pre></b>
+<div class="ques">
+<input onclick="ans(this.name,'wrong')" type="radio" name=1></A> a) <em>0 1 2</em>
+<br><input onclick="ans(this.name,'wrong')" type="radio" name=1></A> b) <em>3 0 2</em>
+<br><input onclick="ans(this.name,'wrong')" type="radio" name=1></A> c) <em>0 3 2</em>
+<br><input onclick="ans(this.name,'correct')" type="radio" name=1></A> d) <em>1 0 2</em>
+<br><br></div>
+<div class="details" id=wrong1><b>Wrong!</b>Try again.</b>.<br></div>
+<div class="details" id=wrong1e><b>Wrong Again!</b> Try one more chance.</b>.<br></div>
+<div class="details" id=wrong1a><b>Wrong!</b> The correct answer is <i>d) 1 0 2</i><br> static blocks are executed first. </div>
+<div class="detailsr" id=correct1><font class="right"><b>Correct!</b></font><br>static blocks are executed first.</div>
+
+<p title="method definition" class="tip">2. Which are correct?</p>
+<b><font class="ques"><pre></pre></font></b>
+<div class="ques">
+<input onclick="ans(this.name,'wrong')" type="radio" name=2></A> a) <em>int sum(int first, int second) { first + second; }</em>
+<br><input onclick="ans(this.name,'correct')" type="radio" name=2></A> b) <em>int sum(int first, int second) { return first + second; }</em>
+<br><input onclick="ans(this.name,'wrong')" type="radio" name=2></A> c) <em>int sum(int first, second) { return first + second; }</em>
+<br><input onclick="ans(this.name,'wrong')" type="radio" name=2></A> d) <em>sum(int first, int second) { return first + second; }</em>
+<br><br></div>
+<div class="details" id=wrong2><b>Wrong!</b> Try again.</b>.<br></div>
+<div class="details" id=wrong2e><b>Wrong Again!</b> Try one more chance.</b>.
+</div>
+<div class="details" id=wrong2a><b>Wrong!</b> The correct answer is <i>b) int sum(int first, int second) { return first + second; }</i></div>
+<div class="detailsr" id=correct2><b>Correct!</b> int sum(int first, int second) { return first + second; }</div>
+
+<p title="Multi threading" class="tip">3. What is the output?</p>
+<b><font class="ques"><pre>public class Test extends Thread
+   {
+     public static void main(String[] args) {
+      Thread t = new Thread(new Test());
+       t.start();
+       t.start();
+      System.out.println("main");
+    }
+    public void run() {
+      System.out.println("thread ");
+    }
+  } </pre></font></b>
+<div class="ques"><input onclick="ans(this.name,'wrong')" type="radio" name=3></A> a) <em>throws IllegalMonitorStateException at runtime</em>
+<br><input onclick="ans(this.name,'correct')" type="radio" name=3></A> b) <em>throws IllegalThreadStateException at runtime</em>
+<br><input onclick="ans(this.name,'wrong')" type="radio" name=3></A> c) <em>Compile Error </em>
+<br><input onclick="ans(this.name,'wrong')" type="radio" name=3></A> d) <em>output: thread thread main </em>
+<br><br></font></div>
+<div class="details" id=wrong3><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong3e><b>Wrong Again!</b> Try one more chance.</b>.</div>
+<div class="details" id=wrong3a><b>Wrong!</b><br>The correct answer is <i>b) throws IllegalThreadStateException at runtime. start() can be called only once</i><br> </div>
+<div class="detailsr" id=correct3><font class="right"><b>Correct!</b></font><br>throws IllegalThreadStateException at runtime. start() can be called only once</div>
+
+<p title="HasSet behaviour" class="tip">4. What is the output?</p>
+<b><font class="ques"><pre>
+import java.util.*;
+public class Test { 
+    public static void main(String args[]) {
+       Set s = new HashSet();
+       System.out.print(s.add("A"));
+       System.out.print(s.add("F"));
+       System.out.print(s.add("A"));
+       System.out.print(s.add("B"));
+   }
+} </pre></b>
+<div class="ques"><input onclick="ans(this.name,'wrong')" type="radio" name=4></A> a) <em>truetruetruetrue </em>
+<br><input onclick="ans(this.name,'wrong')" type="radio" name=4></A> b) <em>truetruefalsefalse </em>
+<br><input onclick="ans(this.name,'wrong')" type="radio" name=4></A> c) <em>truefalsetruefalse </em>
+<br><input onclick="ans(this.name,'correct')" type="radio" name=4></A> d) <em>truetruefalsetrue</em>
+</div></font>
+<div class="details" id=wrong4><b>Wrong!</b> Try again.</b></div>
+<div class="details" id=wrong4e><b>Wrong Again!</b> Try one more chance.</b>.</div>
+<div class="details" id=wrong4a><b>Wrong!</b>  The correct answer is <i>d) truetruefalsetrue</i><br>Set does not allow multiples. 'A' cannot be added second time</div>
+<div class="detailsr" id=correct4><font class="right"><b>Correct!</b></font><br> truetruefalsetrue. Set does not allow multiples. 'A' cannot be added second time</div>
+
+<p title="ArrayList behaviour" class="tip">5. When using an ArrayList as implementation of List, what happens if <br>adding an element exceeds the ArrayList's capacity?</p>
+<div class="ques"><input onclick="ans(this.name,'wrong')" type="radio" name=5></A> a) <em>Throws ArrayIndexOutOfBoundsException</em>
+<br><input onclick="ans(this.name,'wrong')" type="radio" name=5></A> b) <em>Error cannot be handled in code</em>
+<br><input onclick="ans(this.name,'correct')" type="radio" name=5></A> c) <em> ArrayList expands automatically to fit the addition</em>
+<br><input onclick="ans(this.name,'wrong')" type="radio" name=5></A> d) <em>JVM terminates the application</em><br></font></div>
+<div class="details" id=wrong5><b>Wrong!</b> Try again.</b></div>
+<div class="details" id=wrong5e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong5a><b>Wrong!</b> <br>The correct answer is <i>c) ArrayList expands automatically to fit the addition </i></div>
+<div class="detailsr" id=correct5><font class="right"><b>Correct!</b></font><br>ArrayList expands automatically to fit the addition </div>
+
+<p title="return data type" class="tip">6. Which of the options can be used as return type of method getVal() at XXX</p>
+<b><font class="ques"><pre>public class Test {
+      public static XXX getVal(byte x, double y) {
+          return (short) x/y*2;
+      }
+      public static void main (String [] args) {
+         Test t = new Test();
+         System.out.println(getVal((byte)120, 6.0));
+      }
+    } 
+A. Double
+B. Float
+C. Byte
+D. Long
+E. Number
+F. Integer
+</b></pre> 
+<div class="ques"><input onclick="ans(this.name,'wrong')" type="radio" name=6></A> a) <em>A and C</em>
+<br><input onclick="ans(this.name,'wrong')" type="radio" name=6></A> b) <em>A and B</em>
+<br><input onclick="ans(this.name,'wrong')" type="radio" name=6></A> c) <em>C and F </em>
+<br><input onclick="ans(this.name,'correct')" type="radio" name=6></A> d) <em>A and E</em>
+</div></font>
+<div class="details" id=wrong6><b>Wrong!</b> Try again.</b></div>
+<div class="details" id=wrong6e><b>Wrong Again!</b> Try one more chance.</b>.</div>
+<div class="details" id=wrong6a><b>Wrong!</b> <br>The correct answer is <i>d) A and E. </i>Others have loss of precision / type mis-match </div>
+<div class="detailsr" id=correct6><font class="right"><b>Correct!</b></font> Others have loss of precision / type mis-match</div>
+
+<p title="Multi Threading" class="tip">7. Which statement at XXX will give output of 10</p>
+<b><font class="ques"><pre>import java.io.IOException;
+public class Test implements Runnable{
+    public int data;
+    public void run() {
+       try {
+          Thread.sleep(2000);
+          data = 10;
+       } 
+       catch(InterruptedException e) { }
+    }
+    public static void main (String [] args) {
+       try {
+          Test a = new Test();
+          Thread t = new Thread(a);
+          t.start();
+          XXX
+          System.out.println(a.data);
+       }
+       catch(Exception e) { }
+    }}
+</b></pre></font>
+<div class="ques"><input onclick="ans(this.name,'wrong')" type="radio" name=7></A> a) <em>t.wait();</em>
+<br><input onclick="ans(this.name,'wrong')" type="radio" name=7></A> b) <em>t.yield();</em>
+<br><input onclick="ans(this.name,'wrong')" type="radio" name=7></A> c) <em>t.notify();</em>
+<br><input onclick="ans(this.name,'correct')" type="radio" name=7></A> d) <em>t.join();</em></font></div>
+<div class="details" id=wrong7><b>Wrong!</b> Try again.</b></div>
+<div class="details" id=wrong7e><b>Wrong Again!</b> Try one more chance.</b>.</div>
+<div class="details" id=wrong7a><b>Wrong!</b> <br>The correct answer is <i>d) t.join(); </i> main thread waits till thread t is dead</div>
+<div class="detailsr" id=correct7><font class="right"><b>Correct!</b></font> t.join(); main thread waits till thread t is dead</div> 
+
+<tr>
+<td><br> <font size="6"  face="arial"> <a href="./javaquiz1.htm"><img src="previous.jpg"></a> &nbsp; <a href="./javaquiz3.htm"><img src="next.jpg"></a> </font></td>
+</table></td></tr></table>
+</body></html>

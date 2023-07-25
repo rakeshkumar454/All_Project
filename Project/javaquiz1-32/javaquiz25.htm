@@ -1,0 +1,216 @@
+<! created by Surendran Velath>
+<html><head>
+
+<meta name="AccessType" Content="Free">
+<title>Java certification Quiz</title>
+<style>
+ .tip{color:#b23c09;font-size:18px;font-weight:bold;font-family:arial}
+ a:hover{color:red;font-family:verdana;font-size:22px;}
+</style>
+
+<script type="text/javascript" src="jquiz.js">
+</script>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+<table class="outer">
+<tr>
+<td bgColor="#f3eff0">
+<table class="inner">
+<tr>
+<td>	
+<table cellSpacing=0 cellPadding=0 border=0>
+<tr>
+<td>
+<font class="title">Java Quiz - 25
+
+<p><a href="javaquiz24.htm">&#171;</a>&nbsp;<a href="javaquiz1.htm">1</a>&nbsp;<a href="javaquiz2.htm">2</a>&nbsp;<a href="javaquiz3.htm">3</a>&nbsp;<a href="javaquiz4.htm">4</a>&nbsp;<a href="javaquiz5.htm">5</a>&nbsp;<a href="javaquiz6.htm">6</a>&nbsp;<a href="javaquiz7.htm">7</a>&nbsp;<a href="javaquiz8.htm">8</a>&nbsp;<a href="javaquiz9.htm">9</a>&nbsp;<a href="javaquiz10.htm">10</a>&nbsp;<a href="javaquiz11.htm">11</a>&nbsp;<a href="javaquiz12.htm">12</a>&nbsp;<a href="javaquiz13.htm">13</a>&nbsp;<a href="javaquiz14.htm">14</a>&nbsp;<a href="javaquiz15.htm">15</a>&nbsp;<a href="javaquiz16.htm">16</a>&nbsp;<a href="javaquiz17.htm">17</a>&nbsp;<a href="javaquiz18.htm">18</a>&nbsp;<a href="javaquiz19.htm">19</a>&nbsp;<a href="javaquiz20.htm">20</a>&nbsp;<a href="javaquiz21.htm">21</a>&nbsp;<a href="javaquiz22.htm">22</a>&nbsp;<a href="javaquiz23.htm">23</a>&nbsp;<a href="javaquiz24.htm">24</a>&nbsp;25&nbsp;<a href="javaquiz26.htm">26</a>&nbsp;<a href="javaquiz27.htm">27</a>&nbsp;<a href="javaquiz28.htm">28</a>&nbsp;<a href="javaquiz29.htm">29</a>&nbsp;<a href="javaquiz30.htm">30</a>&nbsp;<a href="javaquiz31.htm">31</a>&nbsp;<a href="javaquiz32.htm">32</a>&nbsp;<a href="javaquiz26.htm">&#187;</a></p>
+</font>
+
+<b><font class="ques"><pre>
+1. What is the output?
+public static void main(String[] args) {
+    String[] vehicles = { "Car", "Truck", "Van", "Tractor" };
+    System.out.print(vehicles.length +", ");
+    System.out.println(vehicles[3].length());
+}
+</pre></b>
+<font color=#000000><!-- options --><input onclick="ans(this.name,'wrong')" type=radio name=1> a) <em>4, 3</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=1> b) <em>3, 5</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=1> c) <em>4, 7</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=1> d) <em>ArrayIndexOutOfBoundsException</em><br></font>
+<div class="details" id=wrong1><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong1e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong1a><b>Wrong!</b><br>The correct answer is <i>c) 4, 7</i><br></div>
+<div class="detailsr" id=correct1><b>Correct! </b><br> <i> 4, 7</i></div>
+
+<b><font class="ques"><pre>
+2. What should be placed at ?? to display only last 4 digits and all others masked by x ?
+public class CrCdMask {
+  public static void main(String[] args) {
+    System.out.println(maskCardNo("1234-5678-9012-3423"));
+  }
+  private static String maskCardNo(String cardNo) {
+    String val = "xxxx-xxxx-xxxx-";
+    ??
+    return val;
+  }
+}
+A. val = val + cardNo.substring(15, 19);
+B. val = new StringBuilder(val).append(cardNo, 15,19).toString();
+C. val = val + cardNo.substring(16,19);
+D. val = val + cardNo.substring(16,4);
+</pre>
+</b><font color=#000000><input onclick="ans(this.name,'correct')" type=radio name=2> a) <em>A or B</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=2> b) <em>C or D </em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=2> c) <em>A only</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=2> d) <em>B only</em><br><br>
+</font><div class="details" id=wrong2><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong2e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong2a><b>Wrong! </b>The correct answer is <i>a) A or B<br>
+val appended with a substring of cardNo from index 15 to count 19</i><br> </div>
+<div class="detailsr" id=correct2><b>Correct! </b> <i> A or B <br>
+val appended with a substring of cardNo from index 15 to count 19</i></div>
+
+<b><font class="ques"><pre>
+3. What is the output?
+public class CheckEqual {
+  public static void main(String[] args) {
+    String s1 = "School";
+    String s2 = new String("school");
+    if(s1.equalsIgnoreCase(s2)) {
+      System.out.println("Same");
+    }
+    else {
+      System.out.println("Not Same");
+    }
+  }
+}</pre>
+</b><font color=#000000><input onclick="ans(this.name,'wrong')" type=radio name=3> a) <em>Compile Error</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=3> b) <em>Run time error</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=3> c) <em>Not Same</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=3> d) <em>Same</em><br>
+<br></font><div class="details" id=wrong3><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong3e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong3a><b>Wrong!</b> The correct answer is <i>d) Same</i> <br>s1 and s2 are compared with case ignored<br> </div>
+<div class="detailsr" id=correct3><b>Correct! </b><i>Same</i><br> s1 and s2 are compared with case ignored</div>
+
+<b><font class="ques"><pre>
+4. What is the output?
+public class SumTest {
+  public static void main(String[] args) {
+    doSum(10, 20);
+    doSum(10.4, 10.6);
+  }
+  public static void doSum(int n , int m) {
+    System.out.println("int sum is : " + (n+m));
+  }
+  public static void doSum(Integer n , Integer m) {
+    System.out.println("Integer sum is : " + (n+m));
+  }
+  public static void doSum(float n , float m) {
+    System.out.println("float sum is : " + (n+m));
+  }
+  public static void doSum(double n , double m) {
+    System.out.println("double sum is : " + (n+m));
+  }
+  public static void doSum(Object n , Object m) {
+    System.out.println("Object sum is : " + (""+n+m));
+  }
+}</pre>
+</b><font color=#000000><input onclick="ans(this.name,'wrong')" type=radio name=4> a) <em>int sum is : 30 & float sum is : 21.0</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=4> b) <em>Integer sum is : 30 & float sum is : 21.0</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=4> c) <em>int sum is : 30 & double sum is : 21.0</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=4> d) <em>double sum is : 30 & double sum is : 21.0</em><br>
+<br></font><div class="details" id=wrong4><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong4e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong4a><b>Wrong! </b><br>The correct answer is <i>c) int sum is : 30 & double sum is : 21.0 </i><br>The nearest match is int and double</div>
+<div class="detailsr" id=correct4><b>Correct! </b><i>int sum is : 30 & double sum is : 21.0 <br>The nearest match is int and double</i></div>
+
+<b><font class="ques"><pre>
+5. What is the output if following is run as below? 
+         java HelloTest java
+public class HelloTest {
+  public static void main(String[] args) {
+    if(args[0].equals("java")?false:true) {
+      System.out.println("Success");
+    }
+    else {
+      System.out.println("Fail");
+    }
+  }
+}</pre>
+</b><font color=#000000><input onclick="ans(this.name,'correct')" type=radio name=5> a) <em>Fail</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=5> b) <em>Success</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=5> c) <em>Runtime error</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=5> d) <em>Compile error</em>
+<br>
+<br></font><div class="details" id=wrong5><b>Wrong!</b> Try again.</b>.
+<br></div>
+<div class="details" id=wrong5e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong5a><b>Wrong! </b><br>The correct answer is <i>a) Fail</i> : Ternary operator is like if else</div>
+<div class="detailsr" id=correct5><b>Correct! </b><br><i> Fail </i> Ternary operator is like if else </div>
+
+<b><font class="ques"><pre>
+6. To get d=0.5 for q 90 or more AND d=0.2 for q <br>between 80 and 90, else zero 
+which are the options that can be written at XX?
+public class DiscountTest {
+  public static void main(String[] args) {
+    double d = 0; 
+    int q = 0; 
+    XX
+    System.out.println(q + " : "+ d);    
+  }
+}
+A. if(q>=90) {d = 0.5;}
+   if(q>80 && q<90){d = 0.2;}
+B. d = (q>= 90)?0.5:(q>80)?0.2:0;
+C. d = (q>= 90)?0.5:0;
+   d = (q> 80)?0.2:0;
+D. if(q>80 || q<90){d = 0.2;}
+   else { d=0.5; }
+</pre></b>
+<font color=#000000>
+<input onclick="ans(this.name,'wrong')" type=radio name=6> a) <em>B, D</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=6> b) <em>A, D</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=6> c) <em>A, B</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=6> d) <em>A, C</em><br></font>
+<div class="details" id=wrong6><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong6e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong6a><b>Wrong!</b><br>The correct answer is <i>c) A, B</i> </div>
+<div class="detailsr" id=correct6><b>Correct! </b><br> A, B</div>
+
+<b><font class="ques"><pre>
+7. What is the output?
+public class CountTest {
+  static int count=0;
+  int n = 0;
+  public void changeCount(int chances) {
+    while (n < chances) {
+     n++;
+     if(n%2==0)
+       count++;
+     }
+  }
+  public static void main(String[] args) {
+    CountTest ct1 = new CountTest();
+    CountTest ct2 = new CountTest();
+    ct1.changeCount(5);
+    ct2.changeCount(10);
+    System.out.println(ct1.count + " : "+ct2.count);
+  }
+}</pre></b>
+<font color=#000000>
+<input onclick="ans(this.name,'wrong')" type=radio name=7> a) <em>10: 10</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=7> b) <em>7 : 7</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=7> c) <em>5 : 5</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=7> d) <em>2 : 5</em></font>
+<div class="details" id=wrong7><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong7e><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong7a><b>Wrong!</b><br>The correct answer is b) 7 : 7<i> static variable is shared</div>
+<div class="detailsr" id=correct7><b>Correct! </b><br> 7 : 7 static variable is shared</div>
+<tr>
+<td><br><a href="./javaquiz24.htm"><img src="previous.jpg"></a>
+&nbsp;<a href="./javaquiz26.htm"><img src="next.jpg"></a> </td>
+</table></td></tr></table>
+</body></html>

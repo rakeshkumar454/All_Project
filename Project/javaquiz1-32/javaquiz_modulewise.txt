@@ -1,0 +1,254 @@
+--- page 1 ---
+1. type check
+2. array assign
+3. local variable
+4. this
+5. OOPS concept
+6. type check int-short
+7. Checked exception
+--- page 2 ---
+1. static block
+2. method definition
+3. Multi Threading
+4. HashSet
+5. ArrayList
+6. Wrapper Classes
+7. Multi Threading
+--- page 3 ---
+1. Short circuit operator
+2. Math class
+3. instanceof operator
+4. operator precedence
+5. Checked Exception
+6. Exception hierarchy
+7. Multi Threading
+--- page 4 ---
+1. static/instance members
+2. local variable
+3. Thread constructor
+4. interface
+5. Exceptions
+6. if else
+7. default constructor
+--- page 5 ---
+1. super
+2. method overloading
+3. ArrayList
+4. Inheritance
+5. Design patterns
+6. for loop
+7. String class
+--- page 6 ---
+1. for loop
+2. main
+3. overloading
+4. Assertion
+5. Inheritance
+6. access modifier
+7. Pass by reference
+--- page 7 ---
+1. Java features
+2. String class
+3. String class
+4. 2-dim array
+5. final member
+6. synchronization
+7. if else
+--- page 8 ---
+1. anonymous inner class
+2. anonymous inner class
+3. interface
+4. bitwise operation
+5. local variable
+6. switch statement
+7. Wrapper classes
+--- page 9 ---
+1. Annotation
+2. static import
+3. encapsulation
+4. toString()
+5. method overloading
+6. HashTable
+7. inner class
+--- page 10 ---
+1. array declaration
+2. File I/O
+3. I/O streams 
+4. I/O streams
+5. Overloading
+6. identifiers
+7. interface
+--- page 11 ---
+1. Exception handling
+2. numerical range
+3. numerical declaration
+4. char declaration
+5. Collections
+6. identifiers
+7. incremental operator
+--- page 12 ---
+1. Multi Threading
+2. data types
+3. data types
+4. Collections
+5. inner class
+6. Constructor
+7. String concatination
+--- page 13 ---
+1. File I/O
+2. int array
+3. incremental operator
+4. Exceptions
+5. Multi Threading
+6. Multi Threading
+7. Assignment operator
+--- page 14 ---
+1. static method inheritance
+2. interface
+3. Exceptions
+4. static block
+5. Constructor
+6. main method
+7. inner class
+--- page 15 ---
+1. try with resources
+2. StringBuilder
+3. OOP concepts
+4. boolean
+5. effectively final
+6. AutoCloseable try
+7. Overloading
+--- page 16 ---
+1. Overloading, Overriding
+2. wait() method
+3. Wrapper class
+4. main() method
+5. File class
+6. Overloading
+7. Annotation
+--- page 17 ---
+1. inner class
+2. Exceptions
+3. Object creation
+4. Exceptions
+5. anonymous inner class
+6. Externalizable interface
+7. inner class
+--- page 18 ---
+1. Generic method
+2. Multi Threading
+3. clone()
+4. reflection
+5. static field overriding
+6. static method overriding
+7. static block error
+--- page 19 ---
+1. java.util.Scanner
+2. inner classes
+3. clone()
+4. String
+5. Serialization
+6. 2 dimensional array
+7. Inheritance
+--- page 20 ---
+1. static block
+2. static method inheritance
+3. static method inheritance
+4. static block order
+5. Marker interfaces
+6. Default/protected methods inheritance
+7. Constructor
+--- page 21 ---
+1. toString()
+2. Singleton
+3. stream.forEach()
+4. Random
+5. Collections: ArrayList
+6. Multi Threading
+7. ArrayList
+--- page 22 ---  
+1. equals()
+2. Exception
+3. 2-dim array
+4. primitive types
+5. String
+6. StringBuilder
+7. for loop
+--- page 23 ---
+1. operator precedence
+2. abstract, final, private
+3. try catch
+4. ++ operator, pass by value
+5. interface
+6. static instance blocks
+7. TreeSet
+--- page 24 ---
+1. Stream API
+2. Stream API
+3. local variable
+4. Stream API
+5. Stream API
+6. Functional Interface
+7. Functional Interface
+--- page 25 ---
+1. Arrays
+2. String
+3. if, else
+4. dynamic method call
+5. equals() method
+6. if, else, ternary
+7. while, if
+--- page 26 ---
+1. LocalDate
+2. for loop
+3. static variable
+4. continue, break
+5. int array
+6. ArrayList
+7. interface, abstract class
+--- page 27 ---
+1. Boolean
+2. local variable
+3. inheritance. 
+4. variable type
+5. variable scope
+6. java declarations
+7. array indexes
+--- page 28 ---
+1. Arrays
+2. main method
+3. main method
+4. Class cast
+5. for loop
+6. String
+7. array index
+--- page 29 ---
+1. int/long types
+2. incremental operator
+3. int array
+4. Exceptions
+5. primitive types
+6. control statements
+7. array indexes
+--- page 30 ---
+1. ternary operator
+2. decremental operator
+3. switch statement
+4. local variable
+5. String
+6. + operator
+7. while loop
+--- page 31 ---
+1. ArrayList
+2. StringBuilder
+3. Exception 
+4. Assert
+5. inheritance
+6. package
+7. StringBuffer
+--- page 32 ---
+1. Checked Exceptions
+2. String
+3. Collection interface
+4. variable scope
+5. continue and break

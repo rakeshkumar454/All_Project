@@ -1,0 +1,208 @@
+<! created by Surendran Velath>
+<html><head>
+
+<meta name="AccessType" Content="Free">
+<title>Java certification Quiz</title>
+<style>
+ .tip{color:#b23c09;font-size:18px;font-weight:bold;font-family:arial}
+ a:hover{color:red;font-family:verdana;font-size:22px;}
+</style>
+<script type="text/javascript" src="jquiz.js">
+</script>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+<table class="outer">
+<tr>
+<td bgColor="#f3eff0">
+<table class="inner">
+<tr>
+<td>	
+<table cellSpacing=0 cellPadding=0 border=0>
+<tr>
+<td>
+<font class="title">Java Quiz - 3
+
+<p><a href="javaquiz2.htm">&#171;</a>&nbsp;<a href="javaquiz1.htm">1</a>&nbsp;<a href="javaquiz2.htm">2</a>&nbsp;3&nbsp;<a href="javaquiz4.htm">4</a>&nbsp;<a href="javaquiz5.htm">5</a>&nbsp;<a href="javaquiz6.htm">6</a>&nbsp;<a href="javaquiz7.htm">7</a>&nbsp;<a href="javaquiz8.htm">8</a>&nbsp;<a href="javaquiz9.htm">9</a>&nbsp;<a href="javaquiz10.htm">10</a>&nbsp;<a href="javaquiz11.htm">11</a>&nbsp;<a href="javaquiz12.htm">12</a>&nbsp;<a href="javaquiz13.htm">13</a>&nbsp;<a href="javaquiz14.htm">14</a>&nbsp;<a href="javaquiz15.htm">15</a>&nbsp;<a href="javaquiz16.htm">16</a>&nbsp;<a href="javaquiz17.htm">17</a>&nbsp;<a href="javaquiz18.htm">18</a>&nbsp;<a href="javaquiz19.htm">19</a>&nbsp;<a href="javaquiz20.htm">20</a>&nbsp;<a href="javaquiz21.htm">21</a>&nbsp;<a href="javaquiz22.htm">22</a>&nbsp;<a href="javaquiz23.htm">23</a>&nbsp;<a href="javaquiz24.htm">24</a>&nbsp;<a href="javaquiz25.htm">25</a>&nbsp;<a href="javaquiz26.htm">26</a>&nbsp;<a href="javaquiz27.htm">27</a>&nbsp;<a href="javaquiz28.htm">28</a>&nbsp;<a href="javaquiz29.htm">29</a>&nbsp;<a href="javaquiz30.htm">30</a>&nbsp;<a href="javaquiz31.htm">31</a>&nbsp;<a href="javaquiz32.htm">32</a>&nbsp;<a href="javaquiz4.htm">&#187;</a></p></font>
+
+
+<p title="short circuit operator" class="tip">1. For the code :</p>
+<b><font class="ques"><pre>
+public class Test {
+  int d;
+  public static void main(String[] args) {
+    Test t = null;
+    // A
+    System.out.print("Ok");
+  }
+}
+Which expression at A will throw a NullPointerException ? 
+</pre></b>
+<font color=#000000>
+<input onclick="ans(this.name,'wrong')" type="radio" name="1"> a) <em>if(t==null || t.d>31).</em>
+<br><input onclick="ans(this.name,'correct')" type="radio" name="1"> b) <em>if(t==null && t.d>31)</em>
+<br><input onclick="ans(this.name,'wrong')" type="radio" name="1"> c) <em>if(t!=null && t.d>31)</em>
+<br><input onclick="ans(this.name,'wrong')" type="radio" name="1"> d) <em>None of the above</em>
+<br><br></font>
+<div class="details" id=wrong1 ><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong1e ><b>Wrong Again!</b> Try one more chance.</b><br></div>
+<div class="details" id=wrong1a ><b>Wrong!</b><br>The correct answer is <i>b) if(t==null && t.d>31)</i>. 
+<br>In case of short circuit operators && and || if the first expression alone can determine a condition, then the second is not checked. Here, in cases a and c the second expression is not verified</div>
+<div class="detailsr" id=correct1 ><b>Correct!</b><br>
+In case of short circuit operators && and || if the first expression alone can determine a condition, then the second is not checked.  Here, in cases a and c the second expression is not verified</div>
+
+<p title="Math class" class="tip">2. What is the output of the following : </p>
+<b><font class="ques"><pre>
+public class Test {
+   public static void main(String[] args) { 
+     System.out.println(Math.max(5.0, 8));
+   }
+} 
+</pre>
+</b><font color=#000000><input onclick="ans(this.name,'wrong')" type="radio" name="2"> a) <em>8</em>
+<br><input onclick="ans(this.name,'correct')" type="radio" name="2"> b) <em>8.0  </em>
+<br><input onclick="ans(this.name,'wrong')" type="radio" name="2"> c) <em>error, no method max(double, int) in Math class</em>
+<br><input onclick="ans(this.name,'wrong')" type="radio" name="2"> d) <em>None of the above</em>
+<br><br></font>
+<div class="details" id=wrong2><b>Wrong!</b> Try again.</b>
+<br></div>
+<div class="details" id=wrong2e ><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong2a><b>Wrong!</b><br>The correct answer is <i>b) 8.0 </i></div>
+<div class="detailsr" id=correct2><b>Correct!</b><br>8.0</div><p></p>
+
+<p title="instanceof operator" class="tip">3. What is the output of the following : </p>
+<b><font class="ques"><pre>
+public class Orange extends Fruit {
+  public static void main(String[] args) { 
+      Orange t = new Orange();
+      if(t instanceof Fruit) System.out.println("Fruit");
+      if(t instanceof Apple) System.out.println("Apple");
+      if(t instanceof Orange) System.out.println("Orange");
+  }
+}
+class Fruit {
+}
+class Apple extends Fruit {
+} </pre>
+</b><font color=#000000><input onclick="ans(this.name,'correct')" type="radio" name="3"> a) <em>Compile error</em>
+<br><input onclick="ans(this.name,'wrong')" type="radio" name="3"> b) <em>Orange </em>
+<br><input onclick="ans(this.name,'wrong')" type="radio" name="3"> c) <em>Fruit, Apple,Orange </em>
+<br><input onclick="ans(this.name,'wrong')" type="radio" name="3"> d) <em>Fruit, Orange.</em>
+<br><br></font>
+<div class="details" id=wrong3><b>Wrong!</b> Try again.</b></div>
+<div class="details" id=wrong3e ><b>Wrong Again!</b> Try one more chance.</b></div>
+</div><div class="details" id=wrong3a><b>Wrong!</b><br>The correct answer is <i>a) Compile Error </i><br> </div>
+<div class="detailsr" id=correct3><b>Correct!</b><i> a) Compile Error </i><br></div>
+
+<p title="operator precedence" class="tip">4. The following code :</p>
+<b><font class="ques"><pre>
+public class Test {
+  public static void main(String[] args) {
+    if(5 & 7 > 0 && 5 | 7 < 0)
+      System.out.println("true");
+  }
+}</pre>
+</b><font color=#000000><input onclick="ans(this.name,'wrong')" type="radio" name="4"> a) <em>prints output true</em>
+<br><input onclick="ans(this.name,'wrong')" type="radio" name="4"> b) <em>no output  </em>
+<br><input onclick="ans(this.name,'correct')" type="radio" name="4"> c) <em>does not compile.</em>
+<br><input onclick="ans(this.name,'wrong')" type="radio" name="4"> d) <em>Run time exception </em>
+<br><br></font>
+<div class="details" id=wrong4><b>Wrong!</b> Try again.</b></div>
+<div class="details" id=wrong4e ><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong4a><b>Wrong!</b><br>The correct answer is <i>c) does not compile. </i><br>< and > have higher precedence to & and | so 5 & 7 and 5 | 7 should be enclosed in parenthesis. </div>
+<div class="detailsr" id=correct4><b>Correct!</b><br>< and > have higher precedence to & and | so 5 & 7 and 5 | 7 should be enclosed in parenthesis.</div>
+
+<p title="Checked Exception" class="tip">5. What is the output of the following : </p>
+<b><font class="ques"><pre>
+import java.io.*;
+class Test {
+  public static void main(String[] args) throws InterruptedException {
+     try {
+        Thread.sleep(1000);
+        System.out.println("try");
+     }
+     catch(IOException e) {
+        System.out.println("catch");
+     }
+     finally {
+        System.out.println("finally");
+     }
+  }
+}
+</pre>
+</b><font color=#000000><input onclick="ans(this.name,'wrong')" type="radio" name="5"> a) <em>try, finally</em>
+<br><input onclick="ans(this.name,'correct')" type="radio" name="5"> b) <em>Compile error. </em>
+<br><input onclick="ans(this.name,'wrong')" type="radio" name="5"> c) <em>try</em>
+<br><input onclick="ans(this.name,'wrong')" type="radio" name="5"> d) <em>catch, finally</em>
+<br><br></font>
+<div class="details" id=wrong5><b>Wrong!</b> Try again.</b></div>
+<div class="details" id=wrong5e ><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong5a><b>Wrong!</b><br>The correct answer is <i>b) Compile error  </i>.<br>IOException is never thrown in try block. It is a checked exception </div>
+<div class="detailsr" id=correct5><b>Correct!</b><br><i>Compile error. </i>  IOException is never thrown in try block. It is a checked exception</div><p></p>
+
+<p title="Exception in inheritence" class="tip">6. The following code </p>
+<b><font class="ques"><pre>
+class Test {
+  Test() throws Exception {
+  }
+  public static void main (String[] args) throws Exception {
+    Test t = new Test();
+  }
+}
+class Child extends Test {
+}
+</pre>
+</b>
+<font color=#000000><input onclick="ans(this.name,'correct')" type="radio" name="6"> a) <em>class Child will not compile.</em>
+<br><input onclick="ans(this.name,'wrong')" type="radio" name="6"> b) <em>both will not compile.</em>
+<br><input onclick="ans(this.name,'wrong')" type="radio" name="6"> c) <em>compiles and runs fine</em>
+<br><input onclick="ans(this.name,'wrong')" type="radio" name="6"> d) <em>class Test will not compile.</em>
+<br><br></font>
+<div class="details" id=wrong6 ><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong6e ><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong6a ><b>Wrong!</b><br>The correct answer is <i>a) class Child will not compile.</i><br>Exception should be declared to be thrown in the default Constructor in inherited class </div>
+<div class="detailsr" id=correct6 ><b>Correct!</b><br>
+Exception should be declared to be thrown in the default Constructor in inherited class</div>
+
+<p title="Multi Threading" class="tip">7. For the following code :</p>
+<b><font class="ques"><pre>
+import java.io.IOException;
+public class Test implements Runnable{
+    private int m, n;
+    public synchronized void run() {
+      try {
+        for(int i =0; i<10; i++) {
+          m++; n++;
+          Thread.sleep(100);
+          System.out.println(m+", "+n);
+        }
+      } 
+      catch(InterruptedException e) {
+      }
+    }
+    public static void main (String [] args) {
+        try {
+           Test a = new Test();
+           new Thread(a).start();
+           new Thread(a).start();
+         }
+         catch(Exception e) {
+         }
+    }
+}</pre>
+</b>
+<font color=#000000><input onclick="ans(this.name,'wrong')" type="radio" name="7"> a) <em>The program prints pairs of equal values twice (for example, “1, 1” followed by “1, 1”, followed by “2, 2” and so on)</em>
+<br><input onclick="ans(this.name,'wrong')" type="radio" name="7"> b) <em>Code will not compile.</em>
+<br><input onclick="ans(this.name,'correct')" type="radio" name="7"> c) <em>The program prints pairs of equal values (for example, “1, 1” followed by “2, 2” and so on)</em>
+<br><input onclick="ans(this.name,'wrong')" type="radio" name="7"> d) <em>The program prints pairs of equal or unequal values (for example, “1, 1” or “2, 1” and so on)</em>
+<br><br></font>
+<div class="details" id=wrong7 ><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong7e ><b>Wrong Again!</b> Try one more chance.</b></div>
+<div class="details" id=wrong7a ><b>Wrong!</b><br>The correct answer is <i>c) The program prints pairs of equal values (for example, “1, 1” followed by “2, 2” and so on)</i><br></div>
+<div class="detailsr" id=correct7 ><b>Correct! </b><br>
+The program prints pairs of equal values (for example, “1, 1” followed by “2, 2” and so on)</div>
+<tr>
+<td><br><a href="./javaquiz2.htm"> <img src="previous.jpg"></a> 
+ &nbsp;<a href="./javaquiz4.htm"><img src="next.jpg"></a> </td>
+</table></td></tr></table>
+</body></html>

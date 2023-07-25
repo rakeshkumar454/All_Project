@@ -1,0 +1,182 @@
+<! created by Surendran Velath>
+<html><head>
+
+<meta name="AccessType" Content="Free">
+<title>Java certification Quiz</title>
+<style>
+ .tip{color:#b23c09;font-size:18px;font-weight:bold;font-family:arial}
+ a:hover{color:red;font-family:verdana;font-size:22px;}
+</style>
+<script type="text/javascript" src="jquiz.js">
+</script>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+<table class="outer">
+<tr>
+<td bgColor="#f3eff0">
+<table class="inner">
+<tr>
+<td>	
+<table cellSpacing=0 cellPadding=0 border=0>
+<tr>
+<td>
+<font class="title">Java Quiz - 11
+
+<p><a href="javaquiz10.htm">&#171;</a>&nbsp;<a href="javaquiz1.htm">1</a>&nbsp;<a href="javaquiz2.htm">2</a>&nbsp;<a href="javaquiz3.htm">3</a>&nbsp;<a href="javaquiz4.htm">4</a>&nbsp;<a href="javaquiz5.htm">5</a>&nbsp;<a href="javaquiz6.htm">6</a>&nbsp;<a href="javaquiz7.htm">7</a>&nbsp;<a href="javaquiz8.htm">8</a>&nbsp;<a href="javaquiz9.htm">9</a>&nbsp;<a href="javaquiz10.htm">10</a>&nbsp;11&nbsp;<a href="javaquiz12.htm">12</a>&nbsp;<a href="javaquiz13.htm">13</a>&nbsp;<a href="javaquiz14.htm">14</a>&nbsp;<a href="javaquiz15.htm">15</a>&nbsp;<a href="javaquiz16.htm">16</a>&nbsp;<a href="javaquiz17.htm">17</a>&nbsp;<a href="javaquiz18.htm">18</a>&nbsp;<a href="javaquiz19.htm">19</a>&nbsp;<a href="javaquiz20.htm">20</a>&nbsp;<a href="javaquiz21.htm">21</a>&nbsp;<a href="javaquiz22.htm">22</a>&nbsp;<a href="javaquiz23.htm">23</a>&nbsp;<a href="javaquiz24.htm">24</a>&nbsp;<a href="javaquiz25.htm">25</a>&nbsp;<a href="javaquiz26.htm">26</a>&nbsp;<a href="javaquiz27.htm">27</a>&nbsp;<a href="javaquiz28.htm">28</a>&nbsp;<a href="javaquiz29.htm">29</a>&nbsp;<a href="javaquiz30.htm">30</a>&nbsp;<a href="javaquiz31.htm">31</a>&nbsp;<a href="javaquiz32.htm">32</a>&nbsp;<a href="javaquiz12.htm">&#187;</a></p>
+</font>
+
+<b><font class="ques"><pre>
+1. What is the output ? 
+  public class Test {
+     public static void main (String [] args) {
+       try {
+          badMethod();
+          System.out.print("E"); 
+      }
+      catch (RuntimeException ex) {
+          System.out.print("B"); 
+          return;
+      }
+      catch (Exception ex1) {
+          System.out.print("C"); 
+          return;
+      }
+      finally {
+           System.out.print("D"); 
+      }   
+   }
+   public static void badMethod() {	
+        System.out.print("A"); 
+   }
+ }
+</pre></b>
+<font color=#000000><input onclick="ans(this.name,'wrong')" type=radio name=1> a) <em>Compile error</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=1> b) <em>ABD</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=1> c) <em>ACD</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=1> d) <em>AED</em><br></font>
+<div class="details" id=wrong1><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong1e><b>Wrong Again!</b> Try one more chance.<br></div>
+<div class="details" id=wrong1a><b>Wrong!</b><br>The correct answer is <i>d) AED.  There is no exception thrown<br></div>
+<div class="detailsr" id=correct1><b>Correct! </b><br> AED. There is no exception thrown</div>
+
+<b><font class="ques"><pre>
+2. What is the numerical range of a byte?</pre>
+</b><font color=#000000><input onclick="ans(this.name,'wrong')" type=radio name=2> a) <em>0...32767</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=2> b) <em>-256...255</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=2> c) -128...127</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=2> d) <em>0...255</em><br><br>
+</font><div class="details" id=wrong2><font color=#ff0000 size=+1><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong2e><b>Wrong Again!</b> Try one more chance.<br></div>
+<div class="details" id=wrong2a><font color=#ff0000 size=+1><b>Wrong!</b><br></font>The correct answer is <i>c) -128...127</i><br> </div>
+<div class="detailsr" id=correct2><font color=#277801 size=+1><b>Correct! </b><br> <i>-128...127</i></div><p></p>
+
+<b><font class="ques"><pre>
+3. Which three are valid declarations of a float?
+A. float foo = -1;
+B. float foo = 1.0;
+C. float foo = 42e1;
+D. float foo = 2.02f;
+E. float foo = 3.03d;
+F. float foo = 0x0123;
+</pre>
+</b><font color=#000000><input onclick="ans(this.name,'wrong')" type=radio name=3> a) <em>B, D, F</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=3> b) <em>A, B, D</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=3> c) <em>A, D, F</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=3> d) <em>A, D, E</em><br>
+<br></font><div class="details" id=wrong3><font color=#ff0000 size=+1><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong3e><b>Wrong Again!</b> Try one more chance.</b><br></div>
+<div class="details" id=wrong3a><font color=#ff0000 size=+1><b>Wrong!</b><br></font>The correct answer is <i>c) A, D, F.</i> Others have loss of precision<br> </div>
+<div class="detailsr" id=correct3><font color=#277801 size=+1><b>Correct! </b><br><i>A, D, F.</i> Others have loss of precision</div>
+
+<b><font class="ques"><pre>
+4. Which are valid declarations of a char? 
+A. char  ch1 ="a";
+B. char  ch2 ='\'';
+C. char  ch3 ='cafe';
+D. char  ch4 ="cafe";
+E. char  ch5 = '\ucafe';
+F. char  ch6 ='\u0041'; 
+G. char  ch7 = (char)true;
+</pre>
+</b><font color=#000000><input onclick="ans(this.name,'wrong')" type=radio name=4> a) <em>A, E, F</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=4> b) <em>B, F, G</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=4> c) <em>B, E, F</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=4> d) <em>B, E, G</em><br>
+<br></font><div class="details" id=wrong4><font color=#ff0000 size=+1><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong4e><b>Wrong Again!</b> Try one more chance.</b><br></div>
+<div class="details" id=wrong4a><font color=#ff0000 size=+1><b>Wrong!</b><br></font>The correct answer is <i>c) B, E, F</i><br> </div>
+<div class="detailsr" id=correct4><font color=#277801 size=+1><b>Correct! </b><br><i> B, E, F</i></div>
+
+<b><font class="ques"><pre>
+5. What is the output?
+import java.util.TreeSet;
+public class Test {
+  public static void main (String [] args) {
+     TreeSet ss = new TreeSet();
+     ss.add("n");
+     ss.add("c");
+     ss.add("z");
+     ss.add("d");
+     ss.add("f");
+     ss.add("a");
+     ss.add("z");
+     System.out.println(ss);
+  }
+} 
+</pre>
+</b><font color=#000000><input onclick="ans(this.name,'wrong')" type=radio name=5> a) <em>[n, c, d, f, a, z] </em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=5> b) <em>[n, c, z, d, f, a, z] </em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=5> c) <em>[n, c, z, d, f, a] </em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=5> d) <em>[a, c, d, f, n, z] </em>
+<br><br></font><div class="details" id=wrong5><font color=#ff0000 size=+1><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong5e><b>Wrong Again!</b> Try one more chance.</b><br></div>
+<div class="details" id=wrong5a><font color=#ff0000 size=+1><b>Wrong!</b><br></font>The correct answer is <i>d) [a, c, d, f, n, z] TreeSet implements SortedSet interface, and so elements are sorted and no duplicates </i><br> </div>
+<div class="detailsr" id=correct5><font color=#277801 size=+1><b>Correct!</b> <i> [a, c, d, f, n, z] TreeSet implements SortedSet interface, and so elements are sorted and no duplicates </i> </div><p></p>
+
+<b><font class="ques"><pre>
+6. Which of these CANNOT be used as identifiers in Java?
+  A. false
+  B. extend
+  C. enum
+  D. try
+  E. synchronous
+  F. assert
+  G. case
+</pre></b>
+<font color=#000000><input onclick="ans(this.name,'correct')" type=radio name=6> a) <em>A, C, D, F, G</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=6> b) <em>A, B, D, E, G</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=6> c) <em>A, D, E, F, G</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=6> d) <em>A, C, D, E, F</em><br><br></font>
+<div class="details" id=wrong6><b>Wrong!</b> Try again.</b><br></div>
+<div class="details" id=wrong6e><b>Wrong Again!</b> Try one more chance.</b><br></div>
+<div class="details" id=wrong6a><b>Wrong!</b><br>The correct answer is <i>a) A, C, D, F, G.</i> 'false' is a literal and others are keywords</div>
+<div class="detailsr" id=correct6><b>Correct! </b><br> A, C, D, F, G. 'false' is a literal and others are keywords</div>
+
+<b><font class="ques"><pre>
+7. What is the output?
+public class Test {
+    public static void main(String [] args) {
+        int x= 0;
+        int y= 0;
+        for (int z = 0; z < 5; z++) {
+            if (( ++x > 2 ) && (++y > 2)) {
+                x++;
+            }
+        }
+        System.out.println(x +" "+ y);
+    }
+}</pre></b>
+<font color=#000000><input onclick="ans(this.name,'wrong')" type=radio name=7> a) <em>5 2</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=7> b) <em>5 3</em>
+<br><input onclick="ans(this.name,'correct')" type=radio name=7> c) <em>6 3</em>
+<br><input onclick="ans(this.name,'wrong')" type=radio name=7> d) <em>6 4</em><br><br></font>
+<div class="details" id=wrong7><b>Wrong!</b> Try again.</b>.<br></div>
+<div class="details" id=wrong7e><b>Wrong Again!</b> Try one more chance.</b><br></div>
+<div class="details" id=wrong7a><b>Wrong!</b> The correct answer is <i>c) 6 3</i> <br> ++x increments before usage and x++ uses first and then increments </div>
+<div class="detailsr" id=correct7><b>Correct! </b> 6 3<br>  ++x increments before usage and x++ uses first and then increments </div>
+<tr>
+<td><br> <a href="./javaquiz10.htm"><img src="previous.jpg"></a>
+&nbsp;<a href="./javaquiz12.htm"><img src="next.jpg"></a></td>
+</table></td></tr></table>
+</body></html>
